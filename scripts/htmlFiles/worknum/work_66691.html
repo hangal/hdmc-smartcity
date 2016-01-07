@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+				width: 24px;
+				height: 24px;
+				}
+				th.sorttable_sorted::after {
+				background: url(up.png);
+				background-size: contain;
+				}
+				th.sorttable_sorted_reverse::after {
+				background: url(down.png);
+				background-size: cover;
+				}
+
+				.scrollup {
+			    width: 80px;
+			    height: 40px;
+			    position: fixed;
+			    bottom: 50px;
+			    right: 100px;
+			    text-indent: 0px
+			    border-radius: 20px;
+			    border-color:black;
+			    border-style:solid;
+			    border-width:1px;
+			    text-align:center;
+			    padding-top:10px;
+			    color:black;  
+			    background-color:white;
+				}
+				<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+
+
+				</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+				
+				</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;"> Total number of works: 7</h4><h4 style="display:inline-block; margin-left:3em;"> Total amount spent: &#8377 99,581</h4>
+		<table class="table table-responsive sortable">
+
+		<thead>
+
+		<tr>
+
+		<th style="width:5%">Sl no.</th>
+
+		<th style="width:48%">Work Details</th>
+
+		<th>Measurement</th>
+
+		<th>Unit</th>
+
+		<th>Rate</th>
+
+		<th>Total Amount</th>
+
+		</tr>
+
+		</thead>
+
+		<tbody>
+		<a href="#" class="scrollup">Go to top</a>
+		<tr><td class = "span1">1</td><td>Providing Vitrified tiles  60 cms.x 60 cms.of approved makes shade and size for flooring laid on a bed of 12mm thick cement mortar 1:3 mix flush pointing with white cement using colour pigment including cost of materials, labours, curing complete as per s</td><td>49.06</td><td>Sqm</td><td>1,205.28 </td><td>59131.0368</td></tr><tr><td class = "span1">2</td><td>KSRB 15-14.3 : Providing and applying one coat with oil bound washable  distemper  of approved brand and shade on wall surface including priming coat with distemper primer after throughly brooming the surface to remove all dirt dust mortar drops and sand </td><td>422.69</td><td>Sqm</td><td>24.19 </td><td>10224.8711</td></tr><tr><td class = "span1">3</td><td>KSRB 15-17.13 : Providing and applying polishing with french polish over previously polished wood surface and /or wood based surface to give an even surface after cleaning the surface of all dirt dust and foreign matter sand papering so as to produce a sm</td><td>14.98</td><td>Sqm</td><td>56.16 </td><td>841.2768</td></tr><tr><td class = "span1">4</td><td>KSRB 15-17.7 : Providing and applying painting one coats (excluding priming coat) on new wood surface and /or wood based  surface with enamel paint to give an even shade  cleaning the surface of all dirt dust and foreign matter sand papering  including co</td><td>38.54</td><td>Sqm</td><td>48.92 </td><td>1885.3768</td></tr><tr><td class = "span1">5</td><td>Removing reparing and refixing venitian blinds of windows fashion fabric of Taiwan make including cost of materials, labours, complete As per the direction of the Engineer-in-charge of the work.</td><td>15.00</td><td>Nos</td><td>600.00 </td><td>9000.0</td></tr><tr><td class = "span1">6</td><td>Providing and Supplying Executive revolving chair black colour with raczin As per the direction of the Engineer-in-charge.</td><td>1.00</td><td>Nos</td><td>16,000.00 </td><td>16000.0</td></tr><tr><td class = "span1">7</td><td>Providing and Fixing cloth curtain of good quality to windows including cost of materials, labours, complete as per the direction of the Engineer-in-charge of the work.</td><td>5.00</td><td>Nos</td><td>500.00 </td><td>2500.0</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

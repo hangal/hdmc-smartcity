@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+				width: 24px;
+				height: 24px;
+				}
+				th.sorttable_sorted::after {
+				background: url(up.png);
+				background-size: contain;
+				}
+				th.sorttable_sorted_reverse::after {
+				background: url(down.png);
+				background-size: cover;
+				}
+
+				.scrollup {
+			    width: 80px;
+			    height: 40px;
+			    position: fixed;
+			    bottom: 50px;
+			    right: 100px;
+			    text-indent: 0px
+			    border-radius: 20px;
+			    border-color:black;
+			    border-style:solid;
+			    border-width:1px;
+			    text-align:center;
+			    padding-top:10px;
+			    color:black;  
+			    background-color:white;
+				}
+				<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+
+
+				</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+				
+				</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;"> Total number of works: 6</h4><h4 style="display:inline-block; margin-left:3em;"> Total amount spent: &#8377 7,17,519</h4>
+		<table class="table table-responsive sortable">
+
+		<thead>
+
+		<tr>
+
+		<th style="width:5%">Sl no.</th>
+
+		<th style="width:48%">Work Details</th>
+
+		<th>Measurement</th>
+
+		<th>Unit</th>
+
+		<th>Rate</th>
+
+		<th>Total Amount</th>
+
+		</tr>
+
+		</thead>
+
+		<tbody>
+		<a href="#" class="scrollup">Go to top</a>
+		<tr><td class = "span1">1</td><td> Scarifying bituminous course 50mm to 75mm thick along with premix carpet / surface dressing by road roller attached with scarifier without disturbing the base and stacking the debris including cost of all labour charges, HOM of machineries complete as pe</td><td>769.5</td><td>Sqm</td><td>51.00 </td><td>39244.5</td></tr><tr><td class = "span1">2</td><td>Compaction KSRRB 300-58. Compaction of original ground with maximum of 6 passes of 8 to 10 tonnes power roller including filling in depression occuring during rolling including cost of all labour, HOM of machinery complete as per specifications. MORTH / C</td><td>769.5</td><td>Sqm</td><td>51.00 </td><td>39244.5</td></tr><tr><td class = "span1">3</td><td>  Providing and laying in position plain cement concrete of mix M10 with OPC cement @ 220kgs, with 40mm and down size graded granite metal coarse aggregates @0.892cum and fine aggregtes @ 0.465cum machine mixed, machine mixed, concrete laid in layers not </td><td>76.95</td><td>CUM</td><td>4,001.00 </td><td>307876.95</td></tr><tr><td class = "span1">4</td><td> Providing and laying in position plain cement concrete of mix M15 with cement @ 240kgs, with 20mm and down size graded granite metal coarse aggregates @0.878cum and fine aggregtes @ 0.459cum, machine mixed, concrete laid in layers not exceeding 15 cms. t</td><td>57.71</td><td>CUM</td><td>5,641.00 </td><td>325542.11</td></tr><tr><td class = "span1">5</td><td>Providing and removing centering, shuttering, strutting, propping etc., and removal of form work Gutters for mass concrete including cost of all materials labour charges etc., complete as per specifications.Including loading and unloading Including all le</td><td>17.1</td><td>Sqm</td><td>101.00 </td><td>1727.1</td></tr><tr><td class = "span1">6</td><td>Lead For Disposal Of Excavated Earth to a distance of 2Km with mechanical means loading anf unloading As per item complete.Including loading and unloading Including all lead & lifts, loading & unloading charges and as directed by Engineer incharge of the </td><td>38.48</td><td>CUM</td><td>101.00 </td><td>3886.48</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

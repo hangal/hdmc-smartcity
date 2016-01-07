@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+            <title>Smart City</title>
+
+            <meta charset="utf-8">
+
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+
+            <script src="../commonfiles/sorttable.js"></script>
+
+            <link rel="stylesheet" href="../commonfiles/bootstrap.css">
+
+            <script src="../commonfiles/jquery.min.js"></script>
+
+            <script src="../commonfiles/bootstrap.min.js"></script>
+
+            <script src="../commonfiles/addons.js"></script>
+
+            <script src="http://maps.googleapis.com/maps/api/js"></script>
+            <script>
+            var src = 'http://hack4hd.org/data/HD-ward-boundaries.kml';
+
+            function initialize() {
+              var mapProp = {
+                center:new google.maps.LatLng(15.3935685,75.08009570000002),
+                zoom:15,
+                mapTypeId:google.maps.MapTypeId.ROADMAP
+              };
+              var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+              var ctaLayer = new google.maps.KmlLayer({
+                url: 'http://hack4hd.org/data/HD-ward-boundaries.kml',
+                map: map
+              });
+
+            }
+            google.maps.event.addDomListener(window, 'load', initialize);
+            </script>
+            </head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+    <h2 style="text-align:center; display:inline-block;"><a href="../allworks/allworks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+    <img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="margin-left:5em"> Ward number: 69</h4><h4 style="display:inline-block;margin-left:5em"> Total number of works: 31</h4><h4 style="display:inline-block; margin-left:7em;"> Completed works: 25</h4><h4 style="display:inline-block; margin-left:7em;"> In progress works: 6</h4><h4 style="display:inline-block; margin-left:5em;"> Total amount spent: &#8377 1,66,68,056</h4><h4 style="display:inline-block; margin-left:3.5em;"> Total number of contractors: 12</h4>
+                </div>
+                <div id="googleMap" style="width:100%;height:25em;margin-top:2.5em;"></div>
+                <div class="container">
+                
+            <table class="table table-responsive sortable" id="myTable">
+
+            <thead>
+
+            <tr>
+
+            <th style="width:5%">Ward</th>
+
+            <th style="width:48%">Work Description</th>
+
+            <th>Work Order Date</th>
+
+            <th>Work Completion Date</th>
+
+            <th>Work Type</th>
+
+            <th>Source of Income</th>
+
+            <th style="width:7%">Contractor</th>
+
+            <th>Amount Sanctioned</th>
+
+            <th>Status</th>
+
+            </tr>
+
+            </thead>
+
+            <tbody>
+            <a href="#" class="scrollup">Go to top</a>
+            <tr><td class = "span1"><a href="../wardworks/ward_69.html" target="_blank">69</a></td><td>EE(South) office Govt.Staff of Sri S.S.Mannangi on 1-12-2013 to 31-12-2013 for Serendar Bill</td><td>04-Apr-14</td><td>04-Apr-14</td><td><a href="../worktype/worktype_5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="../contractors/contractor_5045.html" target="_blank">Mannangi S S</a></td><td>1,26,541</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="../wardworks/ward_69.html" target="_blank">69</a></td><td>HDMC Pay bill for Excutive Engineer (South) staff salary for the Apr-2014
+</td><td>26-Apr-14</td><td>26-Apr-14</td><td><a href="../worktype/worktype_5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="../contractors/contractor_1494.html" target="_blank">EE South</a></td><td>20,00,000</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="../wardworks/ward_69.html" target="_blank">69</a></td><td>Salary bill of Govt. Staff of Executive Engineer (South) Office for the month of Apr-2014
+</td><td>26-Apr-14</td><td>26-Apr-14</td><td><a href="../worktype/worktype_5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="../contractors/contractor_1494.html" target="_blank">EE South</a></td><td>20,00,000</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="../wardworks/ward_69.html" target="_blank">69</a></td><td>Salary bill of Office Staff of Swiming Pool E.E(South) Office for the month of Apr-2014
+</td><td>26-Apr-14</td><td>26-Apr-14</td><td><a href="../worktype/worktype_5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="../contractors/contractor_1494.html" target="_blank">EE South</a></td><td>20,00,000</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="../wardworks/ward_69.html" target="_blank">69</a></td><td>EE(South) Swiming pool Employee of D.A.Difference Bill</td><td>06-May-14</td><td>06-May-14</td><td><a href="../worktype/worktype_5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="../contractors/contractor_1494.html" target="_blank">EE South</a></td><td>18,687</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="../wardworks/ward_69.html" target="_blank">69</a></td><td>EE(South) office Staff D.A.Difference Bill</td><td>06-May-14</td><td>06-May-14</td><td><a href="../worktype/worktype_5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="../contractors/contractor_1494.html" target="_blank">EE South</a></td><td>20,807</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="../wardworks/ward_69.html" target="_blank">69</a></td><td>EE(South) office Sarander Live Bill</td><td>06-May-14</td><td>06-May-14</td><td><a href="../worktype/worktype_5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="../contractors/contractor_1494.html" target="_blank">EE South</a></td><td>34,286</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="../wardworks/ward_69.html" target="_blank">69</a></td><td>EE(South) Swiming pool office staff of Sarandar Bill</td><td>06-May-14</td><td>06-May-14</td><td><a href="../worktype/worktype_5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="../contractors/contractor_1494.html" target="_blank">EE South</a></td><td>73,756</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="../wardworks/ward_69.html" target="_blank">69</a></td><td>EE(S) office Vehicle No.KA-25/D-4895 for Apr-2014 Bill</td><td>26-May-14</td><td>26-May-14</td><td><a href="../worktype/worktype_4.html" target="_blank">Hired Vehicle Rent</td><td>Own Source</td><td><a href="../contractors/contractor_1106.html" target="_blank">Om Travels</a></td><td>3,00,000</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="../wardworks/ward_69.html" target="_blank">69</a></td><td>Re-Embersment Medical Bill for Sri C.B.Tandel Swiming Pool Employee of EE(South)</td><td>22-Jul-14</td><td>22-Jul-14</td><td><a href="../worktype/worktype_5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="../contractors/contractor_3344.html" target="_blank">Tandel C B</a></td><td>1,17,033</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="../wardworks/ward_69.html" target="_blank">69</a></td><td>Medical Bill for Sri M.I. Manager,FDA EE(South) office (dtd:14-11-2013 to 08-05-2014)</td><td>09-Sep-14</td><td>09-Sep-14</td><td><a href="../worktype/worktype_5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="../contractors/contractor_1990.html" target="_blank">Manager M I</a></td><td>8,209</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="../wardworks/ward_69.html" target="_blank">69</a></td><td>Info not available</td><td>09-Sep-14</td><td>09-Sep-14</td><td><a href="../worktype/worktype_5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="../contractors/contractor_2447.html" target="_blank">P H Tamburi</a></td><td>1,00,000</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="../wardworks/ward_69.html" target="_blank">69</a></td><td>EE(South) Office Stationary Expenses.</td><td>03-Jan-15</td><td>03-Jan-15</td><td><a href="../worktype/worktype_5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="../contractors/contractor_1470.html" target="_blank">Janata Book And Stationary</a></td><td>10,000</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="../wardworks/ward_69.html" target="_blank">69</a></td><td>Sri M.I. Manager EE(s) office Medical Reimbersment</td><td>26-Feb-15</td><td>26-Feb-15</td><td><a href="../worktype/worktype_5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="../contractors/contractor_1990.html" target="_blank">Manager M I</a></td><td>14,630</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="../wardworks/ward_69.html" target="_blank">69</a></td><td>EE(S) Office Employees Earned Leave Bill dt:1-2-15 to 15-2-15</td><td>05-Mar-15</td><td>05-Mar-15</td><td><a href="../worktype/worktype_5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="../contractors/contractor_1494.html" target="_blank">EE South</a></td><td>43,277</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="../wardworks/ward_69.html" target="_blank">69</a></td><td>D.A.Difference for EE(S) Office Smt: S.S.Vagmore, Govt Employee dt:1-9-2014 to 31-1-2015</td><td>09-Apr-15</td><td>09-Apr-15</td><td><a href="../worktype/worktype_5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="../contractors/contractor_1494.html" target="_blank">EE South</a></td><td>3,635</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="../wardworks/ward_69.html" target="_blank">69</a></td><td>Salary bill for Executive Engineer (South) Office Staff for the month of April-2015</td><td>28-Apr-15</td><td>28-Apr-15</td><td><a href="../worktype/worktype_5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="../contractors/contractor_1494.html" target="_blank">EE South</a></td><td>40,00,000</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="../wardworks/ward_69.html" target="_blank">69</a></td><td>Salary bill of Govt. Staff of Executive Engineer (South) Office for the month of April-2015</td><td>28-Apr-15</td><td>28-Apr-15</td><td><a href="../worktype/worktype_5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="../contractors/contractor_1494.html" target="_blank">EE South</a></td><td>20,00,000</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="../wardworks/ward_69.html" target="_blank">69</a></td><td>EE(S) Employees Leave Encashment Bill</td><td>04-May-15</td><td>04-May-15</td><td><a href="../worktype/worktype_5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="../contractors/contractor_1494.html" target="_blank">EE South</a></td><td>1,03,934</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="../wardworks/ward_69.html" target="_blank">69</a></td><td><a href="../worknum/work_71809.html" target="_blank">Operation & Maintanance of Musical Fountain at M.G.Park in Hubli</a></td><td>04-Feb-15</td><td>03-Sep-15</td><td><a href="../worktype/worktype_2.html" target="_blank">Maintenance</td><td>Own Source</td><td><a href="../contractors/contractor_571.html" target="_blank">Infotech Computer Education, Hubli</a></td><td>1,62,500</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="../wardworks/ward_69.html" target="_blank">69</a></td><td>Sri C. B. Tandel EE(s) office Medical Reimbersment Bill</td><td>18-May-15</td><td>18-May-15</td><td><a href="../worktype/worktype_5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="../contractors/contractor_3344.html" target="_blank">Tandel C B</a></td><td>38,290</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="../wardworks/ward_69.html" target="_blank">69</a></td><td>Renovation of HDMC Meetiing Hall in HDMC central premises.</td><td>27-May-15</td><td>26-Jun-15</td><td><a href="../worktype/worktype_5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="../contractors/contractor_7829.html" target="_blank">Anita V Megharaj</a></td><td>30,000</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="../wardworks/ward_69.html" target="_blank">69</a></td><td>EE(South) Office Sri Mahesh. P. Arlihond Travelling Bill</td><td>02-Jun-15</td><td>02-Jun-15</td><td><a href="../worktype/worktype_5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="../contractors/contractor_7860.html" target="_blank">Aralihond Mahesh P</a></td><td>1,650</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="../wardworks/ward_69.html" target="_blank">69</a></td><td>EE(S) office Vehicle No.KA-25/D-4459 for April-2015  Bill</td><td>04-Jun-15</td><td>04-Jun-15</td><td><a href="../worktype/worktype_4.html" target="_blank">Hired Vehicle Rent</td><td>Own Source</td><td><a href="../contractors/contractor_1106.html" target="_blank">Om Travels</a></td><td>3,00,000</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="../wardworks/ward_69.html" target="_blank">69</a></td><td>EE(South) Sri Mahesh. P. Aralihond Travalling Expensess Bill</td><td>10-Jul-15</td><td>10-Jul-15</td><td><a href="../worktype/worktype_5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="../contractors/contractor_7860.html" target="_blank">Aralihond Mahesh P</a></td><td>1,739</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="../wardworks/ward_69.html" target="_blank">69</a></td><td>EE(South) office employees Festival Advance</td><td>05-Aug-15</td><td>05-Aug-15</td><td><a href="../worktype/worktype_5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="../contractors/contractor_1494.html" target="_blank">EE South</a></td><td>25,000</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="../wardworks/ward_69.html" target="_blank">69</a></td><td>EE(South) Office Stationery Bill</td><td>21-Aug-15</td><td>21-Aug-15</td><td><a href="../worktype/worktype_5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="../contractors/contractor_1470.html" target="_blank">Janata Book And Stationary</a></td><td>10,185</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="../wardworks/ward_69.html" target="_blank">69</a></td><td>EE(S) Office Staff Sri S.M. Sambrani peon, 270 days Leave Ancashment Bill</td><td>21-Aug-15</td><td>21-Aug-15</td><td><a href="../worktype/worktype_5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="../contractors/contractor_1516.html" target="_blank">Sambrani S.M</a></td><td>2,13,030</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="../wardworks/ward_69.html" target="_blank">69</a></td><td>HDMC Gratuti Contribution  in Shri Mahesh. P. Aralihond, EE(South)</td><td>24-Sep-15</td><td>24-Sep-15</td><td><a href="../worktype/worktype_5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="../contractors/contractor_7860.html" target="_blank">Aralihond Mahesh P</a></td><td>35,727</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="../wardworks/ward_69.html" target="_blank">69</a></td><td>Performance Based Annual Maintenance of Gardens and Circles in Hubballi City</td><td>24-Sep-15</td><td>23-Sep-16</td><td><a href="../worktype/worktype_5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="../contractors/contractor_1301.html" target="_blank">Green Ivy Prp Manik A Shivakar</a></td><td>28,72,800</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="../wardworks/ward_69.html" target="_blank">69</a></td><td>EE(S) C.B.Tandel (Swiming pool) for D.A. Difference Bill Month of July, August-2015</td><td>09-Nov-15</td><td>09-Nov-15</td><td><a href="../worktype/worktype_5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="../contractors/contractor_3344.html" target="_blank">Tandel C B</a></td><td>2,340</td><td style="color:#d32a0e">Inprogress</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

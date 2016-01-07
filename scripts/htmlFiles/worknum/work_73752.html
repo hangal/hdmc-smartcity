@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+				width: 24px;
+				height: 24px;
+				}
+				th.sorttable_sorted::after {
+				background: url(up.png);
+				background-size: contain;
+				}
+				th.sorttable_sorted_reverse::after {
+				background: url(down.png);
+				background-size: cover;
+				}
+
+				.scrollup {
+			    width: 80px;
+			    height: 40px;
+			    position: fixed;
+			    bottom: 50px;
+			    right: 100px;
+			    text-indent: 0px
+			    border-radius: 20px;
+			    border-color:black;
+			    border-style:solid;
+			    border-width:1px;
+			    text-align:center;
+			    padding-top:10px;
+			    color:black;  
+			    background-color:white;
+				}
+				<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+
+
+				</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+				
+				</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;"> Total number of works: 6</h4><h4 style="display:inline-block; margin-left:3em;"> Total amount spent: &#8377 98,690</h4>
+		<table class="table table-responsive sortable">
+
+		<thead>
+
+		<tr>
+
+		<th style="width:5%">Sl no.</th>
+
+		<th style="width:48%">Work Details</th>
+
+		<th>Measurement</th>
+
+		<th>Unit</th>
+
+		<th>Rate</th>
+
+		<th>Total Amount</th>
+
+		</tr>
+
+		</thead>
+
+		<tbody>
+		<a href="#" class="scrollup">Go to top</a>
+		<tr><td class = "span1">1</td><td>Removing wall panelling/false ceiling/wooden parition /aluminium partition, stacking with it all cost and conveyance labour for all items of work, HOM of equipment etc. complete as per specifications.</td><td>24.69</td><td>Sqm</td><td>64.80 </td><td>1599.912</td></tr><tr><td class = "span1">2</td><td>Providing and fixing veneer panelling, over the 50mm x 35mm sal wood frame at spacing note exceeding 600mm c/c fixed to the wall and top covered out of 4mm thick approved quality Veneer, fixed over 12mm thick ply of approved brand,termite and water resist</td><td>12.90</td><td>Sqm</td><td>5,058.72 </td><td>65257.488</td></tr><tr><td class = "span1">3</td><td>prividing, frabricating,assembling and fixing in position anodized aluminium partitins using aluminium sections of mat finish or glassy finish in combination of plain grove,single grove and double as per requirments for the frames of overall size 63.5mmx3</td><td>3.71</td><td>Sqm</td><td>3,305.88 </td><td>12264.8148</td></tr><tr><td class = "span1">4</td><td>Providing venyl flooring of approved quality and make, fixed on the top of existing flooring fixed with suitable adhesive, including cutting to the required size and fixing etc. complete.</td><td>18.75</td><td>Sqm</td><td>675.00 </td><td>12656.25</td></tr><tr><td class = "span1">5</td><td>Providing  and applying painting in two coats with plastic emulsion paint of apprved brand on wall surface to give and even approved shade after throughly brusing the surface , free from mortar drops and oher foreign matter including preparing the surface</td><td>76.13</td><td>Sqm</td><td>71.28 </td><td>5426.5464</td></tr><tr><td class = "span1">6</td><td>Providing  and  applying  painting  Two coats (excluding priming coat) on new wood  surface and/or wood  based  surface with  enamel paint to give an even shade after  cleaning  the  surface of all dirt, dust and  foreign matter, sand papering  including </td><td>17.01</td><td>Sqm</td><td>87.48 </td><td>1488.0348</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

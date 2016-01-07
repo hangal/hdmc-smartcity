@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+				width: 24px;
+				height: 24px;
+				}
+				th.sorttable_sorted::after {
+				background: url(up.png);
+				background-size: contain;
+				}
+				th.sorttable_sorted_reverse::after {
+				background: url(down.png);
+				background-size: cover;
+				}
+
+				.scrollup {
+			    width: 80px;
+			    height: 40px;
+			    position: fixed;
+			    bottom: 50px;
+			    right: 100px;
+			    text-indent: 0px
+			    border-radius: 20px;
+			    border-color:black;
+			    border-style:solid;
+			    border-width:1px;
+			    text-align:center;
+			    padding-top:10px;
+			    color:black;  
+			    background-color:white;
+				}
+				<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+
+
+				</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+				
+				</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;"> Total number of works: 10</h4><h4 style="display:inline-block; margin-left:3em;"> Total amount spent: &#8377 18,391</h4>
+		<table class="table table-responsive sortable">
+
+		<thead>
+
+		<tr>
+
+		<th style="width:5%">Sl no.</th>
+
+		<th style="width:48%">Work Details</th>
+
+		<th>Measurement</th>
+
+		<th>Unit</th>
+
+		<th>Rate</th>
+
+		<th>Total Amount</th>
+
+		</tr>
+
+		</thead>
+
+		<tbody>
+		<a href="#" class="scrollup">Go to top</a>
+		<tr><td class = "span1">1</td><td>Supplying surface mounted type mirror optic luminaries for Single /Twin 36/40 watts fluorescent lamps cross rising of stove enameled deep coloured M.S.low profile housing complete with all accessories  and high purity anodized aluminium reflector assembli</td><td>02</td><td>Each</td><td>1,713.60 </td><td>3427.2</td></tr><tr><td class = "span1">2</td><td>II. 2x4-36/40 Watts   b) Group B  </td><td>02</td><td>Each</td><td>2,550.00 </td><td>5100.0</td></tr><tr><td class = "span1">3</td><td>Fixing all types and all capacities fluorescent/false ceiling/spot light/CFL fittings indoor on the wall/ceiling/rafters/girders using 23/0.0076" twin twisted PVC insulated wires, required nos of round blocks and clamps (if required)  On wall/ceiling/Raft</td><td>04</td><td>Each</td><td>107.10 </td><td>428.4</td></tr><tr><td class = "span1">4</td><td>Supplying and fixing polished wood board made of not less than 15mm thick plank on both sides with planks made out of not more than 2 pieces and fixing the same to the wall using tapered inverted wooden plugs screws etc.,  a)8"x6"x1.5"  </td><td>01</td><td>Each</td><td>57.12 </td><td>57.12</td></tr><tr><td class = "span1">5</td><td>Supplying and fixing of backlite DP/socket/switch with/without neon indicator over existing wood board or flush mounting in plastic plates/nitches. I.Using group "A" materials .   I . Using Group A Material  d) 16 Amps Combined  switch  and socket with In</td><td>01</td><td>Each</td><td>179.52 </td><td>179.52</td></tr><tr><td class = "span1">6</td><td>Replacing indoor PCB Circuit Of Air Conditioner.</td><td>01</td><td>Each</td><td>3,200.00 </td><td>3200.0</td></tr><tr><td class = "span1">7</td><td>Remote of Air Conditioner</td><td>01</td><td>Each</td><td>900.00 </td><td>900.0</td></tr><tr><td class = "span1">8</td><td>Gas Charging of Air Conditioner</td><td>01</td><td>Each</td><td>2,600.00 </td><td>2600.0</td></tr><tr><td class = "span1">9</td><td>AC Water Servicing</td><td>02</td><td>Each</td><td>600.00 </td><td>1200.0</td></tr><tr><td class = "span1">10</td><td>Replacing of swinging motor of Air Conditioner.</td><td>02</td><td>Each</td><td>650.00 </td><td>1300.0</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

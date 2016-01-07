@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+				width: 24px;
+				height: 24px;
+				}
+				th.sorttable_sorted::after {
+				background: url(up.png);
+				background-size: contain;
+				}
+				th.sorttable_sorted_reverse::after {
+				background: url(down.png);
+				background-size: cover;
+				}
+
+				.scrollup {
+			    width: 80px;
+			    height: 40px;
+			    position: fixed;
+			    bottom: 50px;
+			    right: 100px;
+			    text-indent: 0px
+			    border-radius: 20px;
+			    border-color:black;
+			    border-style:solid;
+			    border-width:1px;
+			    text-align:center;
+			    padding-top:10px;
+			    color:black;  
+			    background-color:white;
+				}
+				<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+
+
+				</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+				
+				</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;"> Total number of works: 12</h4><h4 style="display:inline-block; margin-left:3em;"> Total amount spent: &#8377 98,291</h4>
+		<table class="table table-responsive sortable">
+
+		<thead>
+
+		<tr>
+
+		<th style="width:5%">Sl no.</th>
+
+		<th style="width:48%">Work Details</th>
+
+		<th>Measurement</th>
+
+		<th>Unit</th>
+
+		<th>Rate</th>
+
+		<th>Total Amount</th>
+
+		</tr>
+
+		</thead>
+
+		<tbody>
+		<a href="#" class="scrollup">Go to top</a>
+		<tr><td class = "span1">1</td><td>T5 1x28=28 watts Lamp  (Approved Rate)</td><td>8</td><td>Nos</td><td>90.80 </td><td>726.4</td></tr><tr><td class = "span1">2</td><td>T5 1x28=28 watts Ballast  (Approved Rate)</td><td>8</td><td>Nos</td><td>624.25 </td><td>4994.0</td></tr><tr><td class = "span1">3</td><td>T5 1x28=28 watts Holder  (Approved Rate)</td><td>5</td><td>Nos</td><td>27.24 </td><td>136.2</td></tr><tr><td class = "span1">4</td><td>T5 4x24=96 watts fitting, 24 watts Lamp  (Approved Rate)</td><td>20</td><td>Nos</td><td>124.85 </td><td>2497.0</td></tr><tr><td class = "span1">5</td><td>T5 2x24=48 watts Ballast  (Approved Rate)</td><td>4</td><td>Nos</td><td>1,049.87 </td><td>4199.48</td></tr><tr><td class = "span1">6</td><td>Labour Charges for Repairs  T5 4x24=96 watts fittings</td><td>4</td><td>Nos</td><td>3.09 </td><td>12.36</td></tr><tr><td class = "span1">7</td><td>Labour Charges for Repairs  T5 1x28=28 watts fittings</td><td>12</td><td>Nos</td><td>1.03 </td><td>12.36</td></tr><tr><td class = "span1">8</td><td>Supplying decorative horizontal type street light fluorescent fitting weather and water proof complete with Energy Saving Electronic Ballast etc, locking type brass contact holders with 1 no. of 4 feet 40 watts fluorescent tube completely wired for use on</td><td>49</td><td>Nos</td><td>1,458.60 </td><td>71471.4</td></tr><tr><td class = "span1">9</td><td>Supplying and fixing  HPSV lamps on existing fitting mounted on tubular pole.  250Watts</td><td>6</td><td>Nos</td><td>825.95 </td><td>4955.7</td></tr><tr><td class = "span1">10</td><td>Supply and fixing/repalcing of choke for Sodium Vapour lamp fitting in existing fitting mounted on tubular pole.  b) 250Watts         a) Group A</td><td>6</td><td>Nos</td><td>991.44 </td><td>5948.64</td></tr><tr><td class = "span1">11</td><td>Supplying and fixing/repalcement of  Ignitor suitable for 70 to 400Watts SV/MH fittings.  a) Group A</td><td>6</td><td>Nos</td><td>530.40 </td><td>3182.4</td></tr><tr><td class = "span1">12</td><td>Supply and fixing of of 230 volts Porcelain holder for MV/SV/MH lamp.  b) 250-400Watts lamp Holder</td><td>2</td><td>Nos</td><td>79.56 </td><td>159.12</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

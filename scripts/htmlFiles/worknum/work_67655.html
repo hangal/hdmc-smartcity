@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+				width: 24px;
+				height: 24px;
+				}
+				th.sorttable_sorted::after {
+				background: url(up.png);
+				background-size: contain;
+				}
+				th.sorttable_sorted_reverse::after {
+				background: url(down.png);
+				background-size: cover;
+				}
+
+				.scrollup {
+			    width: 80px;
+			    height: 40px;
+			    position: fixed;
+			    bottom: 50px;
+			    right: 100px;
+			    text-indent: 0px
+			    border-radius: 20px;
+			    border-color:black;
+			    border-style:solid;
+			    border-width:1px;
+			    text-align:center;
+			    padding-top:10px;
+			    color:black;  
+			    background-color:white;
+				}
+				<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+
+
+				</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+				
+				</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;"> Total number of works: 8</h4><h4 style="display:inline-block; margin-left:3em;"> Total amount spent: &#8377 21,48,378</h4>
+		<table class="table table-responsive sortable">
+
+		<thead>
+
+		<tr>
+
+		<th style="width:5%">Sl no.</th>
+
+		<th style="width:48%">Work Details</th>
+
+		<th>Measurement</th>
+
+		<th>Unit</th>
+
+		<th>Rate</th>
+
+		<th>Total Amount</th>
+
+		</tr>
+
+		</thead>
+
+		<tbody>
+		<a href="#" class="scrollup">Go to top</a>
+		<tr><td class = "span1">1</td><td> Earthwork excavation for foundation of buildings, culverts, water supply, sanitary lines and electrical conduits either in pits or in trenches 1.5m and above in width, in ordinary soil not exceeding 1.5 m. in depth including dressing the bottom and sides</td><td>553.89</td><td>CUM</td><td>150.00 </td><td>83083.5</td></tr><tr><td class = "span1">2</td><td> Providing and laying in position plain cement concrete of mix M10 with OPC cement @ 220kgs, with 40mm and down size graded granite metal coarse aggregates @0.892cum and fine aggregtes @ 0.465cum machine mixed, machine mixed, concrete laid in layers not e</td><td>60.27</td><td>CUM</td><td>5,252.00 </td><td>316538.04</td></tr><tr><td class = "span1">3</td><td>Providing and laying in position reinforced cement concrete of design mix M20 with OPC cement @ 320kgs, with 20mm and down size graded granite metal coarse aggregates @0.878cum and fine aggregtes @ 0.459cum, with superplastisiser @3lts confirming to IS910</td><td>166.29</td><td>CUM</td><td>7,015.00 </td><td>1166524.35</td></tr><tr><td class = "span1">4</td><td>Providing and removing centering, shuttering, strutting, propping etc., and removal of form work Gutters for mass concrete including cost of all materials labour charges etc., complete as per specifications.Including loading and unloading Including all le</td><td>1260.0</td><td>Sqm</td><td>55.00 </td><td>69300.0</td></tr><tr><td class = "span1">5</td><td>Providing and removing centering, shuttering, strutting, propping etc., and removal of form work for flat surface such as suspended floors, roofs, landings, balconies and likes, thickness upto 200 mm including cost of all materials, labour complete as per</td><td>33.00</td><td>Sqm</td><td>281.00 </td><td>9273.0</td></tr><tr><td class = "span1">6</td><td>Providing T.M.T steel reinforcement for R.C.C work including straightening, cutting, bending, hooking, placing in position, lapping and / or welding wherever required, tying with binding wire and anchoring to the adjoining members wherever necessary compl</td><td>75.49</td><td>Quintal</td><td>5,500.00 </td><td>415195.0</td></tr><tr><td class = "span1">7</td><td>Construction of Embankment with Material Gravel/ Murrum. KSRRB M300-53. Construction of embankment with approved material Gravel/Murrum with all lifts and leads, transporting to site, spreading, grading to required slope and compacting to meet requirement</td><td>150.00</td><td>CUM</td><td>456.84 </td><td>68526.0</td></tr><tr><td class = "span1">8</td><td> Transportation of Excavated earth for 2 Kms. KSRRB M100-1 Loading and Unloading of stone boulder / Stone aggregates / Sand / Kanker / Moorum. KSRRB M100-1 : Placing tipper at loading point, loading with front end loader, dumping, turning for return trip,</td><td>276.94</td><td>CUM</td><td>72.00 </td><td>19939.68</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

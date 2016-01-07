@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+				width: 24px;
+				height: 24px;
+				}
+				th.sorttable_sorted::after {
+				background: url(up.png);
+				background-size: contain;
+				}
+				th.sorttable_sorted_reverse::after {
+				background: url(down.png);
+				background-size: cover;
+				}
+
+				.scrollup {
+			    width: 80px;
+			    height: 40px;
+			    position: fixed;
+			    bottom: 50px;
+			    right: 100px;
+			    text-indent: 0px
+			    border-radius: 20px;
+			    border-color:black;
+			    border-style:solid;
+			    border-width:1px;
+			    text-align:center;
+			    padding-top:10px;
+			    color:black;  
+			    background-color:white;
+				}
+				<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+
+
+				</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+				
+				</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;"> Total number of works: 5</h4><h4 style="display:inline-block; margin-left:3em;"> Total amount spent: &#8377 69,725</h4>
+		<table class="table table-responsive sortable">
+
+		<thead>
+
+		<tr>
+
+		<th style="width:5%">Sl no.</th>
+
+		<th style="width:48%">Work Details</th>
+
+		<th>Measurement</th>
+
+		<th>Unit</th>
+
+		<th>Rate</th>
+
+		<th>Total Amount</th>
+
+		</tr>
+
+		</thead>
+
+		<tbody>
+		<a href="#" class="scrollup">Go to top</a>
+		<tr><td class = "span1">1</td><td>1000 watts Metal Halide Lamps</td><td>04</td><td>Each</td><td>6,940.00 </td><td>27760.0</td></tr><tr><td class = "span1">2</td><td>Choke for 1000 watts Metal Halide Lamps  (Including Spare - 1 Nos)  </td><td>05</td><td>Each</td><td>7,405.00 </td><td>37025.0</td></tr><tr><td class = "span1">3</td><td>Igniters for 1000 watts Metal Halide Lamps  (Including Spare - 2 Nos)  </td><td>06</td><td>Each</td><td>746.00 </td><td>4476.0</td></tr><tr><td class = "span1">4</td><td>Supplying fixing of Porcelain fuse channel with cutout on existing wooden/panel using necessary nuts, bolts and washers etc., complete  a) 16 Amps                   </td><td>04</td><td>Each</td><td>55.08 </td><td>220.32</td></tr><tr><td class = "span1">5</td><td>Wiring for lighting/power circuit using one of PVC insulated 1100V grade, multis and copper conductor single core cable in open or concealed system of wiring  Group A.  b) 1.5 sq.mm   </td><td>16</td><td>Mtr</td><td>15.30 </td><td>244.8</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

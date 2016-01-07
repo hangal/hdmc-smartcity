@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+				width: 24px;
+				height: 24px;
+				}
+				th.sorttable_sorted::after {
+				background: url(up.png);
+				background-size: contain;
+				}
+				th.sorttable_sorted_reverse::after {
+				background: url(down.png);
+				background-size: cover;
+				}
+
+				.scrollup {
+			    width: 80px;
+			    height: 40px;
+			    position: fixed;
+			    bottom: 50px;
+			    right: 100px;
+			    text-indent: 0px
+			    border-radius: 20px;
+			    border-color:black;
+			    border-style:solid;
+			    border-width:1px;
+			    text-align:center;
+			    padding-top:10px;
+			    color:black;  
+			    background-color:white;
+				}
+				<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+
+
+				</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+				
+				</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;"> Total number of works: 7</h4><h4 style="display:inline-block; margin-left:3em;"> Total amount spent: &#8377 11,47,386</h4>
+		<table class="table table-responsive sortable">
+
+		<thead>
+
+		<tr>
+
+		<th style="width:5%">Sl no.</th>
+
+		<th style="width:48%">Work Details</th>
+
+		<th>Measurement</th>
+
+		<th>Unit</th>
+
+		<th>Rate</th>
+
+		<th>Total Amount</th>
+
+		</tr>
+
+		</thead>
+
+		<tbody>
+		<a href="#" class="scrollup">Go to top</a>
+		<tr><td class = "span1">1</td><td>Dismantling Mangalore tiles roof and stacking the material within a radius of 50 meters. - -  with reepers  </td><td>152.50</td><td>Sqm</td><td>43.00 </td><td>6557.5</td></tr><tr><td class = "span1">2</td><td>KSRRB M200-16.Dismantling of existing structures like culverts, bridges, retaining walls and other structure comprising of masonry, cement concrete, wood work, steel work, including T&P and scaffolding wherever necessary, sorting the dismantled material, </td><td>3.84</td><td>CUM</td><td>403.00 </td><td>1547.52</td></tr><tr><td class = "span1">3</td><td>KSRB 4-1.5 : Providing and laying in position plain cement concrete of mix M20 with OPC cement @ 300kgs, with 20mm and down size graded granite metal coarse aggregates @0.69cum and fine aggregtes @ 0.43cum, with superplastisiser @3lts confirming to IS9103</td><td>5.56</td><td>CUM</td><td>6,163.00 </td><td>34266.28</td></tr><tr><td class = "span1">4</td><td>Fabricating, supplying and erecting M.S. TubularTruss of span upto 10m. The bottom and top member is provided with 50x50x6mm double equal angles, welded back to back and in between top and bottom line, in areas of mid section is provided with 50x50x6mm eq</td><td>6746.64</td><td>Kg</td><td>145.00 </td><td>978262.8</td></tr><tr><td class = "span1">5</td><td>Providing and installing of approved make pre painted Galvalume iron Accessories, like, plain, ridges, plain gutter, plain flashing, corner Trim, etc. The total coated thickness (TCT) of the sheet shall be 0.47 mm +/- 0.02 tolerance mm Zinc-Alu Alloy coat</td><td>152.50</td><td>Sqm</td><td>797.00 </td><td>121542.5</td></tr><tr><td class = "span1">6</td><td>KSRB15-3.7 : Providing 18mm thick cement plaster in single coat with cement mortar 1:3, to brick masonry including rounding off corners wherever required smooth rendering, : Providing and removing scaffolding, including cost of materials, labour, curing c</td><td>19.13</td><td>Sqm</td><td>233.00 </td><td>4457.29</td></tr><tr><td class = "span1">7</td><td>KSRB 2-1.2 : Earthwork in surface excavation in Hard soil for levelling and lowering the ground manually ( other than foundation of buildings, culverts, road drains and trenches of pipe lines and cables ) and removing the excavated stuff to a distance not</td><td>3.72</td><td>CUM</td><td>203.00 </td><td>755.16</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

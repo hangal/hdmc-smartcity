@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+				width: 24px;
+				height: 24px;
+				}
+				th.sorttable_sorted::after {
+				background: url(up.png);
+				background-size: contain;
+				}
+				th.sorttable_sorted_reverse::after {
+				background: url(down.png);
+				background-size: cover;
+				}
+
+				.scrollup {
+			    width: 80px;
+			    height: 40px;
+			    position: fixed;
+			    bottom: 50px;
+			    right: 100px;
+			    text-indent: 0px
+			    border-radius: 20px;
+			    border-color:black;
+			    border-style:solid;
+			    border-width:1px;
+			    text-align:center;
+			    padding-top:10px;
+			    color:black;  
+			    background-color:white;
+				}
+				<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+
+
+				</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+				
+				</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;"> Total number of works: 5</h4><h4 style="display:inline-block; margin-left:3em;"> Total amount spent: &#8377 55,850</h4>
+		<table class="table table-responsive sortable">
+
+		<thead>
+
+		<tr>
+
+		<th style="width:5%">Sl no.</th>
+
+		<th style="width:48%">Work Details</th>
+
+		<th>Measurement</th>
+
+		<th>Unit</th>
+
+		<th>Rate</th>
+
+		<th>Total Amount</th>
+
+		</tr>
+
+		</thead>
+
+		<tbody>
+		<a href="#" class="scrollup">Go to top</a>
+		<tr><td class = "span1">1</td><td>File No. HDMC:15:02:156:13-14  Desktop Computers with Preloaded operating system.  Make: HCL/HP   Configuration: Intel Corei3, minimum 2 GB RAM, 500 GB HDD, DVD Writer with windows 7 professional.  Warranty : 3 Years.  </td><td>01</td><td>Each</td><td>35,000.00 </td><td>35000.0</td></tr><tr><td class = "span1">2</td><td>Laser Jet Printer All-in-one (Print, Scan, Copy, Fax * Up to 23 ppm * 1200x600 dpi resolution * 128MB RAM * 250 sheet cassette * 35 sheet ADF * FPOT (A4): 6.0secs * 1 year warranty) Make: Canon 4750  </td><td>01</td><td>Each</td><td>18,200.00 </td><td>18200.0</td></tr><tr><td class = "span1">3</td><td>Web CAM Make: I ball / Logitec</td><td>01</td><td>Each</td><td>700.00 </td><td>700.0</td></tr><tr><td class = "span1">4</td><td>Cat 6 Network Cable ( In meters)</td><td>30</td><td>mt</td><td>65.00 </td><td>1950.0</td></tr><tr><td class = "span1">5</td><td>Vat @ 5.5% on Rs. 55,850/-</td><td>0</td><td>--</td><td>3,072.00 </td><td>0.0</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

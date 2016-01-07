@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+		  width: 24px;
+		  height: 24px;
+		}
+		th.sorttable_sorted::after {
+		  background: url(up.png);
+		  background-size: contain;
+		}
+		th.sorttable_sorted_reverse::after {
+		  background: url(down.png);
+		  background-size: cover;
+		}</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+
+		<script src="http://maps.googleapis.com/maps/api/js"></script>
+		<script>
+		var src = 'http://hack4hd.org/data/HD-ward-boundaries.kml';
+
+		function initialize() {
+		  var mapProp = {
+			center:new google.maps.LatLng(15.3935685,75.08009570000002),
+			zoom:15,
+			mapTypeId:google.maps.MapTypeId.ROADMAP
+		  };
+		  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+		  var ctaLayer = new google.maps.KmlLayer({
+			url: 'http://hack4hd.org/data/HD-ward-boundaries.kml',
+			map: map
+		  });
+
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+		<script>
+		function worksTotal(){
+		var table = document.getElementById("myTable");
+		var x = table.rows.length;
+		document.getElementById("totalWorks").innerHTML = x
+		}
+</script>
+<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+<style>
+.scrollup {
+    width: 80px;
+    height: 40px;
+    position: fixed;
+    bottom: 50px;
+    right: 100px;
+    text-indent: 0px
+    border-radius: 20px;
+    border-color:black;
+    border-style:solid;
+    border-width:1px;
+    text-align:center;
+    padding-top:10px;
+    color:black;  
+    background-color:white;
+}
+</style>
+
+		</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;margin-left:5em"> Total number of works: 11</h4><h4 style="display:inline-block; margin-left:7em;"> Completed works: 9</h4><h4 style="display:inline-block; margin-left:7em;"> In progress works: 2</h4><h4 style="display:inline-block; margin-left:5em;"> Total amount spent: &#8377 4,45,224</h4>
+	<table class="table table-responsive sortable" id="myTable">
+
+	<thead>
+
+	<tr>
+
+	<th style="width:5%">Ward</th>
+
+	<th style="width:48%">Work Description</th>
+
+	<th>Work Order Date</th>
+
+	<th>Work Completion Date</th>
+
+	<th>Work Type</th>
+
+	<th>Source of Income</th>
+
+	<th style="width:7%">Contractor</th>
+
+	<th>Amount Sanctioned</th>
+
+	<th>Status</th>
+
+	</tr>
+
+	</thead>
+
+	<tbody>
+	<a href="#" class="scrollup">Go to top</a>
+	<tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_16.html" target="_blank">16</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_66442.html" target="_blank">Regarding  UGD Line OWrk At Manjunathpur Venketesh Temple near Shri Kushtagi Residence. in ward no 16(File number 60737)</a></td><td>07-Oct-14</td><td>08-Nov-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype3.html" target="_blank">Emergency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7216.html" target="_blank">Chinchalli Doddamudakappa Y</a></td><td>18,943</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_16.html" target="_blank">16</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_66625.html" target="_blank">Regarding UGD Line Work At Kere Oni. in ward no 16 (File Number 60738)</a></td><td>07-Oct-14</td><td>06-Nov-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype3.html" target="_blank">Emergency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7216.html" target="_blank">Chinchalli Doddamudakappa Y</a></td><td>26,340</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_16.html" target="_blank">16</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_66626.html" target="_blank">Regarding UGD Line Work At Dharwad Division in ward no 16</a></td><td>07-Oct-14</td><td>08-Nov-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype3.html" target="_blank">Emergency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7216.html" target="_blank">Chinchalli Doddamudakappa Y</a></td><td>24,550</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_18.html" target="_blank">18</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_66628.html" target="_blank">Regarding Drain work At Purihith Nagar Near Nagaraj Gudshyal house. in ward no 18</a></td><td>07-Oct-14</td><td>08-Nov-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype3.html" target="_blank">Emergency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7216.html" target="_blank">Chinchalli Doddamudakappa Y</a></td><td>49,370</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_22.html" target="_blank">22</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_70050.html" target="_blank">Regarding Open drain work At K.H.B. Colony Near  Last Bus Stop. in ward no 22</a></td><td>23-Feb-15</td><td>22-Mar-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype1.html" target="_blank">Capital</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7216.html" target="_blank">Chinchalli Doddamudakappa Y</a></td><td>98,990</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_19.html" target="_blank">19</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_70068.html" target="_blank">Regarding UGD work At Saraswathpur Near  Venkteshwar Apartment. in ward no 19</a></td><td>24-Feb-15</td><td>23-Mar-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype3.html" target="_blank">Emergency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7216.html" target="_blank">Chinchalli Doddamudakappa Y</a></td><td>46,677</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_19.html" target="_blank">19</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_70069.html" target="_blank">Regarding UGD Work At Saraswathpur near Water Tank. in ward no 19</a></td><td>24-Feb-15</td><td>23-Mar-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype3.html" target="_blank">Emergency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7216.html" target="_blank">Chinchalli Doddamudakappa Y</a></td><td>12,940</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_20.html" target="_blank">20</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_70070.html" target="_blank">Regarding UGD wrok At Laxmi Nagar 7th Cross Near Shri Haveri Residence. in ward no 20</a></td><td>24-Feb-15</td><td>23-Mar-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype3.html" target="_blank">Emergency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7216.html" target="_blank">Chinchalli Doddamudakappa Y</a></td><td>22,294</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_16.html" target="_blank">16</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_70629.html" target="_blank">Regarding UGD work At Laxmisingankeri Rathod Chwall. in ward no 16</a></td><td>20-Mar-15</td><td>19-Apr-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype3.html" target="_blank">Emergency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7216.html" target="_blank">Chinchalli Doddamudakappa Y</a></td><td>24,017</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_20.html" target="_blank">20</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_75130.html" target="_blank">Regarding work for the UGD Drain at jannath Nagar 2nd cross in ward no.20</a></td><td>15-Sep-15</td><td>14-Oct-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype1.html" target="_blank">Capital</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7216.html" target="_blank">Chinchalli Doddamudakappa Y</a></td><td>99,852</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_16.html" target="_blank">16</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_76854.html" target="_blank">Regarding UGD work At Laxmi Singankeri  Opp Lingappa Gara residence in ward no 16</a></td><td>17-Nov-15</td><td>16-Dec-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype3.html" target="_blank">Emergency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7216.html" target="_blank">Chinchalli Doddamudakappa Y</a></td><td>21,251</td><td style="color:#d32a0e">Inprogress</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

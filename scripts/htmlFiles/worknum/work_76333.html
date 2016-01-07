@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+				width: 24px;
+				height: 24px;
+				}
+				th.sorttable_sorted::after {
+				background: url(up.png);
+				background-size: contain;
+				}
+				th.sorttable_sorted_reverse::after {
+				background: url(down.png);
+				background-size: cover;
+				}
+
+				.scrollup {
+			    width: 80px;
+			    height: 40px;
+			    position: fixed;
+			    bottom: 50px;
+			    right: 100px;
+			    text-indent: 0px
+			    border-radius: 20px;
+			    border-color:black;
+			    border-style:solid;
+			    border-width:1px;
+			    text-align:center;
+			    padding-top:10px;
+			    color:black;  
+			    background-color:white;
+				}
+				<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+
+
+				</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+				
+				</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;"> Total number of works: 7</h4><h4 style="display:inline-block; margin-left:3em;"> Total amount spent: &#8377 99,556</h4>
+		<table class="table table-responsive sortable">
+
+		<thead>
+
+		<tr>
+
+		<th style="width:5%">Sl no.</th>
+
+		<th style="width:48%">Work Details</th>
+
+		<th>Measurement</th>
+
+		<th>Unit</th>
+
+		<th>Rate</th>
+
+		<th>Total Amount</th>
+
+		</tr>
+
+		</thead>
+
+		<tbody>
+		<a href="#" class="scrollup">Go to top</a>
+		<tr><td class = "span1">1</td><td>KSRRB 300-4 Scrifying top Bituminous surface dressing or premix carpet including picking up scarified materials,stacking of old serviecable materrials by mechanical means including cost of all labour charges complete as per specifications</td><td>225.00</td><td>CUM</td><td>27.65 </td><td>6221.25</td></tr><tr><td class = "span1">2</td><td>KSRB M300-53: Construction of embankment with approved material Gravel/Murrum with all lifts & leads, transporting to site, spreading, grading to required slope & compacting to meet requirement Table 300-2 complete as per specifications. (which includes c</td><td>26.25</td><td>CUM</td><td>497.88 </td><td>13069.35</td></tr><tr><td class = "span1">3</td><td>KSRB M 400-14.2Providing,laying,spreading and compacting stone aggregates of specific sizes to water bound macadam specifications including speading in uniform thickness,hand packing,rolling with 3-wheeled steel/vibratory roller 8-10 tonnes in stagesto pr</td><td>19.69</td><td>CUM</td><td>1,892.16 </td><td>37256.6304</td></tr><tr><td class = "span1">4</td><td>KSRB M 400-14.2Providing,laying,spreading and compacting stone aggregates of specific sizes to water bound macadam specifications including speading in uniform thickness,hand packing,rolling with 3-wheeled steel/vibratory roller 8-10 tonnes in stagesto pr</td><td>19.69</td><td>CUM</td><td>2,003.40 </td><td>39446.946</td></tr><tr><td class = "span1">5</td><td>Providing and laying in position reinforced cement concrete of design mix M25 with OPC cement @ 340kgs,with 20mm and down size graded granite metal coarse aggregates @ 0.70cum and fine aggregates @ 0.47cum,with superplastetisiser @3its confirming to IS910</td><td>0.19</td><td>CUM</td><td>6,770.52 </td><td>1286.3988</td></tr><tr><td class = "span1">6</td><td>Providing and removing centring shuttering,  strutting, propping etc and removel of form work for flat surface such as suspended floors,roofs,landings,balconies and likes, thickness upto 200mm including  cost of all materials, labour complete as per speci</td><td>3.00</td><td>Sqm</td><td>380.16 </td><td>1140.48</td></tr><tr><td class = "span1">7</td><td>KSRB 4.9.2: Providing TMT steel reinforcement for R.C.C. work including straightening, cutting, bedding, hooking, placing in position, lapping and/ or welding wherever required, tying with binding wire and anchoring to the adjoining members wherever  spec</td><td>0.015</td><td>Tonne</td><td>75,907.80 </td><td>1138.617</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

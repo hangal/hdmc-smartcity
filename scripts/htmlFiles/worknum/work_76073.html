@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+				width: 24px;
+				height: 24px;
+				}
+				th.sorttable_sorted::after {
+				background: url(up.png);
+				background-size: contain;
+				}
+				th.sorttable_sorted_reverse::after {
+				background: url(down.png);
+				background-size: cover;
+				}
+
+				.scrollup {
+			    width: 80px;
+			    height: 40px;
+			    position: fixed;
+			    bottom: 50px;
+			    right: 100px;
+			    text-indent: 0px
+			    border-radius: 20px;
+			    border-color:black;
+			    border-style:solid;
+			    border-width:1px;
+			    text-align:center;
+			    padding-top:10px;
+			    color:black;  
+			    background-color:white;
+				}
+				<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+
+
+				</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+				
+				</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;"> Total number of works: 11</h4><h4 style="display:inline-block; margin-left:3em;"> Total amount spent: &#8377 37,060</h4>
+		<table class="table table-responsive sortable">
+
+		<thead>
+
+		<tr>
+
+		<th style="width:5%">Sl no.</th>
+
+		<th style="width:48%">Work Details</th>
+
+		<th>Measurement</th>
+
+		<th>Unit</th>
+
+		<th>Rate</th>
+
+		<th>Total Amount</th>
+
+		</tr>
+
+		</thead>
+
+		<tbody>
+		<a href="#" class="scrollup">Go to top</a>
+		<tr><td class = "span1">1</td><td>RCC Pole 9Mtr Long Including Labour Charge </td><td>03</td><td>Nos</td><td>6,878.00 </td><td>20634.0</td></tr><tr><td class = "span1">2</td><td>Guy set for 11KV Including Labour Charge</td><td>02</td><td>Nos</td><td>1,169.00 </td><td>2338.0</td></tr><tr><td class = "span1">3</td><td>11KVHorizantal Cross arm with clamp Bolt & Nut with one HTST support for (RCC Pole) Including Labour Charge</td><td>02</td><td>Nos</td><td>537.00 </td><td>1074.0</td></tr><tr><td class = "span1">4</td><td>LT 4 Pin cross arm with pole clamps, bolts & Nuts, Washers for RCC/PSC Poles Including Labour Charge</td><td>05</td><td>Nos</td><td>403.00 </td><td>2015.0</td></tr><tr><td class = "span1">5</td><td>45KN Disc Insulator</td><td>12</td><td>Nos</td><td>300.00 </td><td>3600.0</td></tr><tr><td class = "span1">6</td><td>8KV Break Insulator </td><td>24</td><td>Nos</td><td>14.00 </td><td>336.0</td></tr><tr><td class = "span1">7</td><td>1.1 KV Pin Insulator </td><td>12</td><td>Nos</td><td>41.00 </td><td>492.0</td></tr><tr><td class = "span1">8</td><td>Spiral Earth Electrode Including Labour Charge</td><td>03</td><td>Set</td><td>287.00 </td><td>861.0</td></tr><tr><td class = "span1">9</td><td>Releasing of Rabbit conductor</td><td>01</td><td>Km</td><td>2,077.20 </td><td>2077.2</td></tr><tr><td class = "span1">10</td><td>Restringing of Rabbit conductor</td><td>1.00</td><td>Km</td><td>2,308.00 </td><td>2308.0</td></tr><tr><td class = "span1">11</td><td>Releasing & Refixing of Sarvice mains of UG cable (3Ph & Sph)</td><td>25</td><td>Nos</td><td>53.00 </td><td>1325.0</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

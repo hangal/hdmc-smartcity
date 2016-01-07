@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+				width: 24px;
+				height: 24px;
+				}
+				th.sorttable_sorted::after {
+				background: url(up.png);
+				background-size: contain;
+				}
+				th.sorttable_sorted_reverse::after {
+				background: url(down.png);
+				background-size: cover;
+				}
+
+				.scrollup {
+			    width: 80px;
+			    height: 40px;
+			    position: fixed;
+			    bottom: 50px;
+			    right: 100px;
+			    text-indent: 0px
+			    border-radius: 20px;
+			    border-color:black;
+			    border-style:solid;
+			    border-width:1px;
+			    text-align:center;
+			    padding-top:10px;
+			    color:black;  
+			    background-color:white;
+				}
+				<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+
+
+				</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+				
+				</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;"> Total number of works: 7</h4><h4 style="display:inline-block; margin-left:3em;"> Total amount spent: &#8377 32,248</h4>
+		<table class="table table-responsive sortable">
+
+		<thead>
+
+		<tr>
+
+		<th style="width:5%">Sl no.</th>
+
+		<th style="width:48%">Work Details</th>
+
+		<th>Measurement</th>
+
+		<th>Unit</th>
+
+		<th>Rate</th>
+
+		<th>Total Amount</th>
+
+		</tr>
+
+		</thead>
+
+		<tbody>
+		<a href="#" class="scrollup">Go to top</a>
+		<tr><td class = "span1">1</td><td>Earthwork excavation for foundation of buildings culverts  water supply sanitary lines and electrical couduits either in pits or in trenches 1.50m and above in width in ordinary soil not  exceeding 1.50m in depth including dressing the bottom and sides of</td><td>2.98</td><td>CUM</td><td>194.48 </td><td>579.5504</td></tr><tr><td class = "span1">2</td><td>Providing and laying in position plain cement concrete of mix M10 with OPC Cement @ 220kg  using 40mm and down size graded granite metel coarse aggregates @ 0.892cum and fine aggregates @ 0.465 Cum machine mixed cencrete laid in layers not exceeding 15cms</td><td>0.43</td><td>CUM</td><td>4,479.28 </td><td>1926.0904</td></tr><tr><td class = "span1">3</td><td>Providing and removing centering,shuttering, strutting propping ect removing of form work forvertical surfce such as walls at any thickness including attached pilasters, buttresses,plinth and string courses cost of all materials, labour complete as per sp</td><td>41.90</td><td>Sqm</td><td>234.00 </td><td>9804.6</td></tr><tr><td class = "span1">4</td><td>Providing and removing centering,shuttering, strutting propping ect removing of form work for flat surfce such as suspended floors,roofs.,landing ,balconies and likes, thickness upto 200mm  including cost of all materials, labour complete as per specifica</td><td>2.25</td><td>Sqm</td><td>248.56 </td><td>559.26</td></tr><tr><td class = "span1">5</td><td>Providing and laying in position of plain cement concrete mix of Mix M15 with cement @ 240kgs with  20 mm and down size graded granite metal, coarse aggregates @ 0.878cum and fine aggregates @ 0.459Cum machine mixed cencrete  laid in layers not exceeding </td><td>2.15</td><td>CUM</td><td>4,921.28 </td><td>10580.752</td></tr><tr><td class = "span1">6</td><td> Providing TMT  Steel reinforcement for R.C.C  work including straightening , cutting,bending ,hooking,placing, in position, lapping ,aand / or welding wherever required ,tying with binding wire and anchoring to the adjoining members wherever necessary co</td><td>1.10</td><td>Quintal</td><td>7,265.44 </td><td>7991.984</td></tr><tr><td class = "span1">7</td><td> Providing and laying in position plain cement concrete of mix M10 with OPC cement @ 220kgs, with 20mm and down size graded granite metal coarse aggregates @0.84cum and fine aggregtes @ 0.56cum machine mixed,machine mixed, concrete laid in layers not exce</td><td>0.17</td><td>CUM</td><td>4,761.12 </td><td>809.3904</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

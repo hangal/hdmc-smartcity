@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+				width: 24px;
+				height: 24px;
+				}
+				th.sorttable_sorted::after {
+				background: url(up.png);
+				background-size: contain;
+				}
+				th.sorttable_sorted_reverse::after {
+				background: url(down.png);
+				background-size: cover;
+				}
+
+				.scrollup {
+			    width: 80px;
+			    height: 40px;
+			    position: fixed;
+			    bottom: 50px;
+			    right: 100px;
+			    text-indent: 0px
+			    border-radius: 20px;
+			    border-color:black;
+			    border-style:solid;
+			    border-width:1px;
+			    text-align:center;
+			    padding-top:10px;
+			    color:black;  
+			    background-color:white;
+				}
+				<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+
+
+				</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+				
+				</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;"> Total number of works: 8</h4><h4 style="display:inline-block; margin-left:3em;"> Total amount spent: &#8377 41,697</h4>
+		<table class="table table-responsive sortable">
+
+		<thead>
+
+		<tr>
+
+		<th style="width:5%">Sl no.</th>
+
+		<th style="width:48%">Work Details</th>
+
+		<th>Measurement</th>
+
+		<th>Unit</th>
+
+		<th>Rate</th>
+
+		<th>Total Amount</th>
+
+		</tr>
+
+		</thead>
+
+		<tbody>
+		<a href="#" class="scrollup">Go to top</a>
+		<tr><td class = "span1">1</td><td>KSRB 2-2.2: Earthwork excavation for foundation of buildings culverts, water supply, sanitary lines and electrical conduits either in pits or in trenches 1.5m and above in width in hard soil not exceeding 1.5m in depth including dressing the bottom and si</td><td>18.00</td><td>CUM</td><td>264.60 </td><td>4762.8</td></tr><tr><td class = "span1">2</td><td>KSRB 12-1.2: Providing and laying in position to required level or slope 230mm internal diameter salt glazed stoneware pipes grade A and jointing with stiff mixture of cement mortar in proportion of 1:1 testing of pipes and joints including cost of materi</td><td>16.00</td><td>mt</td><td>577.80 </td><td>9244.8</td></tr><tr><td class = "span1">3</td><td>KSRB 2.4: Refilling available earth around pipe lines, cables in layer not exceeding 20cms. in depth compacting each deposited layer by ramming after watering with lead upto 50m and lift upto 1.5m including cost of all labour complete as per specification</td><td>18.00</td><td>CUM</td><td>71.28 </td><td>1283.04</td></tr><tr><td class = "span1">4</td><td>KSRRB M200-15.1: Dismantling of existing structures like culverts, bridges, retaining walls and other structure comprising of masonry, cement concrete, wood work, steel work, including T & P and scaffolding wherever necessary, sorting the dismantled mater</td><td>1.16</td><td>CUM</td><td>190.08 </td><td>220.4928</td></tr><tr><td class = "span1">5</td><td>KSRB 4-2.2: Providing and laying in position reinforced cement concrete of mis 1:2:4 with 20mm and down size graded granite/trap/basalt metal machine mixed concrete laid in layers not exceeding 15cms thick vibrated for all works in foundation plinth and g</td><td>0.80</td><td>CUM</td><td>6,403.32 </td><td>5122.656</td></tr><tr><td class = "span1">6</td><td>Providing and laying reinforced cement concrete pipe NP-2 for culverts including pointing ends and fixing collars with cement mortar 1:2 including cost of all materials, labour, curing complete as per specification.</td><td>3.00</td><td>mt</td><td>625.32 </td><td>1875.96</td></tr><tr><td class = "span1">7</td><td>KSRB 4-9.2: Providing T.M.T. Steel reinforcement for R.C.C.work including straightening, cutting, bending, hooking, placing in position, lapping and/or welding wherever required, tying with binding wire and anchoring to the adjoining members wherever nece</td><td>0.64</td><td>Quintal</td><td>7,590.78 </td><td>4858.0992</td></tr><tr><td class = "span1">8</td><td>Construction of manhole of 1.20M dia in conical shape @  top including laying PCC M-10 preparation with 2.50cm size granite jelly thickness of concrete being 0.25m and offset 0.15m and brick work in CM 1:6 proportion 0.35m thick including providing and fi</td><td>1.00</td><td>Nos</td><td>14,333.44 </td><td>14333.44</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

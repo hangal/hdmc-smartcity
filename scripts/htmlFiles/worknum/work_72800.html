@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+				width: 24px;
+				height: 24px;
+				}
+				th.sorttable_sorted::after {
+				background: url(up.png);
+				background-size: contain;
+				}
+				th.sorttable_sorted_reverse::after {
+				background: url(down.png);
+				background-size: cover;
+				}
+
+				.scrollup {
+			    width: 80px;
+			    height: 40px;
+			    position: fixed;
+			    bottom: 50px;
+			    right: 100px;
+			    text-indent: 0px
+			    border-radius: 20px;
+			    border-color:black;
+			    border-style:solid;
+			    border-width:1px;
+			    text-align:center;
+			    padding-top:10px;
+			    color:black;  
+			    background-color:white;
+				}
+				<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+
+
+				</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+				
+				</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;"> Total number of works: 4</h4><h4 style="display:inline-block; margin-left:3em;"> Total amount spent: &#8377 58,485</h4>
+		<table class="table table-responsive sortable">
+
+		<thead>
+
+		<tr>
+
+		<th style="width:5%">Sl no.</th>
+
+		<th style="width:48%">Work Details</th>
+
+		<th>Measurement</th>
+
+		<th>Unit</th>
+
+		<th>Rate</th>
+
+		<th>Total Amount</th>
+
+		</tr>
+
+		</thead>
+
+		<tbody>
+		<a href="#" class="scrollup">Go to top</a>
+		<tr><td class = "span1">1</td><td>Earthwork excavation for foundation of buildings,culverts,water supply,sanitary lines and electrical  conduits either in pits or in trenches 1.5m and above in width in ordinary soil not exceeding 1.5m in depth including dressing the bottom and sides of pi</td><td>41.85</td><td>CUM</td><td>176.04 </td><td>7367.274</td></tr><tr><td class = "span1">2</td><td>KSRB12-1.1: Providing and laying in position to required level or slope 150m internal diameter salt glazed stoneware pipes grade A and jointing with stiff mixture of cement morter in propotion of 1:1,testing of pipes and joints, including cost of material</td><td>62.00</td><td>R.Mt</td><td>387.72 </td><td>24038.64</td></tr><tr><td class = "span1">3</td><td>KSRB  2-4:Refilling available earth around pipe lines, cables in layers not exceeding 20cms in depth, compacting each deposited layer by ramming after watering with lead up to 50m.and lift upto 1.5m. Including cost of all labour complete as per specificat</td><td>41.85</td><td>CUM</td><td>71.28 </td><td>2983.068</td></tr><tr><td class = "span1">4</td><td>Construction of manhole chamber of 1.20m dia in conical shape at top including laying PCC M-10 proportion with 2.50cm size granite jell thickness of concrete being 0.25m and offset of 0.15M and brickwork in CM1:6 proportion 0.35M thick including providing</td><td>2</td><td>Nos</td><td>12,048.85 </td><td>24097.7</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

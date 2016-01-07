@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+		  width: 24px;
+		  height: 24px;
+		}
+		th.sorttable_sorted::after {
+		  background: url(up.png);
+		  background-size: contain;
+		}
+		th.sorttable_sorted_reverse::after {
+		  background: url(down.png);
+		  background-size: cover;
+		}</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+
+		<script src="http://maps.googleapis.com/maps/api/js"></script>
+		<script>
+		var src = 'http://hack4hd.org/data/HD-ward-boundaries.kml';
+
+		function initialize() {
+		  var mapProp = {
+			center:new google.maps.LatLng(15.3935685,75.08009570000002),
+			zoom:15,
+			mapTypeId:google.maps.MapTypeId.ROADMAP
+		  };
+		  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+		  var ctaLayer = new google.maps.KmlLayer({
+			url: 'http://hack4hd.org/data/HD-ward-boundaries.kml',
+			map: map
+		  });
+
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+		<script>
+		function worksTotal(){
+		var table = document.getElementById("myTable");
+		var x = table.rows.length;
+		document.getElementById("totalWorks").innerHTML = x
+		}
+</script>
+<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+<style>
+.scrollup {
+    width: 80px;
+    height: 40px;
+    position: fixed;
+    bottom: 50px;
+    right: 100px;
+    text-indent: 0px
+    border-radius: 20px;
+    border-color:black;
+    border-style:solid;
+    border-width:1px;
+    text-align:center;
+    padding-top:10px;
+    color:black;  
+    background-color:white;
+}
+</style>
+
+		</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;margin-left:5em"> Total number of works: 11</h4><h4 style="display:inline-block; margin-left:7em;"> Completed works: 9</h4><h4 style="display:inline-block; margin-left:7em;"> In progress works: 2</h4><h4 style="display:inline-block; margin-left:5em;"> Total amount spent: &#8377 4,47,250</h4>
+	<table class="table table-responsive sortable" id="myTable">
+
+	<thead>
+
+	<tr>
+
+	<th style="width:5%">Ward</th>
+
+	<th style="width:48%">Work Description</th>
+
+	<th>Work Order Date</th>
+
+	<th>Work Completion Date</th>
+
+	<th>Work Type</th>
+
+	<th>Source of Income</th>
+
+	<th style="width:7%">Contractor</th>
+
+	<th>Amount Sanctioned</th>
+
+	<th>Status</th>
+
+	</tr>
+
+	</thead>
+
+	<tbody>
+	<a href="#" class="scrollup">Go to top</a>
+	<tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_61.html" target="_blank">61</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_70583.html" target="_blank">Regarding Concret Work at Biraband Road wardno.61</a></td><td>13-Mar-15</td><td>12-Apr-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype3.html" target="_blank">Emergency</td><td>Emergency Fund</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7624.html" target="_blank">Penagonda Sunil Venkatesh</a></td><td>12,080</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_61.html" target="_blank">61</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_72236.html" target="_blank">Regarding Slab Drain & Sholdar Concrete  work At Krishnapur 2nd Cross. in ward no 61</a></td><td>25-May-15</td><td>24-Jun-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype3.html" target="_blank">Emergency</td><td>Emergency Fund</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7624.html" target="_blank">Penagonda Sunil Venkatesh</a></td><td>99,700</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_61.html" target="_blank">61</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_72241.html" target="_blank">Regareding RCC Drain  &  Sholder Concrrte work At Indipump  Main Road Police Sttion Opp  in ward no 61</a></td><td>25-May-15</td><td>24-Jun-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype3.html" target="_blank">Emergency</td><td>Emergency Fund</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7624.html" target="_blank">Penagonda Sunil Venkatesh</a></td><td>99,700</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_61.html" target="_blank">61</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_72244.html" target="_blank">Regrading  Drain Slab work At Indipump near Shri Manjunataha Temple Road in ward no 61</a></td><td>25-May-15</td><td>24-Jun-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype3.html" target="_blank">Emergency</td><td>Emergency Fund</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7624.html" target="_blank">Penagonda Sunil Venkatesh</a></td><td>58,450</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_61.html" target="_blank">61</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_74227.html" target="_blank">Regarding work for the UGD Drain at Krishnapura Area, Siddaruda Main Road,Hubli in Ward No. 61</a></td><td>13-Aug-15</td><td>12-Sep-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype1.html" target="_blank">Capital</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7624.html" target="_blank">Penagonda Sunil Venkatesh</a></td><td>26,900</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_62.html" target="_blank">62</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_74494.html" target="_blank">Repairs to MHC UGD  Banatikatta 2nd Cross  at Ward No.62</a></td><td>25-Aug-15</td><td>24-Sep-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype3.html" target="_blank">Emergency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7624.html" target="_blank">Penagonda Sunil Venkatesh</a></td><td>20,400</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_63.html" target="_blank">63</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_74495.html" target="_blank">Regarding work for the Open Drain at Nekara Nagar Main Road, Hubli in Ward No. 63</a></td><td>25-Aug-15</td><td>24-Sep-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype3.html" target="_blank">Emergency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7624.html" target="_blank">Penagonda Sunil Venkatesh</a></td><td>19,820</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_61.html" target="_blank">61</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_75395.html" target="_blank">Regarding Slab work At Krishnapur Oni 3rd cross Near Shri Durgappa Residence opp in ward no 61</a></td><td>19-Sep-15</td><td>18-Oct-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype2.html" target="_blank">Maintenance</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7624.html" target="_blank">Penagonda Sunil Venkatesh</a></td><td>18,300</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_61.html" target="_blank">61</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_76521.html" target="_blank">Regarding Cleaning of well at Karawar Road Shiva Mandir KEB Compound in Ward No. 61</a></td><td>05-Nov-15</td><td>04-Dec-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype1.html" target="_blank">Capital</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7624.html" target="_blank">Penagonda Sunil Venkatesh</a></td><td>25,300</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_60.html" target="_blank">60</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_76523.html" target="_blank">Regarding Cleaning of well at Janglipet Shankara Mat in WArd No. 60</a></td><td>05-Nov-15</td><td>04-Dec-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype1.html" target="_blank">Capital</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7624.html" target="_blank">Penagonda Sunil Venkatesh</a></td><td>19,500</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_43.html" target="_blank">43</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_77367.html" target="_blank">Regarding Free cost Slab on Drain at DhalimbaraPet, ChennaPet in ward no. 43 of Hubli</a></td><td>10-Dec-15</td><td>09-Jan-16</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype3.html" target="_blank">Emergency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7624.html" target="_blank">Penagonda Sunil Venkatesh</a></td><td>47,100</td><td style="color:#d32a0e">Inprogress</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+				width: 24px;
+				height: 24px;
+				}
+				th.sorttable_sorted::after {
+				background: url(up.png);
+				background-size: contain;
+				}
+				th.sorttable_sorted_reverse::after {
+				background: url(down.png);
+				background-size: cover;
+				}
+
+				.scrollup {
+			    width: 80px;
+			    height: 40px;
+			    position: fixed;
+			    bottom: 50px;
+			    right: 100px;
+			    text-indent: 0px
+			    border-radius: 20px;
+			    border-color:black;
+			    border-style:solid;
+			    border-width:1px;
+			    text-align:center;
+			    padding-top:10px;
+			    color:black;  
+			    background-color:white;
+				}
+				<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+
+
+				</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+				
+				</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;"> Total number of works: 8</h4><h4 style="display:inline-block; margin-left:3em;"> Total amount spent: &#8377 8,86,341</h4>
+		<table class="table table-responsive sortable">
+
+		<thead>
+
+		<tr>
+
+		<th style="width:5%">Sl no.</th>
+
+		<th style="width:48%">Work Details</th>
+
+		<th>Measurement</th>
+
+		<th>Unit</th>
+
+		<th>Rate</th>
+
+		<th>Total Amount</th>
+
+		</tr>
+
+		</thead>
+
+		<tbody>
+		<a href="#" class="scrollup">Go to top</a>
+		<tr><td class = "span1">1</td><td>Earthwork excavation by manual means  in hard soil involving an average horizontal throw upto 2 meters and an average lift upto 0.5 m, excavated surface leveled and sides neatly dressed, the disposed earth to be leveled neatly after breaking of clods comp</td><td>52.5</td><td>CUM</td><td>80.00 </td><td>4200.0</td></tr><tr><td class = "span1">2</td><td>Compaction KSRRB 300-58. Compaction of original ground with maximum of 6 passes of 8 to 10 tonnes power roller including filling in depression occuring during rolling including cost of all labour, HOM of machinery complete as per specifications. Including</td><td>681.25</td><td>Sqm</td><td>4.00 </td><td>2725.0</td></tr><tr><td class = "span1">3</td><td>Providing and laying in position plain cement concrete of mix M10 with OPC cement @ 220kgs, with 40mm and down size graded granite metal coarse aggregates @0.892cum and fine aggregtes @ 0.465cum machine mixed, machine mixed, concrete laid in layers not ex</td><td>93.75</td><td>CUM</td><td>4,400.00 </td><td>412500.0</td></tr><tr><td class = "span1">4</td><td>Providing and laying in position plain cement concrete of mix M15 with cement @ 240kgs, with 20mm and down size graded granite metal coarse aggregates @0.878cum and fine aggregtes @ 0.459cum, machine mixed, concrete laid in layers not exceeding 15 cms. th</td><td>85.31</td><td>CUM</td><td>4,850.00 </td><td>413753.5</td></tr><tr><td class = "span1">5</td><td>Providing and filling joint sealing compound as per drawings and technical specifications with coarse sand and 6 per cent bitumen by weight complete as per specifications MORTH Specification Including loading and unloading Including all lead & lifts, load</td><td>91.5</td><td>mt</td><td>19.00 </td><td>1738.5</td></tr><tr><td class = "span1">6</td><td>Providing and removing centering, shuttering, strutting, propping etc., and removal of form work for vertical surface such as walls at any thickness, including attached pilasters, buttresses, plinth and string courses cost of all materials, labour complet</td><td>52.5</td><td>Sqm</td><td>200.00 </td><td>10500.0</td></tr><tr><td class = "span1">7</td><td>Construction of Embankment with Material Gravel/ Murrum. KSRRB M300-53. Construction of embankment with approved material Gravel/Murrum with all lifts and leads, transporting to site, spreading, grading to required slope and compacting to meet requirement</td><td>78.00</td><td>CUM</td><td>350.00 </td><td>27300.0</td></tr><tr><td class = "span1">8</td><td> Scarifying the surface and dressing KSRRB 300-44 Scarifying top bituminous surface or surface dressing or premix carpet including picking up scarified materials, stacking of old serviceable materials by manual means including cost of all abour charges co</td><td>681.25</td><td>Sqm</td><td>20.00 </td><td>13625.0</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

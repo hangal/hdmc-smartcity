@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+				width: 24px;
+				height: 24px;
+				}
+				th.sorttable_sorted::after {
+				background: url(up.png);
+				background-size: contain;
+				}
+				th.sorttable_sorted_reverse::after {
+				background: url(down.png);
+				background-size: cover;
+				}
+
+				.scrollup {
+			    width: 80px;
+			    height: 40px;
+			    position: fixed;
+			    bottom: 50px;
+			    right: 100px;
+			    text-indent: 0px
+			    border-radius: 20px;
+			    border-color:black;
+			    border-style:solid;
+			    border-width:1px;
+			    text-align:center;
+			    padding-top:10px;
+			    color:black;  
+			    background-color:white;
+				}
+				<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+
+
+				</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+				
+				</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;"> Total number of works: 7</h4><h4 style="display:inline-block; margin-left:3em;"> Total amount spent: &#8377 89,850</h4>
+		<table class="table table-responsive sortable">
+
+		<thead>
+
+		<tr>
+
+		<th style="width:5%">Sl no.</th>
+
+		<th style="width:48%">Work Details</th>
+
+		<th>Measurement</th>
+
+		<th>Unit</th>
+
+		<th>Rate</th>
+
+		<th>Total Amount</th>
+
+		</tr>
+
+		</thead>
+
+		<tbody>
+		<a href="#" class="scrollup">Go to top</a>
+		<tr><td class = "span1">1</td><td>KSRB 15-14.3 : Providing and applying one coat with oil bound washable  distemper  of approved brand and shade on wall surface to give an even shade after througly brooming the surface free from grease,  dirt loose pease of scales,  including  preparing t</td><td>913.71</td><td>Sqm</td><td>20.90 </td><td>19096.539</td></tr><tr><td class = "span1">2</td><td>KSRB 15-17.13 : Providing and applying polishing with french polish over previously polished wood or wood based surface surface to give an even surface after cleaning the surface of all dirt dust and foreign matter sand papered smooth including cost of ma</td><td>451.17</td><td>Sqm</td><td>48.72 </td><td>21981.0024</td></tr><tr><td class = "span1">3</td><td>KSRB 15-17.7 : Providing and applying painting one coats (excluding primig coat)  on new wood surface and /or wood based  surface with enamel paint to give an even shade cleaning the surface of all dirt dust and foreign matter sand papering  including cos</td><td>96.37</td><td>Sqm</td><td>45.66 </td><td>4400.2542</td></tr><tr><td class = "span1">4</td><td>KSRB 15-15.3 :Providing and applying painting in one coat with plastic emulsion paint of approved brand and manufacture on wall surface to give an even  approved  shade after throughly brushing the surface free from  mortar drops and other foreign matter </td><td>496.08</td><td>Sqm</td><td>35.26 </td><td>17491.7808</td></tr><tr><td class = "span1">5</td><td>KSRB 15-15.3 :Providing and applying painting in one coat with plastic emulsion paint of approved brand and manufacture on wall surface to give an even  approved  shade after throughly brushing the surface free from  mortar drops and other foreign matter </td><td>503.24</td><td>Sqm</td><td>36.82 </td><td>18529.2968</td></tr><tr><td class = "span1">6</td><td>KSRB 8.6-6 : Providing and fixing on wall surface 2.5 kg /sq cm H D P E  rain down water pipes 110mm outer dia approved make and brand with necessary specials like shoes, bends and offsets fixed with iron clamps wall plugs, screws including cost of materi</td><td>15.00</td><td>mt</td><td>377.52 </td><td>5662.8</td></tr><tr><td class = "span1">7</td><td>KSRB 24-44 : Repairs to plaster in patches of 2.5 sqm and less in walls,  ceilling 10 to 20mm thick in cement mortar 1:3 including cutting the patches in proper shape and replastering the surface of the wall including disposal of rubbish with a lead of 50</td><td>15.00</td><td>Sqm</td><td>179.40 </td><td>2691.0</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

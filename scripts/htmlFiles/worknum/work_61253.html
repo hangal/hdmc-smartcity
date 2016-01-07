@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+				width: 24px;
+				height: 24px;
+				}
+				th.sorttable_sorted::after {
+				background: url(up.png);
+				background-size: contain;
+				}
+				th.sorttable_sorted_reverse::after {
+				background: url(down.png);
+				background-size: cover;
+				}
+
+				.scrollup {
+			    width: 80px;
+			    height: 40px;
+			    position: fixed;
+			    bottom: 50px;
+			    right: 100px;
+			    text-indent: 0px
+			    border-radius: 20px;
+			    border-color:black;
+			    border-style:solid;
+			    border-width:1px;
+			    text-align:center;
+			    padding-top:10px;
+			    color:black;  
+			    background-color:white;
+				}
+				<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+
+
+				</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+				
+				</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;"> Total number of works: 7</h4><h4 style="display:inline-block; margin-left:3em;"> Total amount spent: &#8377 80,353</h4>
+		<table class="table table-responsive sortable">
+
+		<thead>
+
+		<tr>
+
+		<th style="width:5%">Sl no.</th>
+
+		<th style="width:48%">Work Details</th>
+
+		<th>Measurement</th>
+
+		<th>Unit</th>
+
+		<th>Rate</th>
+
+		<th>Total Amount</th>
+
+		</tr>
+
+		</thead>
+
+		<tbody>
+		<a href="#" class="scrollup">Go to top</a>
+		<tr><td class = "span1">1</td><td>KSRRB M 3000 : Filling pot holes and Patch repairs   with Open Graded Premix surfacing, 20mm KSRRB M 3000 .4:  Removal of failed materials trimming of completed excavation to provide firm vertical faces, cleaning of surface, painting of tack coat on the s</td><td>136.35</td><td>Sqm</td><td>166.32 </td><td>22677.732</td></tr><tr><td class = "span1">2</td><td>KSRB 300-44. Scarifying  top bituminous surface surface dressing or premix carpet including picking up scarified materials stacking of old serviceable   materials within a lead of 100mts by manual means including cost of all labour charges complete as per</td><td>95.5</td><td>Sqm</td><td>20.03 </td><td>1912.865</td></tr><tr><td class = "span1">3</td><td>KSRB 300-58 . Compaction of original ground with naximum of 6 passes of 8 to 10 tonnes power roller including filling in depression occuring during rolling including cost of all labour, HOM of machinery complete as per specifications MORTH Chapter 3</td><td>95.50</td><td>Sqm</td><td>4.00 </td><td>382.0</td></tr><tr><td class = "span1">4</td><td>KSRB 400-17.Providing, laying and spreading and compacting graded stone aggregate to Wet Mix Macadam specifications  including premixing the materials    with water to OMC in mechanical mix plant caeeage  of mixed method of tipper to site laying in unifor</td><td>9.55</td><td>Cum</td><td>2,052.00 </td><td>19596.6</td></tr><tr><td class = "span1">5</td><td>KSRB 500-6. Providing and applying prime coat with  bitumen emulsion on prepared surface of granular base including clearing of road surface and spraying primer at the rate of 0.60 kg /Sqm using machanical means  complete as per specifications.MORTH speci</td><td>95.50</td><td>Sqm</td><td>42.82 </td><td>4089.31</td></tr><tr><td class = "span1">6</td><td>KSRRB M 500-10.Providing and applying tack coat with bitumin emulsion using emulsion pressure distributor at the rate of 0.20 kg per sqm on the prepared  bituminous /Granular surface cleaned with mechanical broom. completeas per specifications.MORTH speci</td><td>95.50</td><td>Sqm</td><td>11.61 </td><td>1108.755</td></tr><tr><td class = "span1">7</td><td>KSRRB M 3000 : Filling pot holes and Patch repairs   with Bituminous Concrete, 40mm KSRRB M 3000 .5:  Removal of failed materials trimming of completed excavation to provide firm vertical faces, cleaning of surface, painting of tack coat on the sides and </td><td>73</td><td>Sqm</td><td>419.04 </td><td>30589.92</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

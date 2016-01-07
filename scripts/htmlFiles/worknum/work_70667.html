@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+				width: 24px;
+				height: 24px;
+				}
+				th.sorttable_sorted::after {
+				background: url(up.png);
+				background-size: contain;
+				}
+				th.sorttable_sorted_reverse::after {
+				background: url(down.png);
+				background-size: cover;
+				}
+
+				.scrollup {
+			    width: 80px;
+			    height: 40px;
+			    position: fixed;
+			    bottom: 50px;
+			    right: 100px;
+			    text-indent: 0px
+			    border-radius: 20px;
+			    border-color:black;
+			    border-style:solid;
+			    border-width:1px;
+			    text-align:center;
+			    padding-top:10px;
+			    color:black;  
+			    background-color:white;
+				}
+				<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+
+
+				</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+				
+				</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;"> Total number of works: 4</h4><h4 style="display:inline-block; margin-left:3em;"> Total amount spent: &#8377 98,721</h4>
+		<table class="table table-responsive sortable">
+
+		<thead>
+
+		<tr>
+
+		<th style="width:5%">Sl no.</th>
+
+		<th style="width:48%">Work Details</th>
+
+		<th>Measurement</th>
+
+		<th>Unit</th>
+
+		<th>Rate</th>
+
+		<th>Total Amount</th>
+
+		</tr>
+
+		</thead>
+
+		<tbody>
+		<a href="#" class="scrollup">Go to top</a>
+		<tr><td class = "span1">1</td><td>KSRB 4-9.1 : Providing TMT steel  reinforcement for R.C.C work including staightening cutting bending hooking placing in position lapping and /or welding  wherever required tying with binding wire and anchoring to the adjoining members wherever necessary </td><td>11.30</td><td>Quintal</td><td>7,374.24 </td><td>83328.912</td></tr><tr><td class = "span1">2</td><td>KSRB 7.9 : Providing and fixing M.S.grill work for windows and ventilators weighing  21kg/sqm using M.S. flats, or M.S. square rods, or combination of M.S. flats and square  rods as per approved design, drawing including  cutting steel sections and weldin</td><td>42.00</td><td>Sqm</td><td>91.80 </td><td>3855.6</td></tr><tr><td class = "span1">3</td><td>Wire mesh 50mmx50mm  K.S.P.W.D/ 2013-14 P.g No.XXV, Item No.731 Rs:322.00/Sqm</td><td>2.10</td><td>Sqm</td><td>347.76 </td><td>730.296</td></tr><tr><td class = "span1">4</td><td>Chiping and Cleaning, construction joint and slab joint, treatment, grouting of honey comb by cement with inorganic accelerator for cement, spray of biological modified Ortho esters and alkaline earh, providing and laying of patch concrete 1:2:4 for requi</td><td>12.00</td><td>Sqm</td><td>900.72 </td><td>10808.64</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

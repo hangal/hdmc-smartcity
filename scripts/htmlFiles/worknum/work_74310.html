@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+				width: 24px;
+				height: 24px;
+				}
+				th.sorttable_sorted::after {
+				background: url(up.png);
+				background-size: contain;
+				}
+				th.sorttable_sorted_reverse::after {
+				background: url(down.png);
+				background-size: cover;
+				}
+
+				.scrollup {
+			    width: 80px;
+			    height: 40px;
+			    position: fixed;
+			    bottom: 50px;
+			    right: 100px;
+			    text-indent: 0px
+			    border-radius: 20px;
+			    border-color:black;
+			    border-style:solid;
+			    border-width:1px;
+			    text-align:center;
+			    padding-top:10px;
+			    color:black;  
+			    background-color:white;
+				}
+				<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+
+
+				</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+				
+				</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;"> Total number of works: 5</h4><h4 style="display:inline-block; margin-left:3em;"> Total amount spent: &#8377 98,191</h4>
+		<table class="table table-responsive sortable">
+
+		<thead>
+
+		<tr>
+
+		<th style="width:5%">Sl no.</th>
+
+		<th style="width:48%">Work Details</th>
+
+		<th>Measurement</th>
+
+		<th>Unit</th>
+
+		<th>Rate</th>
+
+		<th>Total Amount</th>
+
+		</tr>
+
+		</thead>
+
+		<tbody>
+		<a href="#" class="scrollup">Go to top</a>
+		<tr><td class = "span1">1</td><td>KSRB 15-14.2 : Providing and applying two coats with oil bound washable distemper of approved brand and shade on wall surface including priming coat with distemper primer after throughly brooming the surface free from mortar drops and other foreign matter</td><td>200</td><td>Sqm</td><td>68.04 </td><td>13608.0</td></tr><tr><td class = "span1">2</td><td>KSRB 15-18.2 : Providing and applying enamel metal paint two coats  ( excluding priming coat ) over new steel or other metal surface brushing to give an even shade after cleaning oil, grease, dirt and other foreign matter, including cost of materials, lab</td><td>48.00</td><td>Sqm</td><td>85.32 </td><td>4095.36</td></tr><tr><td class = "span1">3</td><td> Providing and fixing  Vitrified glazed tiles  of approved make, quality and colour of size 600x600x10mm thick  on existing flooring skirting and jointed with neat cement slurry mixed with pigment to much shades of tiles  including providing spears at req</td><td>28.00</td><td>Sqm</td><td>1,141.56 </td><td>31963.68</td></tr><tr><td class = "span1">4</td><td> KSRB 7.14 : Providing, fabricating, assembling and fixing in position anodized aluminium partitions using sections in combination of plain, single grove and double grove as per requirements for the frames of overall size 101.6mm x 44.45mm, 3.18mm.thick h</td><td>6.30</td><td>Sqm</td><td>4,826.52 </td><td>30407.076</td></tr><tr><td class = "span1">5</td><td>KSRB 8.7-5 : Providing and fixing in position 12mm thick plaster of Sqm 641.00 paris ( Gypsum anhydrous ) for ceiling flat surface with ceiling tiles upto a height of 5 m above floor level over wooden frames and rendered smooth with plaster of paris ( fra</td><td>18.00</td><td>Sqm</td><td>1,006.56 </td><td>18118.08</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

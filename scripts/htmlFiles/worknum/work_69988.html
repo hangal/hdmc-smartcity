@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+				width: 24px;
+				height: 24px;
+				}
+				th.sorttable_sorted::after {
+				background: url(up.png);
+				background-size: contain;
+				}
+				th.sorttable_sorted_reverse::after {
+				background: url(down.png);
+				background-size: cover;
+				}
+
+				.scrollup {
+			    width: 80px;
+			    height: 40px;
+			    position: fixed;
+			    bottom: 50px;
+			    right: 100px;
+			    text-indent: 0px
+			    border-radius: 20px;
+			    border-color:black;
+			    border-style:solid;
+			    border-width:1px;
+			    text-align:center;
+			    padding-top:10px;
+			    color:black;  
+			    background-color:white;
+				}
+				<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+
+
+				</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+				
+				</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;"> Total number of works: 8</h4><h4 style="display:inline-block; margin-left:3em;"> Total amount spent: &#8377 1,00,519</h4>
+		<table class="table table-responsive sortable">
+
+		<thead>
+
+		<tr>
+
+		<th style="width:5%">Sl no.</th>
+
+		<th style="width:48%">Work Details</th>
+
+		<th>Measurement</th>
+
+		<th>Unit</th>
+
+		<th>Rate</th>
+
+		<th>Total Amount</th>
+
+		</tr>
+
+		</thead>
+
+		<tbody>
+		<a href="#" class="scrollup">Go to top</a>
+		<tr><td class = "span1">1</td><td>KSRRB M200-15.1. Dismalting of exsting structure like culverts,  bridge, retaining walls and other structure copmprising of masonry, cement concrete, wood work, steel work, including T & P and scaffolding wherever necessary, soring the dismantled material</td><td>4.89</td><td>CUM</td><td>226.80 </td><td>1109.052</td></tr><tr><td class = "span1">2</td><td>Earthwork excavation for foundation of buildings culverts water supply sanitary lines and electrical couduits either in pits or in trenches 1.5m and above in width in ordinary soil not  exceeding 1.5m in depth including dressing the bottom and sides of pi</td><td>9.19</td><td>CUM</td><td>176.04 </td><td>1617.8076</td></tr><tr><td class = "span1">3</td><td>NOTE :- 1) Lead for disposal of debris shall be payable at Carriaage raates by mechanical means including loading and unloading as under:- 0.00 to 5.00th km-cum /k  at Rs.8.00</td><td>14.08</td><td>CUM</td><td>73.57 </td><td>1035.8656</td></tr><tr><td class = "span1">4</td><td>Providing and laying in position plain cement concrete of mix M7.5 with OPC cement @ 180kgs, with 40mm and down size graded granite metal coarse aggregates @0.85cum and fine aggregtes @ 0.57cum machine mixed,machine mixed, concrete laid in layers not exce</td><td>1.63</td><td>CUM</td><td>5,041.44 </td><td>8217.5472</td></tr><tr><td class = "span1">5</td><td>KSRB 4-6.4 ; Providing and removing centering,shuttering, strutting propping ect removing of form work for vertical surfce such as walls at any thickness including attached pilasters, buttresses,plinth and string courses cost of all materials, labour comp</td><td>35.20</td><td>Sqm</td><td>297.00 </td><td>10454.4</td></tr><tr><td class = "span1">6</td><td>KSRB 4.2.2 : Providing and laying in position reinforced cement concrete of design mix M20 with OPC cement @320kgswith 20mm and down size graded granite  metal,coars aggregates @0.878cum with and fine aggregetes @0.459cum superplastisiser @3lts confirming</td><td>7.45</td><td>CUM</td><td>6,403.32 </td><td>47704.734</td></tr><tr><td class = "span1">7</td><td>KSRB 4-6.4 ; Providing and removing centering,shuttering, strutting propping ect removing of form work for flat  surfce such as suspended floors, roofs, landings balconies and likes, thicknees above 200mm including  cost of all materials, labour complete </td><td>3.53</td><td>Sqm</td><td>380.16 </td><td>1341.9648</td></tr><tr><td class = "span1">8</td><td>KSRB-4.9.2 Providing TMT  Steel reinforcement for R.C.C  work including straightening , cutting,bending ,hooking,placing, in position, lapping ,aand / or welding wherever required ,tying with binding wire and anchoring to the adjoining members wherever ne</td><td>0.3826</td><td>ton</td><td>75,907.80 </td><td>29042.32428</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

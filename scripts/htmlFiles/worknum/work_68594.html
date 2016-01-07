@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+				width: 24px;
+				height: 24px;
+				}
+				th.sorttable_sorted::after {
+				background: url(up.png);
+				background-size: contain;
+				}
+				th.sorttable_sorted_reverse::after {
+				background: url(down.png);
+				background-size: cover;
+				}
+
+				.scrollup {
+			    width: 80px;
+			    height: 40px;
+			    position: fixed;
+			    bottom: 50px;
+			    right: 100px;
+			    text-indent: 0px
+			    border-radius: 20px;
+			    border-color:black;
+			    border-style:solid;
+			    border-width:1px;
+			    text-align:center;
+			    padding-top:10px;
+			    color:black;  
+			    background-color:white;
+				}
+				<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+
+
+				</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+				
+				</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;"> Total number of works: 5</h4><h4 style="display:inline-block; margin-left:3em;"> Total amount spent: &#8377 43,109</h4>
+		<table class="table table-responsive sortable">
+
+		<thead>
+
+		<tr>
+
+		<th style="width:5%">Sl no.</th>
+
+		<th style="width:48%">Work Details</th>
+
+		<th>Measurement</th>
+
+		<th>Unit</th>
+
+		<th>Rate</th>
+
+		<th>Total Amount</th>
+
+		</tr>
+
+		</thead>
+
+		<tbody>
+		<a href="#" class="scrollup">Go to top</a>
+		<tr><td class = "span1">1</td><td>Supplying of LT UG cable having aluminium conductor PVC insulated, sheathed, galvanized, steel wire/steel tap armoured cable with PVC outer sheathing 1.1 KV class I.Class A PVC cable I. class A PVC cable   d) 4 Core 16 sq mm   </td><td>198</td><td>Mtr</td><td>147.90 </td><td>29284.2</td></tr><tr><td class = "span1">2</td><td>Labour charges for laying of 1.1 KV class UG cable when supplied agency in existing trench GI pipe / stone ware pipe/ on wall / on pole as required  I. In existing trench/duct  a) 6 sqmm to 16 sqmm  </td><td>198</td><td>Mtr</td><td>8.16 </td><td>1615.68</td></tr><tr><td class = "span1">3</td><td>Supplying tinned copper lugs and crimping and wiring to terminal point for wire of the following sizes.(73/20)  f) 16sqmm  </td><td>56</td><td>Each</td><td>14.28 </td><td>799.68</td></tr><tr><td class = "span1">4</td><td>KSRB 2-1.2 Earthwork excavation for foundation of buildings, culverts, water supply, sanitry lines and electrical conduits either in pits or in trenches 1.5m and above in width in ordinary soil not exceeding 1.5m in depth including dressing the bottom and</td><td>32.94</td><td>CUM</td><td>128.96 </td><td>4247.9424</td></tr><tr><td class = "span1">5</td><td>PVC pipe  Pipe-40 mm dia+-</td><td>199</td><td>Mtr</td><td>36.00 </td><td>7164.0</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

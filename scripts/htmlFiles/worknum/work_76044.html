@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+				width: 24px;
+				height: 24px;
+				}
+				th.sorttable_sorted::after {
+				background: url(up.png);
+				background-size: contain;
+				}
+				th.sorttable_sorted_reverse::after {
+				background: url(down.png);
+				background-size: cover;
+				}
+
+				.scrollup {
+			    width: 80px;
+			    height: 40px;
+			    position: fixed;
+			    bottom: 50px;
+			    right: 100px;
+			    text-indent: 0px
+			    border-radius: 20px;
+			    border-color:black;
+			    border-style:solid;
+			    border-width:1px;
+			    text-align:center;
+			    padding-top:10px;
+			    color:black;  
+			    background-color:white;
+				}
+				<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+
+
+				</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+				
+				</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;"> Total number of works: 8</h4><h4 style="display:inline-block; margin-left:3em;"> Total amount spent: &#8377 29,273</h4>
+		<table class="table table-responsive sortable">
+
+		<thead>
+
+		<tr>
+
+		<th style="width:5%">Sl no.</th>
+
+		<th style="width:48%">Work Details</th>
+
+		<th>Measurement</th>
+
+		<th>Unit</th>
+
+		<th>Rate</th>
+
+		<th>Total Amount</th>
+
+		</tr>
+
+		</thead>
+
+		<tbody>
+		<a href="#" class="scrollup">Go to top</a>
+		<tr><td class = "span1">1</td><td>Digging of trench of 0.6m deepx0.50 mtr wide refilling the trench to the required ground level and consolidating etc., complete (As per Civil SR KSRB 1-2, P-7)   7.9.1)In Soil (ordinary)  1. New Kanaya Nagar= 15 Mtr  2.Badiger Oni              = 18 Mtr  3</td><td>56</td><td>Mtr</td><td>78.00 </td><td>4368.0</td></tr><tr><td class = "span1">2</td><td>Asphalt cutting  1. Badiger Oni              = 03 Mtr  2.S.M.Krishana Nagar = 05 Mtr  </td><td>08</td><td>Mtr</td><td>117.00 </td><td>936.0</td></tr><tr><td class = "span1">3</td><td>Supplying of 1.1KV LT UG cable having aluminium conductor PVC insulated, extruded inner sheathed, galvanized, steel strip (exxe[t 2CX10Sq.mm wire armoured) confirming to IS -3975:1990 (No. of Strip indicated in GTP) & extruded PVC outer sheathed armoured </td><td>85</td><td>Mtr</td><td>140.40 </td><td>11934.0</td></tr><tr><td class = "span1">4</td><td>Labour charges for laying of 1.1 KV class UG cable when supplied agency in existing trench GI pipe / stone ware pipe/ on wall / on pole as required  In existing to 16 sqmm   7.8.1) 6 sqmm to 16 sqmm</td><td>85</td><td>Mtr</td><td>10.80 </td><td>918.0</td></tr><tr><td class = "span1">5</td><td>Supplying and fixing of class A (median duty) GI pipe of wall thickness not less than 3.25 mm on pole/wall/drain crossing with necessary clamping arrangements for UG cable of 1.1 KV class. 7.12.1) 40mm</td><td>14</td><td>Mtr</td><td>345.00 </td><td>4830.0</td></tr><tr><td class = "span1">6</td><td>Supplying and fixing L.T cast Iron  pot heads suitable for 1.1 KV class UG cable fitting with necessary bitumen/insulating compound complete with terminals, clamps, bolts nuts and washers etc  7.13.2) 16 sq.mm</td><td>03</td><td>Each</td><td>280.00 </td><td>840.0</td></tr><tr><td class = "span1">7</td><td>Supplying and fixing Miniature Circuit Breakers on existing MCB distribution boards using necessary fixing materials and C Type curve ,indicator  ON/OFF,energy cross-3 with Short circuit breaking capacity of 10K and  complete wiring as required  confirmin</td><td>03</td><td>Each</td><td>849.00 </td><td>2547.0</td></tr><tr><td class = "span1">8</td><td>PVC Pipe ( For UG Cable in  trench )    PVC   Pipe-40 mm dia  New Kanaya Nagar= 14 Mtr  2.Badiger Oni         = 21 Mtr  3. S.M.Krishna Nagar = 23 Mtr</td><td>58</td><td>Mtr</td><td>50.00 </td><td>2900.0</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

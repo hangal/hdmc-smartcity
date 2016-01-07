@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+				width: 24px;
+				height: 24px;
+				}
+				th.sorttable_sorted::after {
+				background: url(up.png);
+				background-size: contain;
+				}
+				th.sorttable_sorted_reverse::after {
+				background: url(down.png);
+				background-size: cover;
+				}
+
+				.scrollup {
+			    width: 80px;
+			    height: 40px;
+			    position: fixed;
+			    bottom: 50px;
+			    right: 100px;
+			    text-indent: 0px
+			    border-radius: 20px;
+			    border-color:black;
+			    border-style:solid;
+			    border-width:1px;
+			    text-align:center;
+			    padding-top:10px;
+			    color:black;  
+			    background-color:white;
+				}
+				<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+
+
+				</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+				
+				</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;"> Total number of works: 5</h4><h4 style="display:inline-block; margin-left:3em;"> Total amount spent: &#8377 19,024</h4>
+		<table class="table table-responsive sortable">
+
+		<thead>
+
+		<tr>
+
+		<th style="width:5%">Sl no.</th>
+
+		<th style="width:48%">Work Details</th>
+
+		<th>Measurement</th>
+
+		<th>Unit</th>
+
+		<th>Rate</th>
+
+		<th>Total Amount</th>
+
+		</tr>
+
+		</thead>
+
+		<tbody>
+		<a href="#" class="scrollup">Go to top</a>
+		<tr><td class = "span1">1</td><td>KSRRB 300-2 : Earthwork excavation by manual means in hard soil  involving an average horizontal throw upto 2 meters and an average lift upto 0.5 m, excavated surface levelled and sides neatly dressed, the disposed earth to be levelled neatly after breaki</td><td>2.86</td><td>CUM</td><td>89.64 </td><td>256.3704</td></tr><tr><td class = "span1">2</td><td>Lead for disposal of debris shall be payable at Carriage rates by Mechanical means including loading and unloading as under 0.00 to 2.00 Km-cum /k,   </td><td>2.86</td><td>CUM</td><td>72.35 </td><td>206.921</td></tr><tr><td class = "span1">3</td><td>KSRB 4-1.6 ; Providing and laying in position plain cement concrete of mix M15 using 20mm and down size graded granite metal, machine mixed, concrete laid in layers not exceeding 15 cms. thick, well compacted, in foundation and plinth, including cost of  </td><td>2.86</td><td>CUM</td><td>5,175.36 </td><td>14801.5296</td></tr><tr><td class = "span1">4</td><td>KSRB 5-1.1 : Providing and constructing granite/trap/basalt rubble stone masonry in foundation with mud mortar (uncoursed) bond stones at two m apart in each cource including cost of materials labour curing complete as per specifications   KBS 5.1.12  </td><td>1.53</td><td>CUM</td><td>1,281.96 </td><td>1961.3988</td></tr><tr><td class = "span1">5</td><td>Supplying and fixing of FRC Frame & Covers  </td><td>2.00</td><td>Nos</td><td>900.00 </td><td>1800.0</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

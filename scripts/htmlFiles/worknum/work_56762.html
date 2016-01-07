@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+				width: 24px;
+				height: 24px;
+				}
+				th.sorttable_sorted::after {
+				background: url(up.png);
+				background-size: contain;
+				}
+				th.sorttable_sorted_reverse::after {
+				background: url(down.png);
+				background-size: cover;
+				}
+
+				.scrollup {
+			    width: 80px;
+			    height: 40px;
+			    position: fixed;
+			    bottom: 50px;
+			    right: 100px;
+			    text-indent: 0px
+			    border-radius: 20px;
+			    border-color:black;
+			    border-style:solid;
+			    border-width:1px;
+			    text-align:center;
+			    padding-top:10px;
+			    color:black;  
+			    background-color:white;
+				}
+				<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+
+
+				</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+				
+				</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;"> Total number of works: 7</h4><h4 style="display:inline-block; margin-left:3em;"> Total amount spent: &#8377 99,216</h4>
+		<table class="table table-responsive sortable">
+
+		<thead>
+
+		<tr>
+
+		<th style="width:5%">Sl no.</th>
+
+		<th style="width:48%">Work Details</th>
+
+		<th>Measurement</th>
+
+		<th>Unit</th>
+
+		<th>Rate</th>
+
+		<th>Total Amount</th>
+
+		</tr>
+
+		</thead>
+
+		<tbody>
+		<a href="#" class="scrollup">Go to top</a>
+		<tr><td class = "span1">1</td><td>Dismentling the tile work in floor and roof laid in cement or surki mortar including stacking the material with in 50 m lead of tiles thickness 10 mm to 25mm.</td><td>66.88</td><td>Sqm</td><td>22.82 </td><td>1526.2016</td></tr><tr><td class = "span1">2</td><td>Providing and applying ater proofing to roof slab, terrace, landscape area, podium etc. using modified polyurethane cures (conforming to ASTM C836-84)  to give a tough elastromeric waterproof membrane on the surface. The surface shall be cleaned free from</td><td>66.88</td><td>Sqm</td><td>728.00 </td><td>48688.64</td></tr><tr><td class = "span1">3</td><td>Providing water proofer capable of bridging cracks up to 2mm in the Exposed roof surface using Spray Applied liquid Water proofer at the rate of 0.20ltrs/sqm. primer and chemical mortar shall be applied before applying this spray liquid water proofer .The</td><td>32.80</td><td>R.Mt</td><td>98.80 </td><td>3240.64</td></tr><tr><td class = "span1">4</td><td>Providing and laying red oxide flooring 40mm thick, with an under layer of 30mm thick M-15 Cement Concrete ,using broken, granite metal of 12.5mm nominal size and top layer of 10mm thick plaster with 1:3 cement mortar mixed with red oxide (using 3.5 kg of</td><td>66.88</td><td>Sqm</td><td>468.00 </td><td>31299.84</td></tr><tr><td class = "span1">5</td><td>Filling available earth (excluding rock) in sides of foundation up to plinth in layers not exceeding 20 cms. In depth compacting each deposited layers by ramming after watering with lead up to 50m, including cost of all labours complete as per specificati</td><td>2.63</td><td>CUM</td><td>92.56 </td><td>243.4328</td></tr><tr><td class = "span1">6</td><td>Providing and  laying in position plain cement concrete of mix M15 with cement @ 240 kgs, with 20mm and down size graded granite metal cource aggregates @0.878 cum and fine aggregates @0.459 cum, machine mixed, concrerte laid in layers not exceeding  15 c</td><td>0.52</td><td>CUM</td><td>4,650.88 </td><td>2418.4576</td></tr><tr><td class = "span1">7</td><td>Providing and laying flooring using prepolished, water cut/gang saw using 19mm thick  grey granite laid over existing floor in CM 1:4 at 20mm thick (average) and pointed with white /grey pigment etc.complete.- Using Grey Granite </td><td>6.50</td><td>Sqm</td><td>1,815.84 </td><td>11802.96</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

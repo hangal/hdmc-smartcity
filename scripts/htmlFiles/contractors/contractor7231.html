@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+		  width: 24px;
+		  height: 24px;
+		}
+		th.sorttable_sorted::after {
+		  background: url(up.png);
+		  background-size: contain;
+		}
+		th.sorttable_sorted_reverse::after {
+		  background: url(down.png);
+		  background-size: cover;
+		}</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+
+		<script src="http://maps.googleapis.com/maps/api/js"></script>
+		<script>
+		var src = 'http://hack4hd.org/data/HD-ward-boundaries.kml';
+
+		function initialize() {
+		  var mapProp = {
+			center:new google.maps.LatLng(15.3935685,75.08009570000002),
+			zoom:15,
+			mapTypeId:google.maps.MapTypeId.ROADMAP
+		  };
+		  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+		  var ctaLayer = new google.maps.KmlLayer({
+			url: 'http://hack4hd.org/data/HD-ward-boundaries.kml',
+			map: map
+		  });
+
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+		<script>
+		function worksTotal(){
+		var table = document.getElementById("myTable");
+		var x = table.rows.length;
+		document.getElementById("totalWorks").innerHTML = x
+		}
+</script>
+<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+<style>
+.scrollup {
+    width: 80px;
+    height: 40px;
+    position: fixed;
+    bottom: 50px;
+    right: 100px;
+    text-indent: 0px
+    border-radius: 20px;
+    border-color:black;
+    border-style:solid;
+    border-width:1px;
+    text-align:center;
+    padding-top:10px;
+    color:black;  
+    background-color:white;
+}
+</style>
+
+		</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;margin-left:5em"> Total number of works: 29</h4><h4 style="display:inline-block; margin-left:7em;"> Completed works: 18</h4><h4 style="display:inline-block; margin-left:7em;"> In progress works: 11</h4><h4 style="display:inline-block; margin-left:5em;"> Total amount spent: &#8377 23,80,515</h4>
+	<table class="table table-responsive sortable" id="myTable">
+
+	<thead>
+
+	<tr>
+
+	<th style="width:5%">Ward</th>
+
+	<th style="width:48%">Work Description</th>
+
+	<th>Work Order Date</th>
+
+	<th>Work Completion Date</th>
+
+	<th>Work Type</th>
+
+	<th>Source of Income</th>
+
+	<th style="width:7%">Contractor</th>
+
+	<th>Amount Sanctioned</th>
+
+	<th>Status</th>
+
+	</tr>
+
+	</thead>
+
+	<tbody>
+	<a href="#" class="scrollup">Go to top</a>
+	<tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_38.html" target="_blank">38</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_67028.html" target="_blank">Regarding Electrical work At Venkteshward Colony Gardan. in ward no 38</a></td><td>18-Oct-14</td><td>17-Nov-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype1.html" target="_blank">Capital</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7231.html" target="_blank">Shree Ganesh Electricals & Engineers</a></td><td>97,532</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_41.html" target="_blank">41</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_67740.html" target="_blank">Regarding  electrical work in ward no 41 hubli.</a></td><td>19-Nov-14</td><td>18-Dec-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype1.html" target="_blank">Capital</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7231.html" target="_blank">Shree Ganesh Electricals & Engineers</a></td><td>99,789</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_1.html" target="_blank">1</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_68092.html" target="_blank">Regarding Electrical Street Lights works at Siddharudh Nagar in ward no : 1</a></td><td>05-Dec-14</td><td>04-Mar-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype1.html" target="_blank">Capital</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7231.html" target="_blank">Shree Ganesh Electricals & Engineers</a></td><td>30,631</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_13.html" target="_blank">13</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_68679.html" target="_blank">Regarding Providing of light to toilet at DC office At Dharwad Division</a></td><td>27-Dec-14</td><td>26-Jan-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype1.html" target="_blank">Capital</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7231.html" target="_blank">Shree Ganesh Electricals & Engineers</a></td><td>31,383</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_34.html" target="_blank">34</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_68769.html" target="_blank">Shifting of 6 Poles at Lokapanhakkal Railway near road of ward no. 34 of Hubli division</a></td><td>30-Dec-14</td><td>29-Jan-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype1.html" target="_blank">Capital</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7231.html" target="_blank">Shree Ganesh Electricals & Engineers</a></td><td>95,308</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_24.html" target="_blank">24</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_69535.html" target="_blank">Regarding Tyub light set work at Nandi leyot in ward no.24</a></td><td>30-Jan-15</td><td>28-Feb-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype1.html" target="_blank">Capital</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7231.html" target="_blank">Shree Ganesh Electricals & Engineers</a></td><td>48,072</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_34.html" target="_blank">34</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_69692.html" target="_blank">Shifting of Electrical line at Virangouda Patil Colony of ward no. 34 of Hubli division.</a></td><td>09-Feb-15</td><td>08-Mar-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype1.html" target="_blank">Capital</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7231.html" target="_blank">Shree Ganesh Electricals & Engineers</a></td><td>91,000</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_67.html" target="_blank">67</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_70272.html" target="_blank">Regarding Street Light Work at A.K.K College ward in.67</a></td><td>03-Mar-15</td><td>02-Apr-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype1.html" target="_blank">Capital</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7231.html" target="_blank">Shree Ganesh Electricals & Engineers</a></td><td>50,748</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_34.html" target="_blank">34</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_70689.html" target="_blank">Instatllation of Mini highmast and street lights at Vidayanagar Mahila Polytechnic Garden of ward no. 34 of Hubli division.</a></td><td>17-Mar-15</td><td>16-Apr-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype1.html" target="_blank">Capital</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7231.html" target="_blank">Shree Ganesh Electricals & Engineers</a></td><td>99,776</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_64.html" target="_blank">64</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_70721.html" target="_blank">Regarding Electrical Work at Gousiya Nagar ward no.64</a></td><td>19-Mar-15</td><td>18-Apr-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype2.html" target="_blank">Maintenance</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7231.html" target="_blank">Shree Ganesh Electricals & Engineers</a></td><td>93,509</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_34.html" target="_blank">34</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_71469.html" target="_blank">Regarding Electrical Work at Lokappan Hakkal ward no.34</a></td><td>18-Apr-15</td><td>17-May-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype1.html" target="_blank">Capital</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7231.html" target="_blank">Shree Ganesh Electricals & Engineers</a></td><td>67,978</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_47.html" target="_blank">47</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_72847.html" target="_blank">Supplying and fixing of Tube Light and Fans in Old Hitguppi Hospital at ward No 47.</a></td><td>16-Jun-15</td><td>15-Jul-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype1.html" target="_blank">Capital</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7231.html" target="_blank">Shree Ganesh Electricals & Engineers</a></td><td>98,875</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_41.html" target="_blank">41</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_73368.html" target="_blank">Supplying and fixing Street light in Heggeri K.H.B area at ward no 41.</a></td><td>09-Jul-15</td><td>08-Aug-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype1.html" target="_blank">Capital</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7231.html" target="_blank">Shree Ganesh Electricals & Engineers</a></td><td>98,891</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_48.html" target="_blank">48</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_73410.html" target="_blank">Regarding electrical work Mini High Mast work in ward no 48 in Hubli Division</a></td><td>09-Jul-15</td><td>08-Aug-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype1.html" target="_blank">Capital</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7231.html" target="_blank">Shree Ganesh Electricals & Engineers</a></td><td>73,686</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_48.html" target="_blank">48</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_73616.html" target="_blank">Regarding work for the Scrap Tube Light fitting at new kanya Nagar in Ward No. 48</a></td><td>20-Jul-15</td><td>19-Aug-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype1.html" target="_blank">Capital</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7231.html" target="_blank">Shree Ganesh Electricals & Engineers</a></td><td>76,646</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_42.html" target="_blank">42</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_73626.html" target="_blank">Electrical works in Arvind nagar janata house badavane of ward no. 42 of hubli division.</a></td><td>20-Jul-15</td><td>19-Aug-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype2.html" target="_blank">Maintenance</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7231.html" target="_blank">Shree Ganesh Electricals & Engineers</a></td><td>33,914</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_29.html" target="_blank">29</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_74040.html" target="_blank">Shifting of HT line in  judge quaters of hubli division.</a></td><td>05-Aug-15</td><td>04-Sep-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype1.html" target="_blank">Capital</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7231.html" target="_blank">Shree Ganesh Electricals & Engineers</a></td><td>27,710</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_64.html" target="_blank">64</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_74404.html" target="_blank">Regarding work for the Street Light at Hubli in Ward No. 64</a></td><td>22-Aug-15</td><td>21-Sep-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype1.html" target="_blank">Capital</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7231.html" target="_blank">Shree Ganesh Electricals & Engineers</a></td><td>98,891</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_64.html" target="_blank">64</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_74405.html" target="_blank">Regarding work for the Street Light at Hubli in Ward No. 64</a></td><td>22-Aug-15</td><td>21-Sep-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype1.html" target="_blank">Capital</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7231.html" target="_blank">Shree Ganesh Electricals & Engineers</a></td><td>98,891</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_34.html" target="_blank">34</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_75384.html" target="_blank">Regarding work for the M.H.L and T.L Street Light at Shanthi Colony Behind K.M.C and Main Road  in Ward No. 34</a></td><td>21-Sep-15</td><td>20-Oct-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype1.html" target="_blank">Capital</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7231.html" target="_blank">Shree Ganesh Electricals & Engineers</a></td><td>98,891</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_48.html" target="_blank">48</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_76376.html" target="_blank">Supply and Fixing of MHL,TL StreetLlight at Main road and Varies areas of ward no.48 of Hubballi Division</a></td><td>03-Nov-15</td><td>02-Dec-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype1.html" target="_blank">Capital</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7231.html" target="_blank">Shree Ganesh Electricals & Engineers</a></td><td>98,891</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_63.html" target="_blank">63</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_76377.html" target="_blank">Installation of Poles  & Supplying & Fixing TL/MHL At Sharavathi Nagar in ward no 63 Hubli Division</a></td><td>03-Nov-15</td><td>02-Dec-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype2.html" target="_blank">Maintenance</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7231.html" target="_blank">Shree Ganesh Electricals & Engineers</a></td><td>98,637</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_63.html" target="_blank">63</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_76381.html" target="_blank">Supplying and fixing  of MHL  Street Light in ward no 63 Hubli Division</a></td><td>03-Nov-15</td><td>02-Dec-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype2.html" target="_blank">Maintenance</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7231.html" target="_blank">Shree Ganesh Electricals & Engineers</a></td><td>93,509</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_50.html" target="_blank">50</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_76768.html" target="_blank">Regarding Mini High Mast work At Maruthi Temple opp in Hubli Division in ward no 50</a></td><td>09-Nov-15</td><td>08-Dec-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype1.html" target="_blank">Capital</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7231.html" target="_blank">Shree Ganesh Electricals & Engineers</a></td><td>99,584</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_50.html" target="_blank">50</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_76772.html" target="_blank">Instalaction of Mini Highmast of Balmanidr Ground  Hubli Divsion in ward no 50</a></td><td>09-Nov-15</td><td>08-Dec-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype1.html" target="_blank">Capital</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7231.html" target="_blank">Shree Ganesh Electricals & Engineers</a></td><td>93,605</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_50.html" target="_blank">50</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_76773.html" target="_blank">Regarding Mini High Mast work At Baal Manidr Office Opp in  Hubli Division in  ward no 50</a></td><td>09-Nov-15</td><td>08-Dec-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype1.html" target="_blank">Capital</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7231.html" target="_blank">Shree Ganesh Electricals & Engineers</a></td><td>99,581</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_50.html" target="_blank">50</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_76774.html" target="_blank">Installtion of mini highmast at various areas of ward no. 50 of Hubli Division.</a></td><td>09-Nov-15</td><td>08-Dec-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype1.html" target="_blank">Capital</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7231.html" target="_blank">Shree Ganesh Electricals & Engineers</a></td><td>96,167</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_50.html" target="_blank">50</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_76777.html" target="_blank">Installtion of mini Highmast at of ward no. 50 of Hubli Division.</a></td><td>09-Nov-15</td><td>08-Dec-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype1.html" target="_blank">Capital</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7231.html" target="_blank">Shree Ganesh Electricals & Engineers</a></td><td>92,354</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_41.html" target="_blank">41</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_76983.html" target="_blank">supplying and fixing of LED mini highmast at ward no. 41 of hubli division, Jagadhish Nagar.</a></td><td>23-Nov-15</td><td>22-Dec-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype1.html" target="_blank">Capital</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7231.html" target="_blank">Shree Ganesh Electricals & Engineers</a></td><td>96,066</td><td style="color:#d32a0e">Inprogress</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

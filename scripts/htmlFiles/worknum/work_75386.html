@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+				width: 24px;
+				height: 24px;
+				}
+				th.sorttable_sorted::after {
+				background: url(up.png);
+				background-size: contain;
+				}
+				th.sorttable_sorted_reverse::after {
+				background: url(down.png);
+				background-size: cover;
+				}
+
+				.scrollup {
+			    width: 80px;
+			    height: 40px;
+			    position: fixed;
+			    bottom: 50px;
+			    right: 100px;
+			    text-indent: 0px
+			    border-radius: 20px;
+			    border-color:black;
+			    border-style:solid;
+			    border-width:1px;
+			    text-align:center;
+			    padding-top:10px;
+			    color:black;  
+			    background-color:white;
+				}
+				<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+
+
+				</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+				
+				</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;"> Total number of works: 6</h4><h4 style="display:inline-block; margin-left:3em;"> Total amount spent: &#8377 1,00,914</h4>
+		<table class="table table-responsive sortable">
+
+		<thead>
+
+		<tr>
+
+		<th style="width:5%">Sl no.</th>
+
+		<th style="width:48%">Work Details</th>
+
+		<th>Measurement</th>
+
+		<th>Unit</th>
+
+		<th>Rate</th>
+
+		<th>Total Amount</th>
+
+		</tr>
+
+		</thead>
+
+		<tbody>
+		<a href="#" class="scrollup">Go to top</a>
+		<tr><td class = "span1">1</td><td>KSRRB M200-12.1. Dismantling of existing structures like culverts, bridges, retaining walls and other structure comprising of masonry, cement concrete, wood work, steel work, including T&P and scaffolding wherever necessary,  sorting the dismantled materi</td><td>3.78</td><td>CUM</td><td>950.40 </td><td>3592.512</td></tr><tr><td class = "span1">2</td><td>KSRB 4.2.8 : Providing and laying in position reinforced cement concrete of Design mix M 20 with  OPC cement @ 320kgs, with 20mm and down size graded granite metal coarse aggregates @ 0.69cum and fine aggregates @ 0.460 cum, with superplasticizers 3 litre</td><td>3.78</td><td>CUM</td><td>6,540.48 </td><td>24723.0144</td></tr><tr><td class = "span1">3</td><td>KSRB 4.9.2 : Providing T.M.T steel reinforcement for R.C.C work including straightening, cutting, bending, hooking, placing in position, lapping and / or welding wherever required, tying with binding wire and anchoring to the adjoining members wherever ne</td><td>0.52</td><td>Tonne</td><td>95,907.80 </td><td>49872.056</td></tr><tr><td class = "span1">4</td><td>KSRB 4-6.4 Providing and removing, centring, shuttering, strutting, propping etc., and removal of form work for verticle surfaces  such as walls at any thickness, including attached pillasrters , butress, plinth cills and string courses  cost of all mater</td><td>63</td><td>Sqm</td><td>297.00 </td><td>18711.0</td></tr><tr><td class = "span1">5</td><td>KSRB 15-16.1 : Providing and finishing external walls in two coats with waterproof cement paint of approved brand and shade to give an even shade after throughly brooming the surface to remove all dirt and loose powdered material, free from mortar drops a</td><td>63</td><td>Sqm</td><td>59.40 </td><td>3742.2</td></tr><tr><td class = "span1">6</td><td>lead for disposal of debris shall be payable at carriage rates by mechanical means including loading and unloading for a distance of 2.00 Km</td><td>3.78</td><td>CUM</td><td>72.71 </td><td>274.8438</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

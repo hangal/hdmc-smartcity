@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+		  width: 24px;
+		  height: 24px;
+		}
+		th.sorttable_sorted::after {
+		  background: url(up.png);
+		  background-size: contain;
+		}
+		th.sorttable_sorted_reverse::after {
+		  background: url(down.png);
+		  background-size: cover;
+		}</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+
+		<script src="http://maps.googleapis.com/maps/api/js"></script>
+		<script>
+		var src = 'http://hack4hd.org/data/HD-ward-boundaries.kml';
+
+		function initialize() {
+		  var mapProp = {
+			center:new google.maps.LatLng(15.3935685,75.08009570000002),
+			zoom:15,
+			mapTypeId:google.maps.MapTypeId.ROADMAP
+		  };
+		  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+		  var ctaLayer = new google.maps.KmlLayer({
+			url: 'http://hack4hd.org/data/HD-ward-boundaries.kml',
+			map: map
+		  });
+
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+		<script>
+		function worksTotal(){
+		var table = document.getElementById("myTable");
+		var x = table.rows.length;
+		document.getElementById("totalWorks").innerHTML = x
+		}
+</script>
+<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+<style>
+.scrollup {
+    width: 80px;
+    height: 40px;
+    position: fixed;
+    bottom: 50px;
+    right: 100px;
+    text-indent: 0px
+    border-radius: 20px;
+    border-color:black;
+    border-style:solid;
+    border-width:1px;
+    text-align:center;
+    padding-top:10px;
+    color:black;  
+    background-color:white;
+}
+</style>
+
+		</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;margin-left:5em"> Total number of works: 2</h4><h4 style="display:inline-block; margin-left:7em;"> Completed works: 2</h4><h4 style="display:inline-block; margin-left:7em;"> In progress works: 0</h4><h4 style="display:inline-block; margin-left:5em;"> Total amount spent: &#8377 98,168</h4>
+	<table class="table table-responsive sortable" id="myTable">
+
+	<thead>
+
+	<tr>
+
+	<th style="width:5%">Ward</th>
+
+	<th style="width:48%">Work Description</th>
+
+	<th>Work Order Date</th>
+
+	<th>Work Completion Date</th>
+
+	<th>Work Type</th>
+
+	<th>Source of Income</th>
+
+	<th style="width:7%">Contractor</th>
+
+	<th>Amount Sanctioned</th>
+
+	<th>Status</th>
+
+	</tr>
+
+	</thead>
+
+	<tbody>
+	<a href="#" class="scrollup">Go to top</a>
+	<tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_45.html" target="_blank">45</a></td><td>Info not available</td><td>10-Jul-14</td><td>10-Jul-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor5484.html" target="_blank">Sushruta Multispeciality hospital & research centre, Hubli</a></td><td>13,168</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_47.html" target="_blank">47</a></td><td>Bill for the medical Advance of  Shri B.L.Kattimani  (Jamadar)</td><td>02-Nov-15</td><td>02-Nov-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor5484.html" target="_blank">Sushruta Multispeciality hospital & research centre, Hubli</a></td><td>85,000</td><td style="color:#43ac6a">Completed</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

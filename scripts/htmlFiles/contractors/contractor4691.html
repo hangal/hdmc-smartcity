@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+		  width: 24px;
+		  height: 24px;
+		}
+		th.sorttable_sorted::after {
+		  background: url(up.png);
+		  background-size: contain;
+		}
+		th.sorttable_sorted_reverse::after {
+		  background: url(down.png);
+		  background-size: cover;
+		}</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+
+		<script src="http://maps.googleapis.com/maps/api/js"></script>
+		<script>
+		var src = 'http://hack4hd.org/data/HD-ward-boundaries.kml';
+
+		function initialize() {
+		  var mapProp = {
+			center:new google.maps.LatLng(15.3935685,75.08009570000002),
+			zoom:15,
+			mapTypeId:google.maps.MapTypeId.ROADMAP
+		  };
+		  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+		  var ctaLayer = new google.maps.KmlLayer({
+			url: 'http://hack4hd.org/data/HD-ward-boundaries.kml',
+			map: map
+		  });
+
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+		<script>
+		function worksTotal(){
+		var table = document.getElementById("myTable");
+		var x = table.rows.length;
+		document.getElementById("totalWorks").innerHTML = x
+		}
+</script>
+<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+<style>
+.scrollup {
+    width: 80px;
+    height: 40px;
+    position: fixed;
+    bottom: 50px;
+    right: 100px;
+    text-indent: 0px
+    border-radius: 20px;
+    border-color:black;
+    border-style:solid;
+    border-width:1px;
+    text-align:center;
+    padding-top:10px;
+    color:black;  
+    background-color:white;
+}
+</style>
+
+		</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;margin-left:5em"> Total number of works: 21</h4><h4 style="display:inline-block; margin-left:7em;"> Completed works: 21</h4><h4 style="display:inline-block; margin-left:7em;"> In progress works: 0</h4><h4 style="display:inline-block; margin-left:5em;"> Total amount spent: &#8377 7,67,809</h4>
+	<table class="table table-responsive sortable" id="myTable">
+
+	<thead>
+
+	<tr>
+
+	<th style="width:5%">Ward</th>
+
+	<th style="width:48%">Work Description</th>
+
+	<th>Work Order Date</th>
+
+	<th>Work Completion Date</th>
+
+	<th>Work Type</th>
+
+	<th>Source of Income</th>
+
+	<th style="width:7%">Contractor</th>
+
+	<th>Amount Sanctioned</th>
+
+	<th>Status</th>
+
+	</tr>
+
+	</thead>
+
+	<tbody>
+	<a href="#" class="scrollup">Go to top</a>
+	<tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_17.html" target="_blank">17</a></td><td>Regarding SD refund of ward no 17 Jambuvant Nagar, Main Road Shri Chintannavar House</td><td>01-Aug-14</td><td>01-Aug-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor4691.html" target="_blank">Chigaru Constructions Dharwad</a></td><td>3,936</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_17.html" target="_blank">17</a></td><td>Regarding EMD refund of ward no 17 Jambuvant Nagar, Main Road Shri Chintannavar House</td><td>01-Aug-14</td><td>01-Aug-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor4691.html" target="_blank">Chigaru Constructions Dharwad</a></td><td>1,968</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_17.html" target="_blank">17</a></td><td>Regarding SD refund of ward no 17 Langoti Tank remove of bund opp C B Nagar Garden</td><td>01-Aug-14</td><td>01-Aug-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor4691.html" target="_blank">Chigaru Constructions Dharwad</a></td><td>4,730</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_17.html" target="_blank">17</a></td><td>Regarding EMD refund of ward no 17 Langoti Tank remove of bund opp C B Nagar Garden</td><td>01-Aug-14</td><td>01-Aug-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor4691.html" target="_blank">Chigaru Constructions Dharwad</a></td><td>2,366</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_1.html" target="_blank">1</a></td><td>Regarding SD refund of ward no01 Construction of Concrete road in Radhakrishna Nagar 2nd Main near CD</td><td>01-Aug-14</td><td>01-Aug-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor4691.html" target="_blank">Chigaru Constructions Dharwad</a></td><td>4,877</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_1.html" target="_blank">1</a></td><td>Regarding EMD refund of ward no01 Construction of Concrete road in Radhakrishna Nagar 2nd Main near CD</td><td>01-Aug-14</td><td>01-Aug-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor4691.html" target="_blank">Chigaru Constructions Dharwad</a></td><td>2,450</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_14.html" target="_blank">14</a></td><td>Regarding EMD refund of Name boards in ward no 13 & 14</td><td>01-Aug-14</td><td>01-Aug-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor4691.html" target="_blank">Chigaru Constructions Dharwad</a></td><td>2,500</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_1.html" target="_blank">1</a></td><td>Regarding refund of SD of installing name boards in ward no 13 & 14</td><td>02-Aug-14</td><td>02-Aug-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor4691.html" target="_blank">Chigaru Constructions Dharwad</a></td><td>4,770</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_17.html" target="_blank">17</a></td><td>Regarding patch work in C B Nagar Shivgiri Langoti tank main roads Sd refund</td><td>02-Aug-14</td><td>02-Aug-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor4691.html" target="_blank">Chigaru Constructions Dharwad</a></td><td>993</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_17.html" target="_blank">17</a></td><td>Regarding patch work in ward no 17 C B Nagar Shivgiri Langoti Tank Main roads</td><td>02-Aug-14</td><td>02-Aug-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor4691.html" target="_blank">Chigaru Constructions Dharwad</a></td><td>397</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_17.html" target="_blank">17</a></td><td>Regarding building construction of ward no 17 Kalyan  Nagar 7th cross Library Building SD Refund</td><td>02-Aug-14</td><td>02-Aug-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor4691.html" target="_blank">Chigaru Constructions Dharwad</a></td><td>2,419</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_17.html" target="_blank">17</a></td><td>Regarding building construction of ward no 17 Kalyan  Nagar 7th cross Library Building EMD Refund</td><td>02-Aug-14</td><td>02-Aug-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor4691.html" target="_blank">Chigaru Constructions Dharwad</a></td><td>1,230</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_1.html" target="_blank">1</a></td><td>Regarding name board work in ward no 17 Garden & open land SD Refund</td><td>02-Aug-14</td><td>02-Aug-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor4691.html" target="_blank">Chigaru Constructions Dharwad</a></td><td>4,770</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_17.html" target="_blank">17</a></td><td>Regarding name board work in ward no 17 Garden & open land EMD Refund</td><td>02-Aug-14</td><td>02-Aug-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor4691.html" target="_blank">Chigaru Constructions Dharwad</a></td><td>2,400</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_1.html" target="_blank">1</a></td><td>Regarding name board work in ward no 01 Garden & open land SD Refund</td><td>02-Aug-14</td><td>02-Aug-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor4691.html" target="_blank">Chigaru Constructions Dharwad</a></td><td>4,770</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_1.html" target="_blank">1</a></td><td>Regarding name board work in ward no 17 Garden & open land EMD Refund</td><td>02-Aug-14</td><td>02-Aug-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor4691.html" target="_blank">Chigaru Constructions Dharwad</a></td><td>2,400</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_17.html" target="_blank">17</a></td><td>Regarding silt removal of ward no 17 Langoti Tank Opp lingayat Bhavan SD refund</td><td>02-Aug-14</td><td>02-Aug-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor4691.html" target="_blank">Chigaru Constructions Dharwad</a></td><td>4,893</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_17.html" target="_blank">17</a></td><td>Regarding silt removal of ward no 17 Langoti Tank Opp lingayat Bhavan EMD refund</td><td>02-Aug-14</td><td>02-Aug-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor4691.html" target="_blank">Chigaru Constructions Dharwad</a></td><td>2,446</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_13.html" target="_blank">13</a></td><td>Regarding construction of CD in near saptapur well SD refund</td><td>02-Aug-14</td><td>02-Aug-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor4691.html" target="_blank">Chigaru Constructions Dharwad</a></td><td>4,989</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_13.html" target="_blank">13</a></td><td>Regarding construction of CD in near saptapur well EMD refund</td><td>02-Aug-14</td><td>02-Aug-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor4691.html" target="_blank">Chigaru Constructions Dharwad</a></td><td>2,256</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_17.html" target="_blank">17</a></td><td>Regarding concrete paving at Shri Ram Nagar</td><td>12-Feb-15</td><td>11-May-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype7.html" target="_blank">Under 22.75%</td><td>SC/ST Development Fund</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor4691.html" target="_blank">Chigaru Constructions Dharwad</a></td><td>7,06,249</td><td style="color:#43ac6a">Completed</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

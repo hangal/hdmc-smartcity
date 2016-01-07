@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+				width: 24px;
+				height: 24px;
+				}
+				th.sorttable_sorted::after {
+				background: url(up.png);
+				background-size: contain;
+				}
+				th.sorttable_sorted_reverse::after {
+				background: url(down.png);
+				background-size: cover;
+				}
+
+				.scrollup {
+			    width: 80px;
+			    height: 40px;
+			    position: fixed;
+			    bottom: 50px;
+			    right: 100px;
+			    text-indent: 0px
+			    border-radius: 20px;
+			    border-color:black;
+			    border-style:solid;
+			    border-width:1px;
+			    text-align:center;
+			    padding-top:10px;
+			    color:black;  
+			    background-color:white;
+				}
+				<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+
+
+				</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+				
+				</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;"> Total number of works: 8</h4><h4 style="display:inline-block; margin-left:3em;"> Total amount spent: &#8377 29,67,644</h4>
+		<table class="table table-responsive sortable">
+
+		<thead>
+
+		<tr>
+
+		<th style="width:5%">Sl no.</th>
+
+		<th style="width:48%">Work Details</th>
+
+		<th>Measurement</th>
+
+		<th>Unit</th>
+
+		<th>Rate</th>
+
+		<th>Total Amount</th>
+
+		</tr>
+
+		</thead>
+
+		<tbody>
+		<a href="#" class="scrollup">Go to top</a>
+		<tr><td class = "span1">1</td><td>Compaction of original ground with maximum of 6 passes of 8 to 10 tonnes power roller including filling in depression occuring during rolling including cost of all labour, HOM of machinery complete as per specifications. Including loading and unloading In</td><td>2275</td><td>Sqm</td><td>3.18 </td><td>7234.5</td></tr><tr><td class = "span1">2</td><td>Wet Mix Macadam KSRRB M400-17. Providing, laying, spreading and compacting graded stones aggregate to wet mix macadam specifications including pre mixing the material with water at OMC in mechanical mix plant carriage of mixed method of tipper to site, la</td><td>523.25</td><td>CUM</td><td>2,061.72 </td><td>1078794.99</td></tr><tr><td class = "span1">3</td><td>Providing and applying tack coat using 80/100 grade bitumen(VG10) in boiler fitted with spray set distributor at the rate of 0.20 kg per sqm on the existing prepared bituminous surface cleaned with mchancial broom. complete as per specifications.  - using</td><td>4550.0</td><td>Sqm</td><td>14.68 </td><td>66794.0</td></tr><tr><td class = "span1">4</td><td>Providing and laying bituminous macadam on prepared surface with crushed coarse aggregates as per design mix formula for base / binding course including loading of aggregates with F.E. loader, hot mixing of stone aggregates and bitumen in hot mix plant, t</td><td>123.75</td><td>CUM</td><td>7,888.82 </td><td>976241.475</td></tr><tr><td class = "span1">5</td><td>Providing and laying semi dense bituminous concrete using crushed aggregates of specified grading, premixed with bituminous binder and filler, transporting the hot mix to work site, laying with a paver finisher to the required grade, level and alignment, </td><td>61.88</td><td>CUM</td><td>10,365.72 </td><td>641430.7536</td></tr><tr><td class = "span1">6</td><td> Providing and applying primer coat with S.S. bitumen emulsion on prepared surface of granular base such as WBM, WMM including cleaning of road surface and spraying primer at the rate of 0.60 kg / sqm using mechanical means complete as per specifications.</td><td>2275.0</td><td>Sqm</td><td>38.00 </td><td>86450.0</td></tr><tr><td class = "span1">7</td><td>Transportation of Excavated earth for 2 Kms. KSRRB M100-1 Loading and Unloading of stone boulder / Stone aggregates / Sand / Kanker / Moorum. KSRRB M100-1 : Placing tipper at loading point, loading with front end loader, dumping, turning for return trip, </td><td>682.5</td><td>CUM</td><td>72.56 </td><td>49522.2</td></tr><tr><td class = "span1">8</td><td>  Earthwork excavation by manual means  in hard soil involving an average horizontal throw upto 2 meters and an average lift upto 0.5 m, excavated surface leveled and sides neatly dressed, the disposed earth to be leveled neatly after breaking of clods co</td><td>682.5</td><td>CUM</td><td>89.64 </td><td>61179.3</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

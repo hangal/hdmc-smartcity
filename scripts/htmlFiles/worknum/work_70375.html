@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+				width: 24px;
+				height: 24px;
+				}
+				th.sorttable_sorted::after {
+				background: url(up.png);
+				background-size: contain;
+				}
+				th.sorttable_sorted_reverse::after {
+				background: url(down.png);
+				background-size: cover;
+				}
+
+				.scrollup {
+			    width: 80px;
+			    height: 40px;
+			    position: fixed;
+			    bottom: 50px;
+			    right: 100px;
+			    text-indent: 0px
+			    border-radius: 20px;
+			    border-color:black;
+			    border-style:solid;
+			    border-width:1px;
+			    text-align:center;
+			    padding-top:10px;
+			    color:black;  
+			    background-color:white;
+				}
+				<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+
+
+				</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+				
+				</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;"> Total number of works: 8</h4><h4 style="display:inline-block; margin-left:3em;"> Total amount spent: &#8377 97,973</h4>
+		<table class="table table-responsive sortable">
+
+		<thead>
+
+		<tr>
+
+		<th style="width:5%">Sl no.</th>
+
+		<th style="width:48%">Work Details</th>
+
+		<th>Measurement</th>
+
+		<th>Unit</th>
+
+		<th>Rate</th>
+
+		<th>Total Amount</th>
+
+		</tr>
+
+		</thead>
+
+		<tbody>
+		<a href="#" class="scrollup">Go to top</a>
+		<tr><td class = "span1">1</td><td>Fabricating supplying and mounting MS box made out 18 SWG suitable for floor/wall mounting fully weather proof with provision for better heat dissipation, provided with hinged front cover, equipped with tamper proof locking arrangements, with suitable siz</td><td>79016</td><td>Sqcm</td><td>0.28 </td><td>22124.48</td></tr><tr><td class = "span1">2</td><td>Supply and fixing  hylum brand hand plastic sheet 3mm thick with necessary nitches for fixing switches, regulators etc., and fixing on existing wood or metal box using N.F screws.  Dimention : 46x32 cms=1472  </td><td>20608</td><td>Sqcm</td><td>0.20 </td><td>4121.6</td></tr><tr><td class = "span1">3</td><td>Supplying fixing of Porcelain fuse channel with cutout on existing wooden/panel using necessary nuts, bolts and washers etc., complete            C) 63 Amps                                                                                                 </td><td>14</td><td>Each</td><td>223.38 </td><td>3127.32</td></tr><tr><td class = "span1">4</td><td>Supply and fixing of 4 pole power contactor with NO/NC contacts on existing wood/panel board using necessary bolts, nuts washers and wiring etc complete  with AC-3 Rating and as per IS-13947.                                                   b) 40Amps</td><td>14</td><td>Each</td><td>1,652.40 </td><td>23133.6</td></tr><tr><td class = "span1">5</td><td>Supplying and fixing Miniature Circuit Breakers on existing MCB distribution boards using necessary fixing materials and wiring complete as required   Group B                                                                        a) 5-32 Amps SP          </td><td>14</td><td>Each</td><td>158.00 </td><td>2212.0</td></tr><tr><td class = "span1">6</td><td>Supplying and fixing  Microprocessor based Electronic timer (with out contactor) Din Mounting using necessary bolts, nuts and washers etc.,                                                                                                                  </td><td>14</td><td>Each</td><td>2,346.00 </td><td>32844.0</td></tr><tr><td class = "span1">7</td><td>PVC Pipe (for UG Cable in trench)  PVC Pipe-40mm dia</td><td>56</td><td>Mtr</td><td>36.00 </td><td>2016.0</td></tr><tr><td class = "span1">8</td><td>Wiring for lighting/power circuit using one of  PVC insulated 1100v grade stranded Aluminium unsheathed wire  single core/multi core cable in open or concealed system of wiring .(10/21)  g.16 sqmm</td><td>294</td><td>Mtr</td><td>28.56 </td><td>8396.64</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

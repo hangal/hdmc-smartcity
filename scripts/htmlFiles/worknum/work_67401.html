@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+				width: 24px;
+				height: 24px;
+				}
+				th.sorttable_sorted::after {
+				background: url(up.png);
+				background-size: contain;
+				}
+				th.sorttable_sorted_reverse::after {
+				background: url(down.png);
+				background-size: cover;
+				}
+
+				.scrollup {
+			    width: 80px;
+			    height: 40px;
+			    position: fixed;
+			    bottom: 50px;
+			    right: 100px;
+			    text-indent: 0px
+			    border-radius: 20px;
+			    border-color:black;
+			    border-style:solid;
+			    border-width:1px;
+			    text-align:center;
+			    padding-top:10px;
+			    color:black;  
+			    background-color:white;
+				}
+				<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+
+
+				</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+				
+				</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;"> Total number of works: 6</h4><h4 style="display:inline-block; margin-left:3em;"> Total amount spent: &#8377 97,521</h4>
+		<table class="table table-responsive sortable">
+
+		<thead>
+
+		<tr>
+
+		<th style="width:5%">Sl no.</th>
+
+		<th style="width:48%">Work Details</th>
+
+		<th>Measurement</th>
+
+		<th>Unit</th>
+
+		<th>Rate</th>
+
+		<th>Total Amount</th>
+
+		</tr>
+
+		</thead>
+
+		<tbody>
+		<a href="#" class="scrollup">Go to top</a>
+		<tr><td class = "span1">1</td><td>Supplying High pressure .. watts Metal halide street light luminary suitable for use with high pressure metal halide lamp with integrated control gear. The fitting shall be non corrosive high pressure die cast aluminum housing with toughened glass, low co</td><td>13</td><td>Each</td><td>6,885.00 </td><td>89505.0</td></tr><tr><td class = "span1">2</td><td>Supplying and fixing of class A (medium duty) GI pipe of wall thick ness not less than 3.25mm on pole/wall/drain crossing with necessary clamping arrangements for UG cable of 1.1 KV class.  a) 40mm  </td><td>13</td><td>Each</td><td>244.80 </td><td>3182.4</td></tr><tr><td class = "span1">3</td><td>Wiring for lighting/power circuit using one of  PVC insulated 1100v grade stranded Aluminium unsheathed wire  single core/multi core cable in open or concealed system of wiring .  b) 2.5 sq.mm  </td><td>105</td><td>Mtr</td><td>6.63 </td><td>696.15</td></tr><tr><td class = "span1">4</td><td>e) 10 Sq.mm</td><td>40</td><td>Mtr</td><td>23.46 </td><td>938.4</td></tr><tr><td class = "span1">5</td><td>Open Conduit system  PVC Pipe 20mm dia  </td><td>40</td><td>Mtr</td><td>15.00 </td><td>600.0</td></tr><tr><td class = "span1">6</td><td>Releasing streetlight Fittings TL/SVL/MHL/MVL/1X28/4X24 T-5 Fitted to RCC Poles including Bend ,Clampset etc and Hand over the Released materials to HDMC,Electrical store. Hubli </td><td>13</td><td>Each</td><td>200.00 </td><td>2600.0</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+				width: 24px;
+				height: 24px;
+				}
+				th.sorttable_sorted::after {
+				background: url(up.png);
+				background-size: contain;
+				}
+				th.sorttable_sorted_reverse::after {
+				background: url(down.png);
+				background-size: cover;
+				}
+
+				.scrollup {
+			    width: 80px;
+			    height: 40px;
+			    position: fixed;
+			    bottom: 50px;
+			    right: 100px;
+			    text-indent: 0px
+			    border-radius: 20px;
+			    border-color:black;
+			    border-style:solid;
+			    border-width:1px;
+			    text-align:center;
+			    padding-top:10px;
+			    color:black;  
+			    background-color:white;
+				}
+				<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+
+
+				</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+				
+				</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;"> Total number of works: 6</h4><h4 style="display:inline-block; margin-left:3em;"> Total amount spent: &#8377 59,615</h4>
+		<table class="table table-responsive sortable">
+
+		<thead>
+
+		<tr>
+
+		<th style="width:5%">Sl no.</th>
+
+		<th style="width:48%">Work Details</th>
+
+		<th>Measurement</th>
+
+		<th>Unit</th>
+
+		<th>Rate</th>
+
+		<th>Total Amount</th>
+
+		</tr>
+
+		</thead>
+
+		<tbody>
+		<a href="#" class="scrollup">Go to top</a>
+		<tr><td class = "span1">1</td><td>KSRB 14.6-1: Providing and laying heavy duty cobble stones 60mm thick interlock pavers, using cement and course sand for manufacture of blocks of approved size, shape and colour with a minimum compressive strength of 281 kg per sqm over 50mm thick sand be</td><td>50.41</td><td>Sqm</td><td>928.80 </td><td>46820.808</td></tr><tr><td class = "span1">2</td><td>KSRRB 800-1. Painting two coats after filling the surface with synthetic enamel paint in approved shades on new plastered concrete surfaces, with materials, labour complete as per specifications. MORTH Chapter 8</td><td>123.25</td><td>Sqm</td><td>57.24 </td><td>7054.83</td></tr><tr><td class = "span1">3</td><td>KSRB 15-18.3 : Providing and applying enamel metal paint one coat (excluding priming coat ) on previously painted steel or other metal surface brushing to give an even shade after cleaning oil, grease, dirt and other foreign matter, including cost of mate</td><td>7.83</td><td>Sqm</td><td>52.92 </td><td>414.3636</td></tr><tr><td class = "span1">4</td><td>Providing and fixing RCC name board of size 1.35xk0.60x0.04 mtrs fixed in reinforced cement concrete poles of size 0.10x0.10x2.60mtrs in cement concrete M 20 proportion using 20mm and down size graded metal machine mixed with 10mm dia main steel bars and </td><td>1.00</td><td>Each</td><td>5,184.00 </td><td>5184.0</td></tr><tr><td class = "span1">5</td><td>KSRRB M800-10. Painting new letter and figures of any shade with synthetic enamel paint black or any other approved colour to give an even shade complete as per specifications. (“ii) English and Roman - Hyphen and the like not to be measured and paid for </td><td>1.89</td><td>Sqm</td><td>64.80 </td><td>122.472</td></tr><tr><td class = "span1">6</td><td>KSRRB M800- Painting Letters KSRRB M800-6. Painting two coats on New Concrete Surface:-Painting two coats after filling the surface with synthetic enamel paint in all shades on new plastered concrete surfaces complete as per specifications. MORTH Specific</td><td>50.00</td><td>CUM</td><td>0.43 </td><td>21.5</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

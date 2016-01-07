@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+		  width: 24px;
+		  height: 24px;
+		}
+		th.sorttable_sorted::after {
+		  background: url(up.png);
+		  background-size: contain;
+		}
+		th.sorttable_sorted_reverse::after {
+		  background: url(down.png);
+		  background-size: cover;
+		}</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+
+		<script src="http://maps.googleapis.com/maps/api/js"></script>
+		<script>
+		var src = 'http://hack4hd.org/data/HD-ward-boundaries.kml';
+
+		function initialize() {
+		  var mapProp = {
+			center:new google.maps.LatLng(15.3935685,75.08009570000002),
+			zoom:15,
+			mapTypeId:google.maps.MapTypeId.ROADMAP
+		  };
+		  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+		  var ctaLayer = new google.maps.KmlLayer({
+			url: 'http://hack4hd.org/data/HD-ward-boundaries.kml',
+			map: map
+		  });
+
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+		<script>
+		function worksTotal(){
+		var table = document.getElementById("myTable");
+		var x = table.rows.length;
+		document.getElementById("totalWorks").innerHTML = x
+		}
+</script>
+<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+<style>
+.scrollup {
+    width: 80px;
+    height: 40px;
+    position: fixed;
+    bottom: 50px;
+    right: 100px;
+    text-indent: 0px
+    border-radius: 20px;
+    border-color:black;
+    border-style:solid;
+    border-width:1px;
+    text-align:center;
+    padding-top:10px;
+    color:black;  
+    background-color:white;
+}
+</style>
+
+		</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;margin-left:5em"> Total number of works: 22</h4><h4 style="display:inline-block; margin-left:7em;"> Completed works: 20</h4><h4 style="display:inline-block; margin-left:7em;"> In progress works: 2</h4><h4 style="display:inline-block; margin-left:5em;"> Total amount spent: &#8377 12,91,520</h4>
+	<table class="table table-responsive sortable" id="myTable">
+
+	<thead>
+
+	<tr>
+
+	<th style="width:5%">Ward</th>
+
+	<th style="width:48%">Work Description</th>
+
+	<th>Work Order Date</th>
+
+	<th>Work Completion Date</th>
+
+	<th>Work Type</th>
+
+	<th>Source of Income</th>
+
+	<th style="width:7%">Contractor</th>
+
+	<th>Amount Sanctioned</th>
+
+	<th>Status</th>
+
+	</tr>
+
+	</thead>
+
+	<tbody>
+	<a href="#" class="scrollup">Go to top</a>
+	<tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_72.html" target="_blank">72</a></td><td>Members  Election Dtd 12-5-2014. Expenses for Breakfast, Lunch and Mineral Water</td><td>13-Jun-14</td><td>13-Jun-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor705.html" target="_blank">Shri Krishna Bhavan</a></td><td>43,632</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_72.html" target="_blank">72</a></td><td>Details of Breakfast,tea and coffee, lunch and mineral water for  GB Meeting , Standing Committee and Chairman  election  Bill no 26 Dtd 21-06-2014
+
+</td><td>05-Jul-14</td><td>05-Jul-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor705.html" target="_blank">Shri Krishna Bhavan</a></td><td>68,059</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_72.html" target="_blank">72</a></td><td>Details of Breakfast,tea and coffee, lunch and mineral water for  GB Meeting , Standing Committee Meeting  for the month July 2014 Bill no 32 Dtd 31-07-2014.
+</td><td>04-Sep-14</td><td>04-Sep-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor705.html" target="_blank">Shri Krishna Bhavan</a></td><td>56,324</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_72.html" target="_blank">72</a></td><td>Details of Breakfast,tea and coffee, lunch and mineral water for  GB Meeting , Standing Committee Meeting  for the month August 2014 Bill no41Dtd 22-09-2014.
+
+
+</td><td>26-Sep-14</td><td>26-Sep-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor705.html" target="_blank">Shri Krishna Bhavan</a></td><td>66,002</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_72.html" target="_blank">72</a></td><td>Details of Breakfast,tea and coffee, lunch and mineral water for  GB Meeting , Standing Committee Meeting  for the month September 2014  Bill no 49  Dtd 10-10-2014.
+
+
+</td><td>16-Oct-14</td><td>16-Oct-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor705.html" target="_blank">Shri Krishna Bhavan</a></td><td>49,487</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_72.html" target="_blank">72</a></td><td>Details of Breakfast,tea and coffee, lunch and mineral water for  GB Meeting , Standing Committee Meeting  for the month September 2014  Bill no 50 Dtd 14-10-2014.
+
+
+</td><td>16-Oct-14</td><td>16-Oct-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor705.html" target="_blank">Shri Krishna Bhavan</a></td><td>51,194</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_72.html" target="_blank">72</a></td><td>Details of Breakfast,tea and coffee, lunch and mineral water for  GB Meeting , Standing Committee Meeting  for the month October 2014  Bill no 50 Dtd 14-10-2014.
+
+</td><td>19-Dec-14</td><td>19-Dec-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor705.html" target="_blank">Shri Krishna Bhavan</a></td><td>49,352</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_72.html" target="_blank">72</a></td><td>Details of Breakfast,tea and coffee, lunch and mineral water for  GB Meeting , Standing Committee Meeting  for the month November 2014  Bill no 70 Dtd 24-12-2014.</td><td>03-Jan-15</td><td>03-Jan-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor705.html" target="_blank">Shri Krishna Bhavan</a></td><td>63,279</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_83.html" target="_blank">83</a></td><td>Arrangment of Tipin, tea, water dated on 26-1-2015 Republic day program</td><td>10-Feb-15</td><td>10-Feb-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor705.html" target="_blank">Shri Krishna Bhavan</a></td><td>23,890</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_83.html" target="_blank">83</a></td><td>Arrangment of Tipin, Tea, water Meals for CBUD workshop
+
+</td><td>10-Feb-15</td><td>10-Feb-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor705.html" target="_blank">Shri Krishna Bhavan</a></td><td>31,710</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_72.html" target="_blank">72</a></td><td>Details of Breakfast,tea and coffee, lunch and mineral water for  GB Meeting , Standing Committee Meeting  for the month December 2014  Bill no 87 Dtd 9-2 -2015.
+
+</td><td>11-Feb-15</td><td>11-Feb-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor705.html" target="_blank">Shri Krishna Bhavan</a></td><td>57,575</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_72.html" target="_blank">72</a></td><td>Details of Breakfast,tea and coffee, lunch and mineral water for  GB Meeting , Standing Committee Meeting  for the month  January 2015  Bill no 88 Dtd 9-2 -2015.
+
+</td><td>28-Feb-15</td><td>28-Feb-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor705.html" target="_blank">Shri Krishna Bhavan</a></td><td>99,456</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_72.html" target="_blank">72</a></td><td>Details of Breakfast,tea and coffee, lunch and mineral water for  GB Meeting , Standing Committee Meeting  for the month  February 2015  Bill no 95 Dtd 7-3 -2015.
+
+
+</td><td>13-Mar-15</td><td>13-Mar-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor705.html" target="_blank">Shri Krishna Bhavan</a></td><td>97,593</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_83.html" target="_blank">83</a></td><td>Arrangment of  Meals, Tipin, Tea, water for HDMC Functions & programs</td><td>07-Apr-15</td><td>07-Apr-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor705.html" target="_blank">Shri Krishna Bhavan</a></td><td>21,214</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_72.html" target="_blank">72</a></td><td>Details of Breakfast,tea and coffee, lunch and mineral water for  GB Meeting , Standing Committee Meeting  Bill no  006 Dtd 9-04-2015
+
+</td><td>18-Apr-15</td><td>18-Apr-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor705.html" target="_blank">Shri Krishna Bhavan</a></td><td>47,550</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_72.html" target="_blank">72</a></td><td>Details of Breakfast,tea and coffee, lunch and mineral water for  GB Meeting , Standing Committee Meeting  Bill no  013 Dtd 26-05-2015
+
+</td><td>29-May-15</td><td>29-May-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor705.html" target="_blank">Shri Krishna Bhavan</a></td><td>85,267</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_83.html" target="_blank">83</a></td><td>Arrangment of Tipin, tea, HDMC programs</td><td>24-Jun-15</td><td>24-Jun-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor705.html" target="_blank">Shri Krishna Bhavan</a></td><td>45,196</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_72.html" target="_blank">72</a></td><td>Details of Breakfast,tea and coffee, lunch and mineral water for  GB Meeting , Standing Committee Meeting  Bill no  019 Dtd 30-06-2015
+
+</td><td>04-Jul-15</td><td>04-Jul-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor705.html" target="_blank">Shri Krishna Bhavan</a></td><td>49,284</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_72.html" target="_blank">72</a></td><td>Details of Breakfast,tea and coffee, lunch and mineral water for  GB Meeting , Standing Committee Meeting  Bill no  025 Dtd 20-07-2015
+
+
+</td><td>27-Jul-15</td><td>27-Jul-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor705.html" target="_blank">Shri Krishna Bhavan</a></td><td>90,818</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_83.html" target="_blank">83</a></td><td>Arrangment of 120 Tipin & lunch, water for SWM meeting dated on 23-7-2015</td><td>31-Jul-15</td><td>31-Jul-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor705.html" target="_blank">Shri Krishna Bhavan</a></td><td>7,371</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_72.html" target="_blank">72</a></td><td>Details of Breakfast,tea and coffee, lunch and mineral water for  GB Meeting , Standing Committee Meeting  Bill no  33 Dtd 05-08-2015</td><td>09-Sep-15</td><td>09-Sep-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor705.html" target="_blank">Shri Krishna Bhavan</a></td><td>88,070</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_72.html" target="_blank">72</a></td><td>Details of Breakfast,tea and coffee, lunch and mineral water for  GB Meeting , Standing Committee Meeting  Bill no  044  Dtd 07-09-2015
+
+</td><td>29-Sep-15</td><td>29-Sep-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor705.html" target="_blank">Shri Krishna Bhavan</a></td><td>99,197</td><td style="color:#43ac6a">Completed</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

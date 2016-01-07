@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+				width: 24px;
+				height: 24px;
+				}
+				th.sorttable_sorted::after {
+				background: url(up.png);
+				background-size: contain;
+				}
+				th.sorttable_sorted_reverse::after {
+				background: url(down.png);
+				background-size: cover;
+				}
+
+				.scrollup {
+			    width: 80px;
+			    height: 40px;
+			    position: fixed;
+			    bottom: 50px;
+			    right: 100px;
+			    text-indent: 0px
+			    border-radius: 20px;
+			    border-color:black;
+			    border-style:solid;
+			    border-width:1px;
+			    text-align:center;
+			    padding-top:10px;
+			    color:black;  
+			    background-color:white;
+				}
+				<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+
+
+				</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+				
+				</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;"> Total number of works: 8</h4><h4 style="display:inline-block; margin-left:3em;"> Total amount spent: &#8377 99,629</h4>
+		<table class="table table-responsive sortable">
+
+		<thead>
+
+		<tr>
+
+		<th style="width:5%">Sl no.</th>
+
+		<th style="width:48%">Work Details</th>
+
+		<th>Measurement</th>
+
+		<th>Unit</th>
+
+		<th>Rate</th>
+
+		<th>Total Amount</th>
+
+		</tr>
+
+		</thead>
+
+		<tbody>
+		<a href="#" class="scrollup">Go to top</a>
+		<tr><td class = "span1">1</td><td>Providing and applying ready mix priming coat over concrete/masonry asbestos  cement  sheet/plastered surface including preparing the surface after thoroughly  cleaning, of oil, grease, dirt and other foreign matter, and sand papering including cost of  m</td><td>367.0</td><td>Sqm</td><td>19.96 </td><td>7325.32</td></tr><tr><td class = "span1">2</td><td>Providing  and  applying  painting in two coats with plastic emulsion paint  of  approved  brand on wall surface to give an even approved  shade   after throughly  brushing the surface free  from mortar drops and other  foreign matter  including  preparin</td><td>333.82</td><td>Sqm</td><td>68.64 </td><td>22913.4048</td></tr><tr><td class = "span1">3</td><td>Providing  and  applying  two  coats  with  oil bond  washable  distemper of  approved  brand  and  shade on wall  surface  including priming coat  with  distemper  prime  after throughly  brooming  the  surface  free  from mortar drops and other  foreign</td><td>84.18</td><td>Sqm</td><td>52.00 </td><td>4377.36</td></tr><tr><td class = "span1">4</td><td>extra over item 15.14.1 for applying oil bond washable distamper on ceiling and /or sloping roof as per specification</td><td>84.18</td><td>Sqm</td><td>55.38 </td><td>4661.8884</td></tr><tr><td class = "span1">5</td><td>Applying priner coat over new wood  surface and/or wood  based surface after brushing with ready mixenamel priming paint including preparing the surface after thoroughly cleaning oil, grease, dirt and foreign matter, sand papering and Knotting ready mix p</td><td>78.02</td><td>Sqm</td><td>23.97 </td><td>1870.1394</td></tr><tr><td class = "span1">6</td><td>Providing  and  applying  painting  Two coats (excluding priming coat) on new wood  surface and/or wood  based  surface with  enamel paint to give an even shade after  cleaning  the  surface of all dirt, dust and  foreign matter, sand papering  including </td><td>83.48</td><td>Sqm</td><td>73.84 </td><td>6164.1632</td></tr><tr><td class = "span1">7</td><td>Providing  and finishing  external walls in two coats with water proof  cement paint of approved  brand  and  shade to give  an even  shade  after  thoroughly  brooming  the  surface to remove  all diet  and loose  powdered  material, free  from mortar  d</td><td>300.90</td><td>Sqm</td><td>64.48 </td><td>19402.032</td></tr><tr><td class = "span1">8</td><td>Providing and Laying linolium covering to floors plain or coloured 3.2mm thick sheet / tiles laid with an approved adhesive on sub floor stretching cuting and fixing complete, including cost of material , labour, complete as per specification</td><td>84.18</td><td>Sqm</td><td>391.04 </td><td>32917.7472</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

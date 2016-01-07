@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+				width: 24px;
+				height: 24px;
+				}
+				th.sorttable_sorted::after {
+				background: url(up.png);
+				background-size: contain;
+				}
+				th.sorttable_sorted_reverse::after {
+				background: url(down.png);
+				background-size: cover;
+				}
+
+				.scrollup {
+			    width: 80px;
+			    height: 40px;
+			    position: fixed;
+			    bottom: 50px;
+			    right: 100px;
+			    text-indent: 0px
+			    border-radius: 20px;
+			    border-color:black;
+			    border-style:solid;
+			    border-width:1px;
+			    text-align:center;
+			    padding-top:10px;
+			    color:black;  
+			    background-color:white;
+				}
+				<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+
+
+				</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+				
+				</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;"> Total number of works: 5</h4><h4 style="display:inline-block; margin-left:3em;"> Total amount spent: &#8377 6,91,369</h4>
+		<table class="table table-responsive sortable">
+
+		<thead>
+
+		<tr>
+
+		<th style="width:5%">Sl no.</th>
+
+		<th style="width:48%">Work Details</th>
+
+		<th>Measurement</th>
+
+		<th>Unit</th>
+
+		<th>Rate</th>
+
+		<th>Total Amount</th>
+
+		</tr>
+
+		</thead>
+
+		<tbody>
+		<a href="#" class="scrollup">Go to top</a>
+		<tr><td class = "span1">1</td><td> Wet Mix Macadam KSRRB M400-17. Providing, laying, spreading and compacting graded stones aggregate to wet mix macadam specifications including pre mixing the material with water at OMC in mechanical mix plant carriage of mixed method of tipper to site, l</td><td>32.1</td><td>CUM</td><td>1,863.00 </td><td>59802.3</td></tr><tr><td class = "span1">2</td><td>Primer Coat/Tack Coat KSRRB M500-6. Providing and applying primer coat with bitumen emulsion on prepared surface of granular base including clearing of road surface and spraying primer at the rate of 0.60 kg / sqm using mechanical means complete as per sp</td><td>321</td><td>Sqm</td><td>38.00 </td><td>12198.0</td></tr><tr><td class = "span1">3</td><td>Filling Pot-holes and Patch Repairs with Open-Graded Premix Surfacing, 20 mm KSRRB M3000-4. Removal of all failed material, trimming of completed excavation to provide firm vertical faces, cleaning of surface, painting of tack coat on the sides and base o</td><td>1484.47</td><td>Sqm</td><td>154.50 </td><td>229350.615</td></tr><tr><td class = "span1">4</td><td>Tack Coat:- Providing and applying tack coat with bitumen emulsion using emulsion pressure distributor at the rate of 0.20 kg per sqm on the prepared bituminous/granular surface cleaned with mechancial broom. complete as per specifications. MORTH Specific</td><td>1805.47</td><td>Sqm</td><td>10.50 </td><td>18957.435</td></tr><tr><td class = "span1">5</td><td>Semi dense bituminous concrete KSRRB M500-18. Providing and laying semi dense bituminous concrete with 100-120 TPH batch type HMP producing an average output of 75 tonnes per hour using crushed aggregates of specified grading, premixed with bituminous bin</td><td>37.11</td><td>CUM</td><td>9,999.00 </td><td>371062.89</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+				width: 24px;
+				height: 24px;
+				}
+				th.sorttable_sorted::after {
+				background: url(up.png);
+				background-size: contain;
+				}
+				th.sorttable_sorted_reverse::after {
+				background: url(down.png);
+				background-size: cover;
+				}
+
+				.scrollup {
+			    width: 80px;
+			    height: 40px;
+			    position: fixed;
+			    bottom: 50px;
+			    right: 100px;
+			    text-indent: 0px
+			    border-radius: 20px;
+			    border-color:black;
+			    border-style:solid;
+			    border-width:1px;
+			    text-align:center;
+			    padding-top:10px;
+			    color:black;  
+			    background-color:white;
+				}
+				<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+
+
+				</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+				
+				</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;"> Total number of works: 9</h4><h4 style="display:inline-block; margin-left:3em;"> Total amount spent: &#8377 2,58,456</h4>
+		<table class="table table-responsive sortable">
+
+		<thead>
+
+		<tr>
+
+		<th style="width:5%">Sl no.</th>
+
+		<th style="width:48%">Work Details</th>
+
+		<th>Measurement</th>
+
+		<th>Unit</th>
+
+		<th>Rate</th>
+
+		<th>Total Amount</th>
+
+		</tr>
+
+		</thead>
+
+		<tbody>
+		<a href="#" class="scrollup">Go to top</a>
+		<tr><td class = "span1">1</td><td>File No. HDMC:40:09:086:05/12-13/14-15  Project Engineer (Software Programmer)</td><td>02</td><td>Each</td><td>31,680.00 </td><td>63360.0</td></tr><tr><td class = "span1">2</td><td>Project Engineer (Network)</td><td>01</td><td>Each</td><td>31,680.00 </td><td>31680.0</td></tr><tr><td class = "span1">3</td><td> Project Assistant (Hardware / Network)</td><td>01</td><td>Each</td><td>18,000.00 </td><td>18000.0</td></tr><tr><td class = "span1">4</td><td>Principal Investigator</td><td>01</td><td>Each</td><td>4,320.00 </td><td>4320.0</td></tr><tr><td class = "span1">5</td><td>Total</td><td>00</td><td>--</td><td>117,360.00 </td><td>0.0</td></tr><tr><td class = "span1">6</td><td> Service Charges @ 7% on Rs.1,17,360.00</td><td>00</td><td>--</td><td>8,215.00 </td><td>0.0</td></tr><tr><td class = "span1">7</td><td>Total (A+Sl.No.6)=1,17,360+8215</td><td>01</td><td>Each</td><td>125,575.00 </td><td>125575.0</td></tr><tr><td class = "span1">8</td><td>Service Taxes @ 12.36 on Rs. 1,25,575 .00      </td><td>01</td><td>Each</td><td>15,521.00 </td><td>15521.0</td></tr><tr><td class = "span1">9</td><td>Grand Total = (Per month Rs. 1,41,096/-)  Per Year = 1,41,096x12=Rs.16,93,152/-</td><td>00</td><td>--</td><td>141,096.00 </td><td>0.0</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

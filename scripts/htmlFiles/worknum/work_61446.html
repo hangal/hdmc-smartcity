@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+				width: 24px;
+				height: 24px;
+				}
+				th.sorttable_sorted::after {
+				background: url(up.png);
+				background-size: contain;
+				}
+				th.sorttable_sorted_reverse::after {
+				background: url(down.png);
+				background-size: cover;
+				}
+
+				.scrollup {
+			    width: 80px;
+			    height: 40px;
+			    position: fixed;
+			    bottom: 50px;
+			    right: 100px;
+			    text-indent: 0px
+			    border-radius: 20px;
+			    border-color:black;
+			    border-style:solid;
+			    border-width:1px;
+			    text-align:center;
+			    padding-top:10px;
+			    color:black;  
+			    background-color:white;
+				}
+				<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+
+
+				</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+				
+				</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;"> Total number of works: 7</h4><h4 style="display:inline-block; margin-left:3em;"> Total amount spent: &#8377 17,552</h4>
+		<table class="table table-responsive sortable">
+
+		<thead>
+
+		<tr>
+
+		<th style="width:5%">Sl no.</th>
+
+		<th style="width:48%">Work Details</th>
+
+		<th>Measurement</th>
+
+		<th>Unit</th>
+
+		<th>Rate</th>
+
+		<th>Total Amount</th>
+
+		</tr>
+
+		</thead>
+
+		<tbody>
+		<a href="#" class="scrollup">Go to top</a>
+		<tr><td class = "span1">1</td><td>Construction of manhole of 1.20M dia in conical shape @ top including   laying PCC M-10 proportion with 2.50 cm size granite jelly thickness of concrete being 0.25 m and offset 0.15 m and brick work in CM 1:6 proportion.0.35 M  thick including providing a</td><td>3.77</td><td>0.30M</td><td>2,141.58 </td><td>8073.7566</td></tr><tr><td class = "span1">2</td><td>KSRB 6-1.3 : Providing and constructing brunt brick masonry for basement and superstructure  with approved quality of non modular bricks of standard size of class designation 35 with cement mortar 1:6 including cost of all materials, labour charges,  scaf</td><td>0.79</td><td>CUM</td><td>3,970.72 </td><td>3136.8688</td></tr><tr><td class = "span1">3</td><td>KSRB 15.3.3 Providing 12mm thick cement plaster in single coat with cement mortar 1:4 to brick masonary including rounding off corners wherever required smooth rendering Providing and removing scaffolding including cost of materials labour curing complete</td><td>2.52</td><td>Sqm</td><td>123.76 </td><td>311.8752</td></tr><tr><td class = "span1">4</td><td>KSRB 4.2.3 : Providing and laying in position reinforced cement concrete of mix M15 with OPC cement @ 240kgs, with 20mm and down size graded granite metal coarse aggregates @0.878cum and fine aggregtes @ 0.459cum, machine mixed, concrete laid in layers no</td><td>0.12</td><td>CUM</td><td>4,921.28 </td><td>590.5536</td></tr><tr><td class = "span1">5</td><td>Providing removing centering, shuttering, propping etc., and removal of form work for Gutters, for mass concrete including cost of all materials, labour etc., complete as per Specifications. </td><td>0.70</td><td>Sqm</td><td>101.92 </td><td>71.344</td></tr><tr><td class = "span1">6</td><td>KSRB 4-9.2 : Providing TMT steel  reinforcement for R.C.C work including staightening cutting bending hooking placing in position lapping and /or welding  wherever required tying with binding wire and anchoring to the adjoining members wherever necessary </td><td>0.12</td><td>Quintal</td><td>7,265.44 </td><td>871.8528</td></tr><tr><td class = "span1">7</td><td>Supplying and fixing of FRC Frame & Covers  </td><td>5.00</td><td>Nos</td><td>900.00 </td><td>4500.0</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

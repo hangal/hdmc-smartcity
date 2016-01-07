@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+				width: 24px;
+				height: 24px;
+				}
+				th.sorttable_sorted::after {
+				background: url(up.png);
+				background-size: contain;
+				}
+				th.sorttable_sorted_reverse::after {
+				background: url(down.png);
+				background-size: cover;
+				}
+
+				.scrollup {
+			    width: 80px;
+			    height: 40px;
+			    position: fixed;
+			    bottom: 50px;
+			    right: 100px;
+			    text-indent: 0px
+			    border-radius: 20px;
+			    border-color:black;
+			    border-style:solid;
+			    border-width:1px;
+			    text-align:center;
+			    padding-top:10px;
+			    color:black;  
+			    background-color:white;
+				}
+				<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+
+
+				</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+				
+				</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;"> Total number of works: 10</h4><h4 style="display:inline-block; margin-left:3em;"> Total amount spent: &#8377 33,852</h4>
+		<table class="table table-responsive sortable">
+
+		<thead>
+
+		<tr>
+
+		<th style="width:5%">Sl no.</th>
+
+		<th style="width:48%">Work Details</th>
+
+		<th>Measurement</th>
+
+		<th>Unit</th>
+
+		<th>Rate</th>
+
+		<th>Total Amount</th>
+
+		</tr>
+
+		</thead>
+
+		<tbody>
+		<a href="#" class="scrollup">Go to top</a>
+		<tr><td class = "span1">1</td><td>Transformer structure materials for 25 KVA (For double pole),Including Labour Charges.</td><td>01</td><td>Set</td><td>21,149.00 </td><td>21149.0</td></tr><tr><td class = "span1">2</td><td>Earthing Materials, Including Labour Charges.</td><td>03</td><td>Set</td><td>2,406.00 </td><td>7218.0</td></tr><tr><td class = "span1">3</td><td>45 KN  Disc Insulators</td><td>06</td><td>Nos</td><td>300.00 </td><td>1800.0</td></tr><tr><td class = "span1">4</td><td>DOLO Set 11 Kvclass,Including Labour Charges.</td><td>01</td><td>Set</td><td>858.00 </td><td>858.0</td></tr><tr><td class = "span1">5</td><td>Misc Materials Like G.I.Wire</td><td>01</td><td>L/S</td><td>467.00 </td><td>467.0</td></tr><tr><td class = "span1">6</td><td>Labour Charges For Releasing of conductor</td><td>0.24</td><td>Km</td><td>1,662.30 </td><td>398.952</td></tr><tr><td class = "span1">7</td><td>Labour Charges For Re-stringing of Conductor</td><td>0.24</td><td>Km</td><td>1,847.00 </td><td>443.28</td></tr><tr><td class = "span1">8</td><td>Labour Charges For Releasing Single Pole  Transformer structure materials</td><td>01</td><td>Set</td><td>648.00 </td><td>648.0</td></tr><tr><td class = "span1">9</td><td>Labour Charges For Transformer Re-Installation</td><td>01</td><td>Set</td><td>720.00 </td><td>720.0</td></tr><tr><td class = "span1">10</td><td>Labour Charges For Releasing 11 KV DOLO Set </td><td>01</td><td>Set</td><td>151.20 </td><td>151.2</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+		  width: 24px;
+		  height: 24px;
+		}
+		th.sorttable_sorted::after {
+		  background: url(up.png);
+		  background-size: contain;
+		}
+		th.sorttable_sorted_reverse::after {
+		  background: url(down.png);
+		  background-size: cover;
+		}</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+
+		<script src="http://maps.googleapis.com/maps/api/js"></script>
+		<script>
+		var src = 'http://hack4hd.org/data/HD-ward-boundaries.kml';
+
+		function initialize() {
+		  var mapProp = {
+			center:new google.maps.LatLng(15.3935685,75.08009570000002),
+			zoom:15,
+			mapTypeId:google.maps.MapTypeId.ROADMAP
+		  };
+		  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+		  var ctaLayer = new google.maps.KmlLayer({
+			url: 'http://hack4hd.org/data/HD-ward-boundaries.kml',
+			map: map
+		  });
+
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+		<script>
+		function worksTotal(){
+		var table = document.getElementById("myTable");
+		var x = table.rows.length;
+		document.getElementById("totalWorks").innerHTML = x
+		}
+</script>
+<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+<style>
+.scrollup {
+    width: 80px;
+    height: 40px;
+    position: fixed;
+    bottom: 50px;
+    right: 100px;
+    text-indent: 0px
+    border-radius: 20px;
+    border-color:black;
+    border-style:solid;
+    border-width:1px;
+    text-align:center;
+    padding-top:10px;
+    color:black;  
+    background-color:white;
+}
+</style>
+
+		</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;margin-left:5em"> Total number of works: 40</h4><h4 style="display:inline-block; margin-left:7em;"> Completed works: 39</h4><h4 style="display:inline-block; margin-left:7em;"> In progress works: 1</h4><h4 style="display:inline-block; margin-left:5em;"> Total amount spent: &#8377 1,98,52,452</h4>
+	<table class="table table-responsive sortable" id="myTable">
+
+	<thead>
+
+	<tr>
+
+	<th style="width:5%">Ward</th>
+
+	<th style="width:48%">Work Description</th>
+
+	<th>Work Order Date</th>
+
+	<th>Work Completion Date</th>
+
+	<th>Work Type</th>
+
+	<th>Source of Income</th>
+
+	<th style="width:7%">Contractor</th>
+
+	<th>Amount Sanctioned</th>
+
+	<th>Status</th>
+
+	</tr>
+
+	</thead>
+
+	<tbody>
+	<a href="#" class="scrollup">Go to top</a>
+	<tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_11.html" target="_blank">11</a></td><td>Zonal office No.2 Office Staff  General Administration Dept - 00  Payment of bill for the Month of Apr-2014</td><td>23-Apr-14</td><td>23-Apr-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2306.html" target="_blank">Zonal Officer No.2</a></td><td>25,00,000</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_11.html" target="_blank">11</a></td><td>Zonal office No.2 Office Staff  PWD Dept - 20  Payment of bill for the month of  Apr-2014</td><td>23-Apr-14</td><td>23-Apr-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2306.html" target="_blank">Zonal Officer No.2</a></td><td>10,65,547</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_11.html" target="_blank">11</a></td><td>Zonal office No.2 Office Staff  Health Dept - 31 Payment of bill for the month of  Apr-2014</td><td>23-Apr-14</td><td>23-Apr-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2306.html" target="_blank">Zonal Officer No.2</a></td><td>2,80,000</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_11.html" target="_blank">11</a></td><td>Zonal office No.2 Office Staff  Tax Dept - 91 Payment of bill for the month of Apr- 2014</td><td>23-Apr-14</td><td>23-Apr-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2306.html" target="_blank">Zonal Officer No.2</a></td><td>20,00,000</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_11.html" target="_blank">11</a></td><td>Zonal office No.2 P K Staff  Health Section-31 Payment of bill for the month of Apr- 2014</td><td>23-Apr-14</td><td>23-Apr-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2306.html" target="_blank">Zonal Officer No.2</a></td><td>1,10,07,527</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_11.html" target="_blank">11</a></td><td>Zonal office No.2 Govt Staff   PWD Dept -20  Payment of bill for the month of  Apr-2014</td><td>23-Apr-14</td><td>23-Apr-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2306.html" target="_blank">Zonal Officer No.2</a></td><td>4,20,000</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_11.html" target="_blank">11</a></td><td>Zonal office No.2 Govt Staff  Health Dept - 31 Payment of bill for the month of Apr-2014</td><td>23-Apr-14</td><td>23-Apr-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2306.html" target="_blank">Zonal Officer No.2</a></td><td>2,90,000</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_11.html" target="_blank">11</a></td><td>Dharwad division Zonal no 02  Payment regarding Office Staff  DA Difference Bill for the month of 01-01-2014 to 31-03-2014.</td><td>23-Apr-14</td><td>23-Apr-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2306.html" target="_blank">Zonal Officer No.2</a></td><td>24,939</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_11.html" target="_blank">11</a></td><td>Dharwad division Zonal no 02  Payment regarding PK Staff  DA Difference Bill for the month of 01-01-2014 to 31-03-2014</td><td>23-Apr-14</td><td>23-Apr-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2306.html" target="_blank">Zonal Officer No.2</a></td><td>1,11,516</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_11.html" target="_blank">11</a></td><td>Zonal No.02 PWD Govt Staff  DA Diffrence bill from  dt:01-01-2014 to 31-03-2014.</td><td>23-Apr-14</td><td>23-Apr-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2306.html" target="_blank">Zonal Officer No.2</a></td><td>3,888</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_11.html" target="_blank">11</a></td><td>Zonal No.02 Health- 31 Govt Staff  DA Diffrence bill from  dt:01-01-2014 to 31-03-2014.</td><td>23-Apr-14</td><td>23-Apr-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2306.html" target="_blank">Zonal Officer No.2</a></td><td>2,394</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_11.html" target="_blank">11</a></td><td>Zonal No.02 PWD -20 DA Diffrence bill from  dt:01-01-2014 to 31-03-2014.</td><td>25-Apr-14</td><td>25-Apr-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2306.html" target="_blank">Zonal Officer No.2</a></td><td>9,885</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_11.html" target="_blank">11</a></td><td>Zonal No.02 Health-31  DA Diffrence bill from  dt:01-01-2014 to 31-03-2014.
+
+</td><td>25-Apr-14</td><td>25-Apr-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2306.html" target="_blank">Zonal Officer No.2</a></td><td>708</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_11.html" target="_blank">11</a></td><td>Zonal No.02 Tax-91 DA Diffrence bill from  dt:01-01-2014 to 31-03-2014.
+
+</td><td>25-Apr-14</td><td>25-Apr-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2306.html" target="_blank">Zonal Officer No.2</a></td><td>19,086</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_11.html" target="_blank">11</a></td><td>Regarding Dr:Sir M Visweshwarayya, Puttali Advance Adjustment  Bill</td><td>14-May-14</td><td>14-May-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2306.html" target="_blank">Zonal Officer No.2</a></td><td>37,976</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_11.html" target="_blank">11</a></td><td>Dharwad division Zonal no 02  PK Staff Payment regarding  15 & 20 Year Time Bond  Bill.</td><td>14-May-14</td><td>14-May-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2306.html" target="_blank">Zonal Officer No.2</a></td><td>39,714</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_11.html" target="_blank">11</a></td><td>Dharwad division Zonal no 02  Payment regarding Surrender Leave encashment Bill of Office Staff for the year 2014-15</td><td>30-May-14</td><td>30-May-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2306.html" target="_blank">Zonal Officer No.2</a></td><td>41,195</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_11.html" target="_blank">11</a></td><td>Dharwad division Zonal no 02  Payment regarding Surrender Leave encashment Bill of Office Staff for the year 2014-15</td><td>30-May-14</td><td>30-May-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2306.html" target="_blank">Zonal Officer No.2</a></td><td>39,327</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_11.html" target="_blank">11</a></td><td>Dharwad division Zonal no 02  Payment regarding Surrender Leave encashment Bill of Office Staff for the year 2014-15</td><td>30-May-14</td><td>30-May-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2306.html" target="_blank">Zonal Officer No.2</a></td><td>76,028</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_11.html" target="_blank">11</a></td><td>Dharwad division Zonal no 02  Office staff Shri D K Savadatti, SDC, Payment regarding  10 & 15 Year Time Bond  Bill.</td><td>13-Jun-14</td><td>13-Jun-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2306.html" target="_blank">Zonal Officer No.2</a></td><td>42,712</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_11.html" target="_blank">11</a></td><td>Dharwad division Zonal no 02  PK Staff Payment regarding 20 Year Time Bond  Bill.</td><td>15-Jul-14</td><td>15-Jul-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2306.html" target="_blank">Zonal Officer No.2</a></td><td>48,605</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_11.html" target="_blank">11</a></td><td>Zonal office No.2 Govt Staff   Function Code:00 -  Payment of bill for the month of July-2014</td><td>23-Jul-14</td><td>23-Jul-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2306.html" target="_blank">Zonal Officer No.2</a></td><td>5,00,000</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_11.html" target="_blank">11</a></td><td>Dharwad division Zonal no 02  PK Staff Shri Hanumant Urf Hanumantappa S Madar Urf Hosamani Payment regarding  15 & 20 Year Time Bond  Bill.</td><td>26-Jul-14</td><td>26-Jul-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2306.html" target="_blank">Zonal Officer No.2</a></td><td>38,238</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_11.html" target="_blank">11</a></td><td>Dharwad division Zonal no 02  PK Staff Shri Ravi S Madar Payment regarding  July 2014 Salary Bill.</td><td>02-Aug-14</td><td>02-Aug-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2306.html" target="_blank">Zonal Officer No.2</a></td><td>17,923</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_11.html" target="_blank">11</a></td><td>Payment of Ganesh Festival adwance bill of Office staff of Z No.2 Dharwad</td><td>18-Aug-14</td><td>18-Aug-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2306.html" target="_blank">Zonal Officer No.2</a></td><td>65,000</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_11.html" target="_blank">11</a></td><td>Dharwad division Zonal no 02  PK Staff Payment of Dasar Festival adwance bill of PK staff of Z No.2 Dharwad
+
+</td><td>12-Sep-14</td><td>12-Sep-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2306.html" target="_blank">Zonal Officer No.2</a></td><td>1,90,000</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_11.html" target="_blank">11</a></td><td>Payment of Special allowence of PK staff of Z No.2 Dharwad 2014-15</td><td>15-Sep-14</td><td>15-Sep-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2306.html" target="_blank">Zonal Officer No.2</a></td><td>1,33,000</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_11.html" target="_blank">11</a></td><td>Expenditure of Rs 24898/- is adjustment and relesing under Imprest amount Rs 25000/- of Asst cmr No2</td><td>15-Sep-14</td><td>15-Sep-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2306.html" target="_blank">Zonal Officer No.2</a></td><td>24,898</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_9.html" target="_blank">9</a></td><td>Payment of Special allowence of PK staff of Z No.2 Dharwad 2014-15</td><td>18-Sep-14</td><td>18-Sep-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2306.html" target="_blank">Zonal Officer No.2</a></td><td>7,000</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_11.html" target="_blank">11</a></td><td>Expenditure of Rs 24838/- is adjustment and relesing under Imprest amount Rs 25000/- of Asst cmr No2</td><td>07-Nov-14</td><td>07-Nov-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2306.html" target="_blank">Zonal Officer No.2</a></td><td>24,838</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_11.html" target="_blank">11</a></td><td>Dharwad division Zonal no 02  Payment regarding Surrender Leav Encashment  Shri Mahantesh B Maygeri (Govt Staff) for the month of dt:Aug 2014</td><td>19-Nov-14</td><td>19-Nov-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2306.html" target="_blank">Zonal Officer No.2</a></td><td>9,784</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_11.html" target="_blank">11</a></td><td>Dharwad division zonal No.02, Govt staff Shri Chandrahas M Bandi (AC02) Waiting Fild Bill for the month of 18-03-2013 to 30-06-2013 and dt:01-07-2013 to 10-07-2013
+</td><td>01-Jan-15</td><td>01-Jan-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2306.html" target="_blank">Zonal Officer No.2</a></td><td>1,47,381</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_11.html" target="_blank">11</a></td><td>Dharwad division Zonal no 02  Payment regarding Office Staff  Smt Vidyavati R Telagar, CAO, DA Difference Bill for the month of 06-08-2014 to 30-09-2014.</td><td>05-Jan-15</td><td>05-Jan-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2306.html" target="_blank">Zonal Officer No.2</a></td><td>1,735</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_11.html" target="_blank">11</a></td><td>Dharwad division Zonal no 02  Payment regarding Office Staff  Smt Vidyavati R Telagar, CAO, 87 Days Diff Salary Bill</td><td>05-Jan-15</td><td>05-Jan-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2306.html" target="_blank">Zonal Officer No.2</a></td><td>90,653</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_11.html" target="_blank">11</a></td><td>Dharwad Division Zonal No.02, Dif Bill for Smt Anjanamma R Kondapalli for the month of Nov 2014 15 days Medical Leave Salary Bill.</td><td>08-Jan-15</td><td>08-Jan-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2306.html" target="_blank">Zonal Officer No.2</a></td><td>10,842</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_11.html" target="_blank">11</a></td><td>Dharwad division Zonal no 02  PK Staff Shri Kareppa Mareppa Madar Payment regarding   Nov-2014 Salary Bill.
+</td><td>09-Feb-15</td><td>09-Feb-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2306.html" target="_blank">Zonal Officer No.2</a></td><td>18,806</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_11.html" target="_blank">11</a></td><td>Dharwad division Zonal no 02, Shri Ravi S Madar  PK Staff Payment regarding  10 Year Time Bond  Bill.
+</td><td>09-Feb-15</td><td>09-Feb-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2306.html" target="_blank">Zonal Officer No.2</a></td><td>10,977</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_11.html" target="_blank">11</a></td><td>Dharwad Division Zonal No.02,PKs 21dayes Special Holiday Bill</td><td>04-Mar-15</td><td>04-Mar-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2306.html" target="_blank">Zonal Officer No.2</a></td><td>35,390</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_11.html" target="_blank">11</a></td><td>Dharwad division Zonal no 02  Payment regarding Surrender Leave encashment Bill of PK Staff for the year 2015-16 (31)
+</td><td>09-Apr-15</td><td>09-Apr-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2306.html" target="_blank">Zonal Officer No.2</a></td><td>4,40,100</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_11.html" target="_blank">11</a></td><td>Dharwad Division Zonal No.02, Other general expenses & Printing and stationary Adjustment of advance Amount.
+</td><td>02-May-15</td><td>02-May-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2306.html" target="_blank">Zonal Officer No.2</a></td><td>24,840</td><td style="color:#43ac6a">Completed</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

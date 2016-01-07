@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+				width: 24px;
+				height: 24px;
+				}
+				th.sorttable_sorted::after {
+				background: url(up.png);
+				background-size: contain;
+				}
+				th.sorttable_sorted_reverse::after {
+				background: url(down.png);
+				background-size: cover;
+				}
+
+				.scrollup {
+			    width: 80px;
+			    height: 40px;
+			    position: fixed;
+			    bottom: 50px;
+			    right: 100px;
+			    text-indent: 0px
+			    border-radius: 20px;
+			    border-color:black;
+			    border-style:solid;
+			    border-width:1px;
+			    text-align:center;
+			    padding-top:10px;
+			    color:black;  
+			    background-color:white;
+				}
+				<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+
+
+				</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+				
+				</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;"> Total number of works: 8</h4><h4 style="display:inline-block; margin-left:3em;"> Total amount spent: &#8377 4,99,454</h4>
+		<table class="table table-responsive sortable">
+
+		<thead>
+
+		<tr>
+
+		<th style="width:5%">Sl no.</th>
+
+		<th style="width:48%">Work Details</th>
+
+		<th>Measurement</th>
+
+		<th>Unit</th>
+
+		<th>Rate</th>
+
+		<th>Total Amount</th>
+
+		</tr>
+
+		</thead>
+
+		<tbody>
+		<a href="#" class="scrollup">Go to top</a>
+		<tr><td class = "span1">1</td><td>Scarifying the surface and dressing KSRRB 300-44 Scarifying top bituminous surface or surface dressing or premix carpet including picking up scarified materials, stacking of old serviceable materials by manual means including cost of all abour charges com</td><td>482.16</td><td>Sqm</td><td>20.00 </td><td>9643.2</td></tr><tr><td class = "span1">2</td><td>Compaction KSRRB 300-58. Compaction of original ground with maximum of 6 passes of 8 to 10 tonnes power roller including filling in depression occuring during rolling including cost of all labour, HOM of machinery complete as per specifications Including </td><td>482.16</td><td>Sqm</td><td>3.99 </td><td>1923.8184</td></tr><tr><td class = "span1">3</td><td>Construction of Embankment with Material Gravel/ Murrum. KSRRB M300-53. Construction of embankment with approved material Gravel/Murrum with all lifts and leads, transporting to site, spreading, grading to required slope and compacting to meet requirement</td><td>72.32</td><td>CUM</td><td>456.84 </td><td>33038.6688</td></tr><tr><td class = "span1">4</td><td>Providing and removing centering, shuttering, strutting, propping etc., and removal of form work for vertical surface such as walls at any thickness, including attached pilasters, buttresses, plinth and string courses cost of all materials, labour complet</td><td>52.81</td><td>Sqm</td><td>267.84 </td><td>14144.6304</td></tr><tr><td class = "span1">5</td><td>Providing and laying in position plain cement concrete of mix M7.5 with OPC cement @ 180kgs, with 40mm and down size graded granite metal coarse aggregates @0.85cum and fine aggregtes @ 0.57cum machine mixed, machine mixed, concrete laid in layers not exc</td><td>48.22</td><td>CUM</td><td>4,619.16 </td><td>222735.8952</td></tr><tr><td class = "span1">6</td><td>Providing and laying in position plain cement concrete of mix M15 with cement @ 240kgs, with 20mm and down size graded granite metal coarse aggregates @0.878cum and fine aggregtes @ 0.459cum, machine mixed, concrete laid in layers not exceeding 15 cms. th</td><td>36.16</td><td>CUM</td><td>5,175.36 </td><td>187141.0176</td></tr><tr><td class = "span1">7</td><td>Construction of manhole of 1.2M dia in conical shape at top including laying PCC M10 proportion with 2.5 cm size granite jelly thickness of thick including providing and fixing C.I steps at 30cm apart PCC. M15 and plastered with CM 1:4 prop 1.25 cm thick </td><td>2.00</td><td>Nos</td><td>14,333.00 </td><td>28666.0</td></tr><tr><td class = "span1">8</td><td>Extra rebate for every 0.3 mtr height of manhole chamber. including loading and unloading including all lead and lifts, charges and as directed by Engineer incharge of the work Including loading and unloading Including all lead & lifts, loading & unloadin</td><td>1</td><td>Nos</td><td>2,164.00 </td><td>2164.0</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

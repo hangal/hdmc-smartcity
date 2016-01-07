@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+		  width: 24px;
+		  height: 24px;
+		}
+		th.sorttable_sorted::after {
+		  background: url(up.png);
+		  background-size: contain;
+		}
+		th.sorttable_sorted_reverse::after {
+		  background: url(down.png);
+		  background-size: cover;
+		}</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+
+		<script src="http://maps.googleapis.com/maps/api/js"></script>
+		<script>
+		var src = 'http://hack4hd.org/data/HD-ward-boundaries.kml';
+
+		function initialize() {
+		  var mapProp = {
+			center:new google.maps.LatLng(15.3935685,75.08009570000002),
+			zoom:15,
+			mapTypeId:google.maps.MapTypeId.ROADMAP
+		  };
+		  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+		  var ctaLayer = new google.maps.KmlLayer({
+			url: 'http://hack4hd.org/data/HD-ward-boundaries.kml',
+			map: map
+		  });
+
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+		<script>
+		function worksTotal(){
+		var table = document.getElementById("myTable");
+		var x = table.rows.length;
+		document.getElementById("totalWorks").innerHTML = x
+		}
+</script>
+<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+<style>
+.scrollup {
+    width: 80px;
+    height: 40px;
+    position: fixed;
+    bottom: 50px;
+    right: 100px;
+    text-indent: 0px
+    border-radius: 20px;
+    border-color:black;
+    border-style:solid;
+    border-width:1px;
+    text-align:center;
+    padding-top:10px;
+    color:black;  
+    background-color:white;
+}
+</style>
+
+		</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;margin-left:5em"> Total number of works: 36</h4><h4 style="display:inline-block; margin-left:7em;"> Completed works: 32</h4><h4 style="display:inline-block; margin-left:7em;"> In progress works: 4</h4><h4 style="display:inline-block; margin-left:5em;"> Total amount spent: &#8377 17,32,168</h4>
+	<table class="table table-responsive sortable" id="myTable">
+
+	<thead>
+
+	<tr>
+
+	<th style="width:5%">Ward</th>
+
+	<th style="width:48%">Work Description</th>
+
+	<th>Work Order Date</th>
+
+	<th>Work Completion Date</th>
+
+	<th>Work Type</th>
+
+	<th>Source of Income</th>
+
+	<th style="width:7%">Contractor</th>
+
+	<th>Amount Sanctioned</th>
+
+	<th>Status</th>
+
+	</tr>
+
+	</thead>
+
+	<tbody>
+	<a href="#" class="scrollup">Go to top</a>
+	<tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_7.html" target="_blank">7</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_64688.html" target="_blank">Regarding Drain Work At Aadhi Shakthi Colony & Aadhi Shakthi Nagar. in ward no 7</a></td><td>01-Jul-14</td><td>01-Aug-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype3.html" target="_blank">Emergency</td><td>Emergency Fund</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor1556.html" target="_blank">Khaza Hussain A. K.</a></td><td>35,200</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_6.html" target="_blank">6</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_65650.html" target="_blank">Regading Drain Work At Kaddi Oni. & Kumbar Oni. in ward no 6</a></td><td>13-Aug-14</td><td>12-Sep-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype3.html" target="_blank">Emergency</td><td>Emergency Fund</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor1556.html" target="_blank">Khaza Hussain A. K.</a></td><td>16,624</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_9.html" target="_blank">9</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_66781.html" target="_blank">Regarding Drain Work At Hosa Oni. in ward no 9</a></td><td>14-Oct-14</td><td>13-Nov-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype3.html" target="_blank">Emergency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor1556.html" target="_blank">Khaza Hussain A. K.</a></td><td>11,450</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_7.html" target="_blank">7</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_66784.html" target="_blank">Regarding Drain Work At Mallikarjun Nagar & Near  Madihal Last Bus Stop. in ward no 7</a></td><td>14-Oct-14</td><td>13-Nov-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype3.html" target="_blank">Emergency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor1556.html" target="_blank">Khaza Hussain A. K.</a></td><td>20,800</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_6.html" target="_blank">6</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_66873.html" target="_blank">Regarding Drain Work At Anthappan Gudi To Kanti Oni Circle. in ward no 6</a></td><td>16-Oct-14</td><td>15-Jan-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype1.html" target="_blank">Capital</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor1556.html" target="_blank">Khaza Hussain A. K.</a></td><td>1,37,879</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_17.html" target="_blank">17</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_67906.html" target="_blank">Providing of hume pipe at w no 17 near CB Nagar Dharwad</a></td><td>21-Nov-14</td><td>21-Dec-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype3.html" target="_blank">Emergency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor1556.html" target="_blank">Khaza Hussain A. K.</a></td><td>48,500</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_6.html" target="_blank">6</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_68239.html" target="_blank">Regarding Drain Work At Penadar Oni Near Shri Dalavayi Residence in ward no 6</a></td><td>10-Dec-14</td><td>09-Jan-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype3.html" target="_blank">Emergency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor1556.html" target="_blank">Khaza Hussain A. K.</a></td><td>35,720</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_6.html" target="_blank">6</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_68244.html" target="_blank">Regarding UGD Line work at Rajanagr and Murughamatt ward no 6</a></td><td>10-Dec-14</td><td>09-Jan-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype3.html" target="_blank">Emergency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor1556.html" target="_blank">Khaza Hussain A. K.</a></td><td>11,600</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_7.html" target="_blank">7</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_68245.html" target="_blank"> Regarding Drain Work At  Nijamuddin Colony. in ward no 7</a></td><td>10-Dec-14</td><td>09-Jan-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype3.html" target="_blank">Emergency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor1556.html" target="_blank">Khaza Hussain A. K.</a></td><td>10,100</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_14.html" target="_blank">14</a></td><td>Regarding Roads work at Michigin Copownd in ward no.14</td><td>26-Dec-14</td><td>25-Mar-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype7.html" target="_blank">Under 22.75%</td><td>SC/ST Development Fund</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor1556.html" target="_blank">Khaza Hussain A. K.</a></td><td>2,54,717</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_10.html" target="_blank">10</a></td><td>Request to refund SD Kept for the work  of  Regdring Buinding Maintences works in ward No: 10,dwd</td><td>14-Jan-15</td><td>14-Jan-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor1556.html" target="_blank">Khaza Hussain A. K.</a></td><td>2,782</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_10.html" target="_blank">10</a></td><td>Request to refund EMD Kept for the work  of  Regdring Buinding Maintences works in ward No: 10,dwd</td><td>14-Jan-15</td><td>14-Jan-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor1556.html" target="_blank">Khaza Hussain A. K.</a></td><td>1,392</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_4.html" target="_blank">4</a></td><td>Regarding Drain work at Gulaganjikoppa in ward no.04</td><td>14-Jan-15</td><td>13-Apr-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype7.html" target="_blank">Under 22.75%</td><td>SC/ST Development Fund</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor1556.html" target="_blank">Khaza Hussain A. K.</a></td><td>5,16,577</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_24.html" target="_blank">24</a></td><td>Repaires At UGD MHC Shanti Niketan In Ward No-25 (SD)</td><td>28-Jan-15</td><td>28-Jan-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor1556.html" target="_blank">Khaza Hussain A. K.</a></td><td>1,319</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_24.html" target="_blank">24</a></td><td>Repaires At UGD MHC Shanti Niketan In Ward No-25 (EMD)</td><td>28-Jan-15</td><td>28-Jan-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor1556.html" target="_blank">Khaza Hussain A. K.</a></td><td>675</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_25.html" target="_blank">25</a></td><td>Repaires At UGD MHC Shanti Niketan In Ward No-25 (SD)</td><td>28-Jan-15</td><td>28-Jan-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor1556.html" target="_blank">Khaza Hussain A. K.</a></td><td>1,262</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_25.html" target="_blank">25</a></td><td>Repaires At UGD MHC Shanti Niketan In Ward No-25 (EMD)</td><td>28-Jan-15</td><td>28-Jan-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor1556.html" target="_blank">Khaza Hussain A. K.</a></td><td>640</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_25.html" target="_blank">25</a></td><td>Repairs and Maintainance manhole chambers at in ward No.25 (SD)</td><td>30-Jan-15</td><td>30-Jan-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor1556.html" target="_blank">Khaza Hussain A. K.</a></td><td>781</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_25.html" target="_blank">25</a></td><td>Repairs and Maintainance manhole chambers at in ward No.25 (EMD)</td><td>30-Jan-15</td><td>30-Jan-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor1556.html" target="_blank">Khaza Hussain A. K.</a></td><td>490</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_25.html" target="_blank">25</a></td><td>Construction of Katcha drain at Dharmapuri Layout in Ward No.25 (EMD)</td><td>30-Jan-15</td><td>30-Jan-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor1556.html" target="_blank">Khaza Hussain A. K.</a></td><td>230</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_25.html" target="_blank">25</a></td><td>Construction of Katcha drain at Dharmapuri Layout in Ward No.25 (SD)</td><td>30-Jan-15</td><td>30-Jan-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor1556.html" target="_blank">Khaza Hussain A. K.</a></td><td>455</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_25.html" target="_blank">25</a></td><td>Repairs and Maintainance manhole chambers at Hebballi road Unkal and Sai nagar and Chrch backside in Ward No.25 (SD)</td><td>30-Jan-15</td><td>30-Jan-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor1556.html" target="_blank">Khaza Hussain A. K.</a></td><td>607</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_25.html" target="_blank">25</a></td><td>Repairs and Maintainance manhole chambers at Hebballi road Unkal and Sai nagar and Chrch backside in Ward No.25 (EMD)</td><td>30-Jan-15</td><td>30-Jan-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor1556.html" target="_blank">Khaza Hussain A. K.</a></td><td>315</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_25.html" target="_blank">25</a></td><td>Repairs and Maintainance manhole chambers at  Achchvavan colony and Sri nagar  in Ward No.25 (EMD)</td><td>30-Jan-15</td><td>30-Jan-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor1556.html" target="_blank">Khaza Hussain A. K.</a></td><td>475</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_25.html" target="_blank">25</a></td><td>Repairs and Maintainance manhole chambers at  Achchvavan colony and Sri nagar  in Ward No.25 (SD)</td><td>30-Jan-15</td><td>30-Jan-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor1556.html" target="_blank">Khaza Hussain A. K.</a></td><td>817</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_6.html" target="_blank">6</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_69538.html" target="_blank">Regarding Drain work. At Arogeri Oni, Anthappan Oni, Old Gadam Road, Near Jadav Residence & Badiger Plot. in ward no 6
+</a></td><td>31-Jan-15</td><td>28-Feb-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype3.html" target="_blank">Emergency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor1556.html" target="_blank">Khaza Hussain A. K.</a></td><td>15,350</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_6.html" target="_blank">6</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_69991.html" target="_blank">Regarding UGD Line & Water Supply work At Pendar Oni, Kumbar Oni. in ward no 6</a></td><td>20-Feb-15</td><td>19-Mar-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype1.html" target="_blank">Capital</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor1556.html" target="_blank">Khaza Hussain A. K.</a></td><td>79,000</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_8.html" target="_blank">8</a></td><td>Regarding Toilet work At Hebballi Agasi Anagawadi in ward no 08</td><td>08-May-15</td><td>07-Jun-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype8.html" target="_blank">Under 7.25</td><td>SFC Untied(OBC Development)</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor1556.html" target="_blank">Khaza Hussain A. K.</a></td><td>95,000</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_7.html" target="_blank">7</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_73650.html" target="_blank">Regarding Drain work At Madhihal Last Bus Stop. in ward no 07</a></td><td>22-Jul-15</td><td>21-Aug-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype3.html" target="_blank">Emergency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor1556.html" target="_blank">Khaza Hussain A. K.</a></td><td>77,260</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_13.html" target="_blank">13</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_74137.html" target="_blank">Regarding Repairing of UGD Line At Station Road Near Tahasildar Office</a></td><td>10-Aug-15</td><td>10-Sep-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype2.html" target="_blank">Maintenance</td><td>Emergency Fund</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor1556.html" target="_blank">Khaza Hussain A. K.</a></td><td>67,500</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_6.html" target="_blank">6</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_74984.html" target="_blank">Construction of Cross drain and ugd line in Shivalli Plot and improvement of RCC slab and covers near more plotin ward no.06 dwd</a></td><td>10-Sep-15</td><td>09-Oct-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype3.html" target="_blank">Emergency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor1556.html" target="_blank">Khaza Hussain A. K.</a></td><td>70,575</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_6.html" target="_blank">6</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_75578.html" target="_blank">Regarding work for the Name of raod and caution boards at Banagaara Area in Wrad No. 06</a></td><td>01-Oct-15</td><td>02-Nov-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype2.html" target="_blank">Maintenance</td><td>Emergency Fund</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor1556.html" target="_blank">Khaza Hussain A. K.</a></td><td>6,000</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_5.html" target="_blank">5</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_75622.html" target="_blank">Regarding work for the UGD Drain at Hosakumbara Area in Ward No. 05</a></td><td>05-Oct-15</td><td>05-Nov-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype3.html" target="_blank">Emergency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor1556.html" target="_blank">Khaza Hussain A. K.</a></td><td>36,876</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_17.html" target="_blank">17</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_76255.html" target="_blank">Regarding  Road work  At  Karanataka Vishwa Vidhyala Ground  Bus Root Road in ward no 17</a></td><td>21-Oct-15</td><td>21-Nov-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype1.html" target="_blank">Capital</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor1556.html" target="_blank">Khaza Hussain A. K.</a></td><td>69,700</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_13.html" target="_blank">13</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_76617.html" target="_blank">Providing chamber cover near tahashildar office Station Road & Zonal Office 01 in Ward No. 13 of Dharwad</a></td><td>18-Nov-15</td><td>18-Dec-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype3.html" target="_blank">Emergency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor1556.html" target="_blank">Khaza Hussain A. K.</a></td><td>38,000</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_6.html" target="_blank">6</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_76663.html" target="_blank">Repairs to Open Drain work at ward no.06 Kanti Galli Near Smashan</a></td><td>09-Nov-15</td><td>08-Dec-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype3.html" target="_blank">Emergency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor1556.html" target="_blank">Khaza Hussain A. K.</a></td><td>65,500</td><td style="color:#d32a0e">Inprogress</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

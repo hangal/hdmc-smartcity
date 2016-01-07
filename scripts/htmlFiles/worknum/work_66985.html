@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+				width: 24px;
+				height: 24px;
+				}
+				th.sorttable_sorted::after {
+				background: url(up.png);
+				background-size: contain;
+				}
+				th.sorttable_sorted_reverse::after {
+				background: url(down.png);
+				background-size: cover;
+				}
+
+				.scrollup {
+			    width: 80px;
+			    height: 40px;
+			    position: fixed;
+			    bottom: 50px;
+			    right: 100px;
+			    text-indent: 0px
+			    border-radius: 20px;
+			    border-color:black;
+			    border-style:solid;
+			    border-width:1px;
+			    text-align:center;
+			    padding-top:10px;
+			    color:black;  
+			    background-color:white;
+				}
+				<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+
+
+				</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+				
+				</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;"> Total number of works: 6</h4><h4 style="display:inline-block; margin-left:3em;"> Total amount spent: &#8377 36,939</h4>
+		<table class="table table-responsive sortable">
+
+		<thead>
+
+		<tr>
+
+		<th style="width:5%">Sl no.</th>
+
+		<th style="width:48%">Work Details</th>
+
+		<th>Measurement</th>
+
+		<th>Unit</th>
+
+		<th>Rate</th>
+
+		<th>Total Amount</th>
+
+		</tr>
+
+		</thead>
+
+		<tbody>
+		<a href="#" class="scrollup">Go to top</a>
+		<tr><td class = "span1">1</td><td>KSRRB 200-8: Cleaning and grubbing road land including proofing cark  vegetation, press tranch, shruts, saplings and tress of girth upto 300mm by manual means in area of light impric, removal of stumps, desposal of uscrviceable materials, stacking of serv</td><td>556.50</td><td>Sqm</td><td>5.03 </td><td>2799.195</td></tr><tr><td class = "span1">2</td><td>KSRB 15-7: Providing lime rendering for plastering to wall and ceiling, including cost of materials, labour, curing complete as per specifications.</td><td>36.00</td><td>Sqm</td><td>18.52 </td><td>666.72</td></tr><tr><td class = "span1">3</td><td>KSRB 4-1.7: Providing and laying in position plain cement concrete of mix M10 with OPC Cement @ 240Kgs. with 20mm and down size graded granite metal coarse agregetes @ 0.878cum and fine aggregates @ 0.459cum machine mixed, concrete laid in layers not exce</td><td>2.03</td><td>CUM</td><td>5,125.68 </td><td>10405.1304</td></tr><tr><td class = "span1">4</td><td>KSRB 5-14: Providing and constructing precast concrete solid blocks with compressive strength ot less than 35 Kg/sqm with cement mortar 1:4 masonary (chain lanik closer blocks) with solid concrete blocks of size 40x20x20cms conforming to I.S.2185/1965 in </td><td>18.50</td><td>Sqm</td><td>856.44 </td><td>15844.14</td></tr><tr><td class = "span1">5</td><td>KSRRB M300-53: Construction of embankment with approved materials Gravel/murrum with all lifts and leads, Transporting to site, spreading, grading to required slope and compacting to meet requirement Table 300-2 complete as per specifications. (which incl</td><td>7.98</td><td>CUM</td><td>456.84 </td><td>3645.5832</td></tr><tr><td class = "span1">6</td><td>KSRB 15-3.8: Providing 12mm thick cement plaster in single coat with cement mortar 1:4 to brick masonry including rounding off corners wherever required smooth rendering, providing and removing scaffolding including cost of materials, labour curing comple</td><td>22.40</td><td>CUM</td><td>159.84 </td><td>3580.416</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+				width: 24px;
+				height: 24px;
+				}
+				th.sorttable_sorted::after {
+				background: url(up.png);
+				background-size: contain;
+				}
+				th.sorttable_sorted_reverse::after {
+				background: url(down.png);
+				background-size: cover;
+				}
+
+				.scrollup {
+			    width: 80px;
+			    height: 40px;
+			    position: fixed;
+			    bottom: 50px;
+			    right: 100px;
+			    text-indent: 0px
+			    border-radius: 20px;
+			    border-color:black;
+			    border-style:solid;
+			    border-width:1px;
+			    text-align:center;
+			    padding-top:10px;
+			    color:black;  
+			    background-color:white;
+				}
+				<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+
+
+				</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+				
+				</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;"> Total number of works: 8</h4><h4 style="display:inline-block; margin-left:3em;"> Total amount spent: &#8377 93,411</h4>
+		<table class="table table-responsive sortable">
+
+		<thead>
+
+		<tr>
+
+		<th style="width:5%">Sl no.</th>
+
+		<th style="width:48%">Work Details</th>
+
+		<th>Measurement</th>
+
+		<th>Unit</th>
+
+		<th>Rate</th>
+
+		<th>Total Amount</th>
+
+		</tr>
+
+		</thead>
+
+		<tbody>
+		<a href="#" class="scrollup">Go to top</a>
+		<tr><td class = "span1">1</td><td>Supply and erection of ..Mtr RCC  pole, Including earth work etc,. Complete as per the standard technical specification.   b)9Mtr 145Kg Wl                                                                         </td><td>03</td><td>Each</td><td>6,714.66 </td><td>20143.98</td></tr><tr><td class = "span1">2</td><td>Supplying and fixing of Spiral Earth Electrodes as per standard technical specification.</td><td>03</td><td>Each</td><td>545.70 </td><td>1637.1</td></tr><tr><td class = "span1">3</td><td>Supplying and fixing of ... Including    all Hardwares etc complete as per the standard technical specification.  g) GUY SET   </td><td>03</td><td>Each</td><td>1,090.38 </td><td>3271.14</td></tr><tr><td class = "span1">4</td><td>Supplying and fixing of .... Cross arm Including    all Hardwares etc complete as per the standard technical specification    a)2 Pin 45 x45 x 5 mm -510 mm  </td><td>32</td><td>Kg</td><td>125.46 </td><td>4014.72</td></tr><tr><td class = "span1">5</td><td>Supplying and fixing of Rabbit conductor ( 6/3.15 mm Al +6/3.15 mm steel)        </td><td>880</td><td>Mtr</td><td>32.09 </td><td>28239.2</td></tr><tr><td class = "span1">6</td><td>Supplying and fixing Including ...labour charges  all Hardwares etc complete as per the standard technical specification .  d) No.8 Strain Insulator  </td><td>30</td><td>Each</td><td>24.48 </td><td>734.4</td></tr><tr><td class = "span1">7</td><td>Supplying decorative horizontal type street light fluorescent fitting weather and water proof complete with energy savings electronic ballast etc. locking type brass contact holders with 1 no. of 4 feet 40 watts fluorescent tube completely wired for use o</td><td>17</td><td>Each</td><td>1,458.60 </td><td>24796.2</td></tr><tr><td class = "span1">8</td><td>Supplying and fixing  25 mm dia class A GI pipe bracket upto 2 mtrs long bent at suitable angle and fixing to this bracket 1x40/2x40 watts fluorescent tube street light fitting of all capacities to GI or CI or rail or RCC pole / wall using suitable clamps</td><td>17</td><td>Each</td><td>622.20 </td><td>10577.4</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+				width: 24px;
+				height: 24px;
+				}
+				th.sorttable_sorted::after {
+				background: url(up.png);
+				background-size: contain;
+				}
+				th.sorttable_sorted_reverse::after {
+				background: url(down.png);
+				background-size: cover;
+				}
+
+				.scrollup {
+			    width: 80px;
+			    height: 40px;
+			    position: fixed;
+			    bottom: 50px;
+			    right: 100px;
+			    text-indent: 0px
+			    border-radius: 20px;
+			    border-color:black;
+			    border-style:solid;
+			    border-width:1px;
+			    text-align:center;
+			    padding-top:10px;
+			    color:black;  
+			    background-color:white;
+				}
+				<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+
+
+				</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+				
+				</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;"> Total number of works: 4</h4><h4 style="display:inline-block; margin-left:3em;"> Total amount spent: &#8377 69,180</h4>
+		<table class="table table-responsive sortable">
+
+		<thead>
+
+		<tr>
+
+		<th style="width:5%">Sl no.</th>
+
+		<th style="width:48%">Work Details</th>
+
+		<th>Measurement</th>
+
+		<th>Unit</th>
+
+		<th>Rate</th>
+
+		<th>Total Amount</th>
+
+		</tr>
+
+		</thead>
+
+		<tbody>
+		<a href="#" class="scrollup">Go to top</a>
+		<tr><td class = "span1">1</td><td>‘__ô»_ íô…Ì__, èÖî›_ …_„™ü …á_š Ë_ï__–_»ôŒ–_ì–ô _Ì– 100 Ë„™»_œ Ë__„__› ƒë_Ë_øæ_ïË_Íá_ï.  »„›__œÈô…î»ôî_®___ ‹±ñ, €ôî___ æ_ê__  </td><td>112</td><td>Each</td><td>40.00 </td><td>4480.0</td></tr><tr><td class = "span1">2</td><td>‘_©Œ¨_á_š çá_ï™__ æ_È_‘__ çá_ï“ ¼–_ü__ Ë_ï__–_»ô–_ì–ô Ë„™__ï__ íô…Ì__ _ô¨_ èÖî›_,100 Ë„™»_ _Ì– ƒë_Ë_øæ_ïË_Íá_ï.  »„›__œÈô…î»ôî_®___ ‹±ñ, €ôî___ æ_ê__</td><td>180</td><td>Each</td><td>125.00 </td><td>22500.0</td></tr><tr><td class = "span1">3</td><td>‘_©Œ¨_á_š çá_ï™__ Ë_™Ë_æô‘ …Ìšáô …á_“š Ë_ï__–_»ôŒ–_ì–ô í_«__üá_ (Ì_¡_™ æ_‘ë_üá_ æ_ç_æ_ Ë„__ï__ ƒë_Ë_øæ_ïË_Íá_ï í„–_… Flexible Wire 100 Ë„™»_ _Ì–, íô…Ì__, _ô¨_ èÖî›_ …_„™ü ƒë_Ë_øæ_ïË_Íá_ï í„–_… üîÈ_á_ Ë_™Ë_æô‘ Ë__„¨_ïË_Íá_ï, çá_ï™__ æ„Ë_ï—›, €ôî___ </td><td>62</td><td>Each</td><td>250.00 </td><td>15500.0</td></tr><tr><td class = "span1">4</td><td>Ë_ï__–_»ôŒ–_ì–ô íô…__ „Ë___±á_š üîÈ_á_ Ë_™Ë_æô‘–„— 100 Ë„™»_œ _Ì–, íô…Ì__ Ë„__ï__ èÖî›_ …_„™ü_ô…ü–ô üîÈ_á_ Ë_™Ë_æô‘ Ë__„¨_ïË_Íá_ï (çá_ï™__ »„›__œÈô…î»ôî_®___ …_„™ü æôî¤)</td><td>178</td><td>Each</td><td>150.00 </td><td>26700.0</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

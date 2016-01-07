@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+				width: 24px;
+				height: 24px;
+				}
+				th.sorttable_sorted::after {
+				background: url(up.png);
+				background-size: contain;
+				}
+				th.sorttable_sorted_reverse::after {
+				background: url(down.png);
+				background-size: cover;
+				}
+
+				.scrollup {
+			    width: 80px;
+			    height: 40px;
+			    position: fixed;
+			    bottom: 50px;
+			    right: 100px;
+			    text-indent: 0px
+			    border-radius: 20px;
+			    border-color:black;
+			    border-style:solid;
+			    border-width:1px;
+			    text-align:center;
+			    padding-top:10px;
+			    color:black;  
+			    background-color:white;
+				}
+				<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+
+
+				</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+				
+				</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;"> Total number of works: 7</h4><h4 style="display:inline-block; margin-left:3em;"> Total amount spent: &#8377 98,300</h4>
+		<table class="table table-responsive sortable">
+
+		<thead>
+
+		<tr>
+
+		<th style="width:5%">Sl no.</th>
+
+		<th style="width:48%">Work Details</th>
+
+		<th>Measurement</th>
+
+		<th>Unit</th>
+
+		<th>Rate</th>
+
+		<th>Total Amount</th>
+
+		</tr>
+
+		</thead>
+
+		<tbody>
+		<a href="#" class="scrollup">Go to top</a>
+		<tr><td class = "span1">1</td><td>Supplying and fixing of Rabbit conductor ( 6/3.15 mm Al +6/3.15 mm steel)        </td><td>115</td><td>Mtr</td><td>32.09 </td><td>3690.35</td></tr><tr><td class = "span1">2</td><td>Supply and fixing of .....cross arm including all Hard wares complete as per the standard technical specification     b) 2 Pin 45 x45 x5mm-510mm  </td><td>06</td><td>Each</td><td>125.46 </td><td>752.76</td></tr><tr><td class = "span1">3</td><td>Supplying and fixing Including .....labour charges all Hard wares etc complete as per the standard technical specification.  d) No.8 Strain insulator   </td><td>06</td><td>Each</td><td>24.48 </td><td>146.88</td></tr><tr><td class = "span1">4</td><td>Supplying High pressure .... watts Metal halide street light luminary suitable for use with high pressure metal halide lamp with integrated control gear. The fitting shall be non corrosive high pressure die cast aluminum housing with toughened glass, low </td><td>05</td><td>Each</td><td>5,559.00 </td><td>27795.0</td></tr><tr><td class = "span1">5</td><td>Supplying decorative horizontal type street light fluorescent fitting weather and water proof complete with energy savings electronic ballast etc. locking type brass contact holders with 1 no. of 4 feet 40 watts fluorescent tube completely wired for use o</td><td>30</td><td>Each</td><td>1,458.60 </td><td>43758.0</td></tr><tr><td class = "span1">6</td><td>Supplying and fixing ...... mm dia class A GI pipe bracket upto 2 mtrs long bent at suitable angle and fixing to this bracket 1x40/2x40 watts fluorescent tube street light fitting of all capacities to GI or CI or rail or RCC pole / wall using suitable cla</td><td>30</td><td>Each</td><td>622.20 </td><td>18666.0</td></tr><tr><td class = "span1">7</td><td>b) Using 32mm dia G.I pipe</td><td>05</td><td>Each</td><td>698.70 </td><td>3493.5</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

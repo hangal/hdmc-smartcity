@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+				width: 24px;
+				height: 24px;
+				}
+				th.sorttable_sorted::after {
+				background: url(up.png);
+				background-size: contain;
+				}
+				th.sorttable_sorted_reverse::after {
+				background: url(down.png);
+				background-size: cover;
+				}
+
+				.scrollup {
+			    width: 80px;
+			    height: 40px;
+			    position: fixed;
+			    bottom: 50px;
+			    right: 100px;
+			    text-indent: 0px
+			    border-radius: 20px;
+			    border-color:black;
+			    border-style:solid;
+			    border-width:1px;
+			    text-align:center;
+			    padding-top:10px;
+			    color:black;  
+			    background-color:white;
+				}
+				<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+
+
+				</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+				
+				</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;"> Total number of works: 6</h4><h4 style="display:inline-block; margin-left:3em;"> Total amount spent: &#8377 46,667</h4>
+		<table class="table table-responsive sortable">
+
+		<thead>
+
+		<tr>
+
+		<th style="width:5%">Sl no.</th>
+
+		<th style="width:48%">Work Details</th>
+
+		<th>Measurement</th>
+
+		<th>Unit</th>
+
+		<th>Rate</th>
+
+		<th>Total Amount</th>
+
+		</tr>
+
+		</thead>
+
+		<tbody>
+		<a href="#" class="scrollup">Go to top</a>
+		<tr><td class = "span1">1</td><td>KSRRB M200-14.1. Dismantling of existing structures like culverts,  bridges,  retaining walls and other structure comprising of masonry, cement  oncrete, wood work, steel work, including T&P and scaffolding wherever  necessary, sorting the dismantled mate</td><td>8.19</td><td>CUM</td><td>226.80 </td><td>1857.492</td></tr><tr><td class = "span1">2</td><td>Providing and applying waterproofing slab terraces lanscape area podium etc using modified polytheeruthane courses (confrimning to ASPTM C836-84_ to give to touch electrometric waterproof membrane on the surfaces. the surface shall be cleaned free from du</td><td>8.19</td><td>Sqm</td><td>756.00 </td><td>6191.64</td></tr><tr><td class = "span1">3</td><td>KSRB 6-1.3 : Providing and constructing burnt brick masonry for basement and superstructure with approved quality of non modular bricks of standard size of class designation 35 with cement mortar 1:6  including cost of materials labour charges scaffolding</td><td>3.68</td><td>CUM</td><td>5,248.80 </td><td>19315.584</td></tr><tr><td class = "span1">4</td><td>  KSRB 14.14-5: Providing Ceramic tiles of approved make,shade and size for flooring, treads of steps and landings laid on a bed of 12mm thick, cement mortar 1:3 mix, flush pointing with white cement using colour pigment , including cost of materials, lab</td><td>8.01</td><td>Sqm</td><td>933.12 </td><td>7474.2912</td></tr><tr><td class = "span1">5</td><td>KSRB 14-17.1 : Providing skirting, dado, rises of steps with white glazed tiles 6mm thick on 10mm thick cement plaster 1:3 and jointed with white cement slurry over rough plaster surface ( excluding cost of rough plastered surface which should be measured</td><td>9.41</td><td>Sqm</td><td>947.16 </td><td>8912.7756</td></tr><tr><td class = "span1">6</td><td>KSRB 11-3 : Providing and fixing white vitreous china clay, water closet Indian type ( Squatting pan ) of size 580mm with footrests, 100mm S or P trap, (approved make) cutting and making good the wall and floor wherever required, including cost of materia</td><td>2.00</td><td>Nos</td><td>1,459.16 </td><td>2918.32</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

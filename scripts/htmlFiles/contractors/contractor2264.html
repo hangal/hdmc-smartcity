@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+		  width: 24px;
+		  height: 24px;
+		}
+		th.sorttable_sorted::after {
+		  background: url(up.png);
+		  background-size: contain;
+		}
+		th.sorttable_sorted_reverse::after {
+		  background: url(down.png);
+		  background-size: cover;
+		}</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+
+		<script src="http://maps.googleapis.com/maps/api/js"></script>
+		<script>
+		var src = 'http://hack4hd.org/data/HD-ward-boundaries.kml';
+
+		function initialize() {
+		  var mapProp = {
+			center:new google.maps.LatLng(15.3935685,75.08009570000002),
+			zoom:15,
+			mapTypeId:google.maps.MapTypeId.ROADMAP
+		  };
+		  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+		  var ctaLayer = new google.maps.KmlLayer({
+			url: 'http://hack4hd.org/data/HD-ward-boundaries.kml',
+			map: map
+		  });
+
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+		<script>
+		function worksTotal(){
+		var table = document.getElementById("myTable");
+		var x = table.rows.length;
+		document.getElementById("totalWorks").innerHTML = x
+		}
+</script>
+<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+<style>
+.scrollup {
+    width: 80px;
+    height: 40px;
+    position: fixed;
+    bottom: 50px;
+    right: 100px;
+    text-indent: 0px
+    border-radius: 20px;
+    border-color:black;
+    border-style:solid;
+    border-width:1px;
+    text-align:center;
+    padding-top:10px;
+    color:black;  
+    background-color:white;
+}
+</style>
+
+		</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;margin-left:5em"> Total number of works: 33</h4><h4 style="display:inline-block; margin-left:7em;"> Completed works: 28</h4><h4 style="display:inline-block; margin-left:7em;"> In progress works: 5</h4><h4 style="display:inline-block; margin-left:5em;"> Total amount spent: &#8377 80,25,659</h4>
+	<table class="table table-responsive sortable" id="myTable">
+
+	<thead>
+
+	<tr>
+
+	<th style="width:5%">Ward</th>
+
+	<th style="width:48%">Work Description</th>
+
+	<th>Work Order Date</th>
+
+	<th>Work Completion Date</th>
+
+	<th>Work Type</th>
+
+	<th>Source of Income</th>
+
+	<th style="width:7%">Contractor</th>
+
+	<th>Amount Sanctioned</th>
+
+	<th>Status</th>
+
+	</tr>
+
+	</thead>
+
+	<tbody>
+	<a href="#" class="scrollup">Go to top</a>
+	<tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_97.html" target="_blank">97</a></td><td>Payment for Electrical,  Staff HDMC, Hubli for the month of April 2014</td><td>25-Apr-14</td><td>25-Apr-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2264.html" target="_blank">AEE-Electricals Hubli</a></td><td>25,04,089</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_97.html" target="_blank">97</a></td><td>Payment for DA Arrears bill for the month of 01-01-2014 to 31-03-2014 Electrical staff`s hubli</td><td>28-Apr-14</td><td>28-Apr-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2264.html" target="_blank">AEE-Electricals Hubli</a></td><td>24,408</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_97.html" target="_blank">97</a></td><td>Payment for Smt.Rajani Desai Telephone operator of HDMC, Electrical Department, Hubli  (2014)</td><td>03-May-14</td><td>03-May-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2264.html" target="_blank">AEE-Electricals Hubli</a></td><td>2,04,909</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_97.html" target="_blank">97</a></td><td>Payment for DA Differece to Smt. Rajani Desai (Telephone Operator) 2014</td><td>07-May-14</td><td>07-May-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2264.html" target="_blank">AEE-Electricals Hubli</a></td><td>2,088</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_97.html" target="_blank">97</a></td><td>15 days Surrendar bill of Electrical Staff of Hubli division</td><td>27-May-14</td><td>27-May-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2264.html" target="_blank">AEE-Electricals Hubli</a></td><td>70,759</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_97.html" target="_blank">97</a></td><td>125 days payment for Shri. M.R.Hebball (F.D.C) Retired</td><td>13-Jun-14</td><td>13-Jun-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2264.html" target="_blank">AEE-Electricals Hubli</a></td><td>1,27,021</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_97.html" target="_blank">97</a></td><td>Payment for of 43 days to Shri.M.R.Hebball FDC (Ritired)</td><td>13-Jun-14</td><td>13-Jun-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2264.html" target="_blank">AEE-Electricals Hubli</a></td><td>44,101</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_97.html" target="_blank">97</a></td><td>Imprest Amount Payment for D.I.Patar AEE (Ele) Hubli.</td><td>04-Jul-14</td><td>04-Jul-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2264.html" target="_blank">AEE-Electricals Hubli</a></td><td>24,293</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_97.html" target="_blank">97</a></td><td>Festival advance for Ganesh Chaturati 2014</td><td>21-Aug-14</td><td>21-Aug-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2264.html" target="_blank">AEE-Electricals Hubli</a></td><td>25,000</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_97.html" target="_blank">97</a></td><td>Payment for Electrical Staff Shri R.A.Shirol (Junior Engineer) HDMC, Hubli year  2014</td><td>30-Aug-14</td><td>30-Aug-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2264.html" target="_blank">AEE-Electricals Hubli</a></td><td>3,70,000</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_97.html" target="_blank">97</a></td><td>Electrical works to resting room of BSF Sena.</td><td>04-Sep-14</td><td>04-Sep-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2264.html" target="_blank">AEE-Electricals Hubli</a></td><td>26,298</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_97.html" target="_blank">97</a></td><td>Payment for Shri R.A.Shirol Junior engineer (Electrical)</td><td>18-Sep-14</td><td>18-Sep-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2264.html" target="_blank">AEE-Electricals Hubli</a></td><td>1,86,051</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_97.html" target="_blank">97</a></td><td>Dasara Festival Advance to Shri. S.I.Gangavati FDC</td><td>19-Sep-14</td><td>19-Sep-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2264.html" target="_blank">AEE-Electricals Hubli</a></td><td>5,000</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_97.html" target="_blank">97</a></td><td>Imprest Amount Payment for D.I.Patar AEE (Ele) Hubli.</td><td>12-Nov-14</td><td>12-Nov-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2264.html" target="_blank">AEE-Electricals Hubli</a></td><td>23,508</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_97.html" target="_blank">97</a></td><td>Payment of Surrender bill of R.A.Shirol (J.E) and D.I.Pattar (EE) Electrical of hubli division.</td><td>09-Jan-15</td><td>09-Jan-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2264.html" target="_blank">AEE-Electricals Hubli</a></td><td>43,607</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_47.html" target="_blank">47</a></td><td>Payment for Difference amount of Shri K.V. Hebsur work Inspector (Ele) from 01-11-2014 To 31-12-2014 of Hubli division.</td><td>21-Feb-15</td><td>21-Feb-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2264.html" target="_blank">AEE-Electricals Hubli</a></td><td>1,744</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_47.html" target="_blank">47</a></td><td>Imprest Amount Payment for D.I.Patar EE (Ele) Hubli.</td><td>25-Feb-15</td><td>25-Feb-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2264.html" target="_blank">AEE-Electricals Hubli</a></td><td>24,941</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_97.html" target="_blank">97</a></td><td>Payment for Staff holiday bill for hubli divisin.</td><td>22-Apr-15</td><td>22-Apr-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2264.html" target="_blank">AEE-Electricals Hubli</a></td><td>10,438</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_97.html" target="_blank">97</a></td><td>Payment for Electrical,  Staff HDMC, Hubli for the month of April 2015</td><td>27-Apr-15</td><td>27-Apr-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2264.html" target="_blank">AEE-Electricals Hubli</a></td><td>35,00,000</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_97.html" target="_blank">97</a></td><td>Payment for Smt.Rajani Desai Telephone operator of HDMC, Electrical Department, Hubli  (2015</td><td>06-May-15</td><td>06-May-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2264.html" target="_blank">AEE-Electricals Hubli</a></td><td>2,31,388</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_97.html" target="_blank">97</a></td><td>Imprest Amount Payment for AEE (Ele) Hubli.</td><td>11-May-15</td><td>11-May-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2264.html" target="_blank">AEE-Electricals Hubli</a></td><td>24,318</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_98.html" target="_blank">98</a></td><td>Payment for Four month DA bill of HDMC, Hubli Electrical department staff.</td><td>18-May-15</td><td>18-May-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2264.html" target="_blank">AEE-Electricals Hubli</a></td><td>22,432</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_98.html" target="_blank">98</a></td><td>Surrender bill of Electrical staff Shri K.V.Hebsur and Shri M.Y Tegginmani of hubli division.</td><td>18-May-15</td><td>18-May-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2264.html" target="_blank">AEE-Electricals Hubli</a></td><td>27,583</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_97.html" target="_blank">97</a></td><td>payment for PP difference bill to G.K.Ravish (EE) Electrical.</td><td>22-Jun-15</td><td>22-Jun-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2264.html" target="_blank">AEE-Electricals Hubli</a></td><td>3,384</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_97.html" target="_blank">97</a></td><td>Payment for Increment difference bill to Shri K.V.Hebsur Work inspector</td><td>22-Jun-15</td><td>22-Jun-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2264.html" target="_blank">AEE-Electricals Hubli</a></td><td>1,452</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_97.html" target="_blank">97</a></td><td>Payment for Salary bill of G.H.Bhandi of Electrical Department of HDMC, Hubli division.</td><td>22-Jun-15</td><td>22-Jun-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2264.html" target="_blank">AEE-Electricals Hubli</a></td><td>14,670</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_97.html" target="_blank">97</a></td><td>Imprest Amount Payment for D.I.Patar AEE (Ele) Hubli.</td><td>13-Jul-15</td><td>13-Jul-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2264.html" target="_blank">AEE-Electricals Hubli</a></td><td>23,839</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_97.html" target="_blank">97</a></td><td>Shri S.G.Kambali Asst. Executive Engineer (Ele) salary bill for the year 2015-16</td><td>27-Aug-15</td><td>27-Aug-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2264.html" target="_blank">AEE-Electricals Hubli</a></td><td>3,80,000</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_97.html" target="_blank">97</a></td><td>Shree M.H.Harkuni (Ele) peon bill of hubli division.Surrender bill for the year 2015-16</td><td>29-Aug-15</td><td>29-Aug-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2264.html" target="_blank">AEE-Electricals Hubli</a></td><td>10,017</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_97.html" target="_blank">97</a></td><td>Ganesh Chaturti Festival advance for Electrical depratment of Hubli division.</td><td>09-Sep-15</td><td>09-Sep-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2264.html" target="_blank">AEE-Electricals Hubli</a></td><td>15,000</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_97.html" target="_blank">97</a></td><td>Imprest Amount Payment for D.I.Patar EE (Ele) Hubli.</td><td>06-Oct-15</td><td>06-Oct-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2264.html" target="_blank">AEE-Electricals Hubli</a></td><td>24,625</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_97.html" target="_blank">97</a></td><td>Fevsitival Adavnce for Smt. Rajani Desai for Deepavali Feshtival HDMC Hubli</td><td>03-Nov-15</td><td>03-Nov-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Salary Grant - SFC</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2264.html" target="_blank">AEE-Electricals Hubli</a></td><td>5,000</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_97.html" target="_blank">97</a></td><td>Imprest Amount Payment for D.I.Patar AEE (Ele) Hubli.</td><td>02-Dec-15</td><td>02-Dec-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor2264.html" target="_blank">AEE-Electricals Hubli</a></td><td>23,696</td><td style="color:#43ac6a">Completed</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

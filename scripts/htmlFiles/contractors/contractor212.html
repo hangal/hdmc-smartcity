@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+		  width: 24px;
+		  height: 24px;
+		}
+		th.sorttable_sorted::after {
+		  background: url(up.png);
+		  background-size: contain;
+		}
+		th.sorttable_sorted_reverse::after {
+		  background: url(down.png);
+		  background-size: cover;
+		}</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+
+		<script src="http://maps.googleapis.com/maps/api/js"></script>
+		<script>
+		var src = 'http://hack4hd.org/data/HD-ward-boundaries.kml';
+
+		function initialize() {
+		  var mapProp = {
+			center:new google.maps.LatLng(15.3935685,75.08009570000002),
+			zoom:15,
+			mapTypeId:google.maps.MapTypeId.ROADMAP
+		  };
+		  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+		  var ctaLayer = new google.maps.KmlLayer({
+			url: 'http://hack4hd.org/data/HD-ward-boundaries.kml',
+			map: map
+		  });
+
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+		<script>
+		function worksTotal(){
+		var table = document.getElementById("myTable");
+		var x = table.rows.length;
+		document.getElementById("totalWorks").innerHTML = x
+		}
+</script>
+<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+<style>
+.scrollup {
+    width: 80px;
+    height: 40px;
+    position: fixed;
+    bottom: 50px;
+    right: 100px;
+    text-indent: 0px
+    border-radius: 20px;
+    border-color:black;
+    border-style:solid;
+    border-width:1px;
+    text-align:center;
+    padding-top:10px;
+    color:black;  
+    background-color:white;
+}
+</style>
+
+		</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;margin-left:5em"> Total number of works: 65</h4><h4 style="display:inline-block; margin-left:7em;"> Completed works: 33</h4><h4 style="display:inline-block; margin-left:7em;"> In progress works: 32</h4><h4 style="display:inline-block; margin-left:5em;"> Total amount spent: &#8377 1,01,97,787</h4>
+	<table class="table table-responsive sortable" id="myTable">
+
+	<thead>
+
+	<tr>
+
+	<th style="width:5%">Ward</th>
+
+	<th style="width:48%">Work Description</th>
+
+	<th>Work Order Date</th>
+
+	<th>Work Completion Date</th>
+
+	<th>Work Type</th>
+
+	<th>Source of Income</th>
+
+	<th style="width:7%">Contractor</th>
+
+	<th>Amount Sanctioned</th>
+
+	<th>Status</th>
+
+	</tr>
+
+	</thead>
+
+	<tbody>
+	<a href="#" class="scrollup">Go to top</a>
+	<tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_21.html" target="_blank">21</a></td><td>Dharwad division zonal no 12 ward no 21 sanitation & ward cleaning bill for the month of  April-2014
+
+</td><td>04-Apr-14</td><td>04-Apr-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>2,53,166</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_91.html" target="_blank">91</a></td><td>Dharwad division Package no 01 Bulk waste  transportation</td><td>07-Apr-14</td><td>07-Apr-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>84,572</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_91.html" target="_blank">91</a></td><td>Dharwad division Package no 01 UGD Cleaning</td><td>07-Apr-14</td><td>07-Apr-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>1,23,156</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_21.html" target="_blank">21</a></td><td>Dharwad division zonal no 12 ward no 21 sanitation & ward cleaning bill for the month of  April 2014
+
+
+</td><td>13-May-14</td><td>13-May-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>2,53,166</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_91.html" target="_blank">91</a></td><td>Dharwad division Package no 01 Bulk waste  transportation</td><td>13-May-14</td><td>13-May-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>84,572</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_91.html" target="_blank">91</a></td><td>Dharwad division Package no 01 UGD Cleaning</td><td>13-May-14</td><td>13-May-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>41,052</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_91.html" target="_blank">91</a></td><td>Dharwad division Package no 01 Bulk waste  transportation</td><td>09-Jun-14</td><td>09-Jun-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>88,276</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_21.html" target="_blank">21</a></td><td>Dharwad division zonal no 12 ward no 21 sanitation & ward cleaning bill for the month of  May -2014
+
+
+</td><td>16-Jun-14</td><td>16-Jun-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>2,80,225</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_21.html" target="_blank">21</a></td><td>Dharwad division zonal no 12 ward no 21 sanitation & ward cleaning Difference amount bill for the month of  April 2014
+
+
+</td><td>16-Jun-14</td><td>16-Jun-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>22,842</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_91.html" target="_blank">91</a></td><td>Dharwad division Package no 01 Bulk waste  transportation</td><td>18-Jun-14</td><td>18-Jun-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>4,006</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_91.html" target="_blank">91</a></td><td>Dharwad division Package no 01 UGD Cleaning</td><td>18-Jun-14</td><td>18-Jun-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>2,004</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_91.html" target="_blank">91</a></td><td>Dharwad division Package no 01 UGD Cleaning</td><td>18-Jun-14</td><td>18-Jun-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>43,054</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_21.html" target="_blank">21</a></td><td>Dharwad division zonal no 12 ward no 21 sanitation & ward cleaning bill for the month of  June -2014
+
+
+</td><td>14-Jul-14</td><td>14-Jul-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>2,80,225</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_91.html" target="_blank">91</a></td><td>Dharwad division Package no 01 Bulk waste  transportation</td><td>15-Jul-14</td><td>15-Jul-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>88,576</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_91.html" target="_blank">91</a></td><td>Dharwad division Package no 01 UGD Cleaning</td><td>15-Jul-14</td><td>15-Jul-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>43,054</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_21.html" target="_blank">21</a></td><td>Dharwad division zonal no 12 ward no 21 sanitation & ward cleaning bill for the month of July 2014                
+
+
+</td><td>05-Aug-14</td><td>05-Aug-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>2,80,225</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_91.html" target="_blank">91</a></td><td>Dharwad division Package no 01 UGD Cleaning</td><td>12-Aug-14</td><td>12-Aug-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>43,056</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_91.html" target="_blank">91</a></td><td>Dharwad division Package no 01 Bulk waste  transportation</td><td>12-Aug-14</td><td>12-Aug-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>91,140</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_21.html" target="_blank">21</a></td><td>Dharwad division zonal no 12 ward no 21 sanitation & ward cleaning bill for the month of  Agust -2014
+</td><td>02-Sep-14</td><td>02-Sep-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>2,80,225</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_91.html" target="_blank">91</a></td><td>Dharwad division Package no 01 UGD Cleaning</td><td>08-Sep-14</td><td>08-Sep-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>43,056</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_91.html" target="_blank">91</a></td><td>Dharwad division Package no 01 Bulk waste  transportation</td><td>08-Sep-14</td><td>08-Sep-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>91,140</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_91.html" target="_blank">91</a></td><td>Dharwad division Package no 01 Bulk waste  transportation</td><td>13-Oct-14</td><td>13-Oct-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>91,140</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_91.html" target="_blank">91</a></td><td>Dharwad division Package no 01 UGD Cleaning</td><td>13-Oct-14</td><td>13-Oct-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>43,056</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_21.html" target="_blank">21</a></td><td>Dharwad division zonal no 12 ward no 21 sanitation & ward cleaning bill for the month of  Septembert -2014
+
+
+</td><td>14-Oct-14</td><td>14-Oct-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>2,80,225</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_91.html" target="_blank">91</a></td><td>Dharwad division Package no 01 UGD Cleaning</td><td>10-Nov-14</td><td>10-Nov-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>43,056</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_91.html" target="_blank">91</a></td><td>Dharwad division Package no 01 Bulk waste  transportation
+</td><td>10-Nov-14</td><td>10-Nov-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>91,140</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_21.html" target="_blank">21</a></td><td>Dharwad division zonal no 12 ward no 21 sanitation & ward cleaning bill for the month of  October-2014
+
+
+</td><td>12-Nov-14</td><td>12-Nov-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>2,80,225</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_21.html" target="_blank">21</a></td><td>Dharwad division zonal no 12 ward no 21 sanitation & ward cleaning bill for the month of  November-2014
+
+
+
+
+
+</td><td>06-Dec-14</td><td>06-Dec-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>2,80,225</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_91.html" target="_blank">91</a></td><td>Dharwad division Package no 01 Bulk waste  transportation
+</td><td>08-Dec-14</td><td>08-Dec-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>91,140</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_91.html" target="_blank">91</a></td><td>Dharwad division Package no 01 UGD Cleaning</td><td>08-Dec-14</td><td>08-Dec-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>43,056</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_21.html" target="_blank">21</a></td><td>Dharawad Division zone-12 Ward no-21 S.W.M Bill For the month of  December 2014
+
+
+
+
+</td><td>06-Jan-15</td><td>06-Jan-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>2,80,225</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_91.html" target="_blank">91</a></td><td>Dharwad division Package no 01 Bulk waste  transportation</td><td>20-Jan-15</td><td>20-Jan-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>91,140</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_91.html" target="_blank">91</a></td><td>Dharwad division Package no 01 UGD Cleaning</td><td>20-Jan-15</td><td>20-Jan-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>43,056</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_21.html" target="_blank">21</a></td><td>Dharawad Division zone-12 Ward no-21 S.W.M Bill For the month of  January 2015
+
+
+
+</td><td>07-Feb-15</td><td>07-Feb-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>2,80,225</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_91.html" target="_blank">91</a></td><td>Dharwad division Package no 01 UGD Cleaning</td><td>26-Feb-15</td><td>26-Feb-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>43,056</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_91.html" target="_blank">91</a></td><td>Dharwad division Package no 01 Bulk waste  transportation</td><td>26-Feb-15</td><td>26-Feb-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>91,140</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_21.html" target="_blank">21</a></td><td>Dharawad Division zone-12 Ward no-21 S.W.M Bill For the month of  February 2015
+
+
+
+
+</td><td>09-Mar-15</td><td>09-Mar-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>2,80,225</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_91.html" target="_blank">91</a></td><td>Dharwad division Package no 01 ward no: 1 to 23</td><td>19-Mar-15</td><td>19-Mar-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>43,056</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_91.html" target="_blank">91</a></td><td>Dharwad division Package no 01 Bulk waste  transportation</td><td>19-Mar-15</td><td>19-Mar-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>91,140</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_21.html" target="_blank">21</a></td><td>Dharawad Division zone-12 Ward no-21 S.W.M Bill For the month of  March  2015
+
+
+
+</td><td>13-Apr-15</td><td>13-Apr-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>2,80,225</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_91.html" target="_blank">91</a></td><td>Dharwad division Package no 01 Bulk waste  transportation</td><td>16-Apr-15</td><td>16-Apr-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>91,140</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_91.html" target="_blank">91</a></td><td>Dharwad division Package no 01 UGD Cleaning</td><td>16-Apr-15</td><td>16-Apr-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>43,056</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_21.html" target="_blank">21</a></td><td>Dharawad Division zone-12 Ward no-21 S.W.M Bill For the month of  April 2015
+
+
+
+
+</td><td>14-May-15</td><td>14-May-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>2,96,524</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_91.html" target="_blank">91</a></td><td>Dharwad division Package no 01 Bulk waste  transportation</td><td>26-May-15</td><td>26-May-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>44,264</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_91.html" target="_blank">91</a></td><td>Dharwad division Package no 01 Bulk waste  transportation</td><td>26-May-15</td><td>26-May-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>93,556</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_21.html" target="_blank">21</a></td><td>Dharwad division zonal no 12 ward no 21 sanitation & ward cleaning bill for the month of  May -2015
+
+
+</td><td>10-Jun-15</td><td>10-Jun-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>2,96,524</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_91.html" target="_blank">91</a></td><td>Dharwad division  SWM Supply of   Skilled & Unskilled manpower 39 Nos</td><td>19-Jun-15</td><td>19-Jun-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>3,72,496</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_91.html" target="_blank">91</a></td><td>Dharwad division Package no 01 Bulk waste  transportation</td><td>19-Jun-15</td><td>19-Jun-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>93,556</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_21.html" target="_blank">21</a></td><td>Dharwad division zonal no 12 ward no 21 sanitation & ward cleaning bill for the month of  June- 2015
+
+
+</td><td>08-Jul-15</td><td>08-Jul-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>2,96,524</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_91.html" target="_blank">91</a></td><td>Dharwad division  SWM Supply of   Skilled & Unskilled manpower 39 Nos</td><td>14-Jul-15</td><td>14-Jul-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>3,72,496</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_91.html" target="_blank">91</a></td><td>Dharwad division Package no 01 Bulk waste  transportation</td><td>14-Jul-15</td><td>14-Jul-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>93,556</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_21.html" target="_blank">21</a></td><td>Dharwad division zonal no 12 ward no 21sanitation & ward cleaning bill for the month of  July-2015</td><td>11-Aug-15</td><td>11-Aug-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>2,96,524</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_91.html" target="_blank">91</a></td><td>Dharwad division Package no 01 Bulk waste  transportation bill</td><td>13-Aug-15</td><td>13-Aug-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>93,556</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_91.html" target="_blank">91</a></td><td>Dharwad division Package no 01 Bulk waste  transportation</td><td>04-Sep-15</td><td>04-Sep-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>5,61,336</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_91.html" target="_blank">91</a></td><td>Dharwad division Package no 01 Bulk waste  transportation</td><td>04-Sep-15</td><td>04-Sep-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>2,65,584</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_21.html" target="_blank">21</a></td><td>Dharwad division zonal no 12 ward no 21 sanitation & ward cleaning bill for the month of Agust -2015
+
+
+</td><td>05-Sep-15</td><td>05-Sep-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>2,96,524</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_21.html" target="_blank">21</a></td><td>Dharwad division zonal no 12 ward no 21 sanitation & ward cleaning bill for the month of September -2015 
+
+
+
+</td><td>10-Oct-15</td><td>10-Oct-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>2,96,524</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_91.html" target="_blank">91</a></td><td>Dharwad division Package no 01 Bulk waste  transportation</td><td>14-Oct-15</td><td>14-Oct-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>44,264</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_91.html" target="_blank">91</a></td><td>Dharwad division Package no 01 Bulk waste  transportation</td><td>14-Oct-15</td><td>14-Oct-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>93,556</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_21.html" target="_blank">21</a></td><td>Dharwad division zonal no 12 ward no 21 sanitation & ward cleaning bill for the month of  October-2015
+
+
+</td><td>05-Nov-15</td><td>05-Nov-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>2,96,524</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_91.html" target="_blank">91</a></td><td>Dharwad division Package no 01 Bulk waste  transportation</td><td>05-Nov-15</td><td>05-Nov-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>44,264</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_91.html" target="_blank">91</a></td><td>Dharwad division Package no 01 Bulk waste  transportation</td><td>05-Nov-15</td><td>05-Nov-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>93,556</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_91.html" target="_blank">91</a></td><td>Dharwad division Package no 01 Bulk waste  transportation</td><td>03-Dec-15</td><td>03-Dec-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>44,264</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_91.html" target="_blank">91</a></td><td>Dharwad division Package no 01 Bulk waste  transportation</td><td>03-Dec-15</td><td>03-Dec-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>93,556</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_21.html" target="_blank">21</a></td><td>Dharwad division zonal no 12 ward no21  sanitation & ward cleaning bill for the month of  November 2015 
+
+
+.
+</td><td>04-Dec-15</td><td>04-Dec-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor212.html" target="_blank">Araved Venkates O.</a></td><td>2,96,524</td><td style="color:#d32a0e">Inprogress</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

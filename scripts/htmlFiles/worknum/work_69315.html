@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+				width: 24px;
+				height: 24px;
+				}
+				th.sorttable_sorted::after {
+				background: url(up.png);
+				background-size: contain;
+				}
+				th.sorttable_sorted_reverse::after {
+				background: url(down.png);
+				background-size: cover;
+				}
+
+				.scrollup {
+			    width: 80px;
+			    height: 40px;
+			    position: fixed;
+			    bottom: 50px;
+			    right: 100px;
+			    text-indent: 0px
+			    border-radius: 20px;
+			    border-color:black;
+			    border-style:solid;
+			    border-width:1px;
+			    text-align:center;
+			    padding-top:10px;
+			    color:black;  
+			    background-color:white;
+				}
+				<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+
+
+				</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+				
+				</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;"> Total number of works: 8</h4><h4 style="display:inline-block; margin-left:3em;"> Total amount spent: &#8377 14,98,910</h4>
+		<table class="table table-responsive sortable">
+
+		<thead>
+
+		<tr>
+
+		<th style="width:5%">Sl no.</th>
+
+		<th style="width:48%">Work Details</th>
+
+		<th>Measurement</th>
+
+		<th>Unit</th>
+
+		<th>Rate</th>
+
+		<th>Total Amount</th>
+
+		</tr>
+
+		</thead>
+
+		<tbody>
+		<a href="#" class="scrollup">Go to top</a>
+		<tr><td class = "span1">1</td><td>KSRB 2-2.1 : Earthwork excavation for foundation of buildings, culverts, water supply, sanitary lines and electrical conduits either in pits or in trenches 1.5m and above in width, in ordinary soil not exceeding 1.5 m. in depth including dressing the bott</td><td>71.44</td><td>CUM</td><td>160.00 </td><td>11430.4</td></tr><tr><td class = "span1">2</td><td>KSRRB 300-48. Scarifying kankar / gravel / metal crust upto 150mm thick with power roller and scarifier, disposal of stuff including cost of all labour charges, HOM of machineries complete as per specifications. MORTH / Chapter 3  as per the direction of </td><td>4680.00</td><td>Sqm</td><td>20.00 </td><td>93600.0</td></tr><tr><td class = "span1">3</td><td>Providing and laying reinforced cement concrete pipe NP2 for culverts including pointing ends, and fixing collars with cement mortar 1:2 including cost of all materials, labour, curing complete as per specifications. Specifications. No. KSRB 1000, 2300 MO</td><td>115.00</td><td>mt</td><td>1,500.00 </td><td>172500.0</td></tr><tr><td class = "span1">4</td><td>Providing and laying reinforced cement concrete pipe NP2 for culverts including pointing ends, and fixing collars with cement mortar 1:2 including cost of all materials, labour, curing complete as per specifications. Specifications. No. KSRB 1000, 2300 MO</td><td>15.00</td><td>mt</td><td>2,200.00 </td><td>33000.0</td></tr><tr><td class = "span1">5</td><td>KSRRB M300- Construction of Embankment with Material Gravel/ Murrum. KSRRB M300-53. Construction of embankment with approved material Gravel/Murrum with all lifts and leads, transporting to site, spreading, grading to required slope and compacting to meet</td><td>788.10</td><td>CUM</td><td>460.00 </td><td>362526.0</td></tr><tr><td class = "span1">6</td><td>KSRB 2-4 : Refilling available earth around pipe lines, cables in layers not exceeding 20cms in depth, compacting each deposited layer by ramming after watering with lead upto 50m. and lift upto 1.5 m. including cost of all labour complete as per specific</td><td>48.92</td><td>CUM</td><td>65.00 </td><td>3179.8</td></tr><tr><td class = "span1">7</td><td>KSRRB M400- Water Bound Macadam KSRRB M400-14.1. Providing, laying, spreading and compacting stone aggregates of specific sizes to water bound macadam specifications including spreading in uniform thickness, hand packing, rolling with 3- wheeled steel/vib</td><td>219.38</td><td>CUM</td><td>1,800.00 </td><td>394884.0</td></tr><tr><td class = "span1">8</td><td>KSRRB M400- Water Bound Macadam KSRRB M400-14.1. Providing, laying, spreading and compacting stone aggregates of specific sizes to water bound macadam specifications including spreading in uniform thickness, hand packing, rolling with 3- wheeled steel/vib</td><td>219.38</td><td>CUM</td><td>1,950.00 </td><td>427791.0</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

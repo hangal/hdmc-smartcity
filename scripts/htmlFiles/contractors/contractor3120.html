@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+		  width: 24px;
+		  height: 24px;
+		}
+		th.sorttable_sorted::after {
+		  background: url(up.png);
+		  background-size: contain;
+		}
+		th.sorttable_sorted_reverse::after {
+		  background: url(down.png);
+		  background-size: cover;
+		}</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+
+		<script src="http://maps.googleapis.com/maps/api/js"></script>
+		<script>
+		var src = 'http://hack4hd.org/data/HD-ward-boundaries.kml';
+
+		function initialize() {
+		  var mapProp = {
+			center:new google.maps.LatLng(15.3935685,75.08009570000002),
+			zoom:15,
+			mapTypeId:google.maps.MapTypeId.ROADMAP
+		  };
+		  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+		  var ctaLayer = new google.maps.KmlLayer({
+			url: 'http://hack4hd.org/data/HD-ward-boundaries.kml',
+			map: map
+		  });
+
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+		<script>
+		function worksTotal(){
+		var table = document.getElementById("myTable");
+		var x = table.rows.length;
+		document.getElementById("totalWorks").innerHTML = x
+		}
+</script>
+<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+<style>
+.scrollup {
+    width: 80px;
+    height: 40px;
+    position: fixed;
+    bottom: 50px;
+    right: 100px;
+    text-indent: 0px
+    border-radius: 20px;
+    border-color:black;
+    border-style:solid;
+    border-width:1px;
+    text-align:center;
+    padding-top:10px;
+    color:black;  
+    background-color:white;
+}
+</style>
+
+		</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;margin-left:5em"> Total number of works: 33</h4><h4 style="display:inline-block; margin-left:7em;"> Completed works: 24</h4><h4 style="display:inline-block; margin-left:7em;"> In progress works: 9</h4><h4 style="display:inline-block; margin-left:5em;"> Total amount spent: &#8377 1,58,950</h4>
+	<table class="table table-responsive sortable" id="myTable">
+
+	<thead>
+
+	<tr>
+
+	<th style="width:5%">Ward</th>
+
+	<th style="width:48%">Work Description</th>
+
+	<th>Work Order Date</th>
+
+	<th>Work Completion Date</th>
+
+	<th>Work Type</th>
+
+	<th>Source of Income</th>
+
+	<th style="width:7%">Contractor</th>
+
+	<th>Amount Sanctioned</th>
+
+	<th>Status</th>
+
+	</tr>
+
+	</thead>
+
+	<tbody>
+	<a href="#" class="scrollup">Go to top</a>
+	<tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_106.html" target="_blank">106</a></td><td>M. A. No. 49/2013 Shri C.B. Katti Advocate Professional Fees</td><td>07-May-14</td><td>07-May-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor3120.html" target="_blank">Katti Chidanand  (Advocate)</a></td><td>3,250</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_106.html" target="_blank">106</a></td><td>R.A.No.7/2011 R.A.No.1/2013 C.B.Katti Advocate professional fees</td><td>02-Jun-14</td><td>02-Jun-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor3120.html" target="_blank">Katti Chidanand  (Advocate)</a></td><td>4,650</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_106.html" target="_blank">106</a></td><td>C.C.No.457/2013 Shri C.B.Katti Advocate professional fees</td><td>08-Jul-14</td><td>08-Jul-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor3120.html" target="_blank">Katti Chidanand  (Advocate)</a></td><td>4,250</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_106.html" target="_blank">106</a></td><td>Legal Opinion Bill of Shri C B Katti Advocate professional fees</td><td>06-Sep-14</td><td>06-Sep-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor3120.html" target="_blank">Katti Chidanand  (Advocate)</a></td><td>750</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_106.html" target="_blank">106</a></td><td>R A No -161/2013  Shri  C B Katti  Advocate Professional fee.</td><td>12-Sep-14</td><td>12-Sep-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor3120.html" target="_blank">Katti Chidanand  (Advocate)</a></td><td>4,200</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_106.html" target="_blank">106</a></td><td>CC No -98/2011   Shri  C B Katti  Advocate Professional fee.</td><td>25-Sep-14</td><td>25-Sep-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor3120.html" target="_blank">Katti Chidanand  (Advocate)</a></td><td>4,200</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_106.html" target="_blank">106</a></td><td>PLA Petition  No -126/2013   Shri  C B Katti  Advocate Professional fee.</td><td>26-Sep-14</td><td>26-Sep-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor3120.html" target="_blank">Katti Chidanand  (Advocate)</a></td><td>3,000</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_106.html" target="_blank">106</a></td><td>O S No -235/2012   Shri C B Katti  Advocate Professional fee.</td><td>26-Sep-14</td><td>26-Sep-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor3120.html" target="_blank">Katti Chidanand  (Advocate)</a></td><td>4,200</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_106.html" target="_blank">106</a></td><td>CC No-99/2011 Legal opinion  given to Shri  C B Katti   Advocate Professional fee.</td><td>28-Nov-14</td><td>28-Nov-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor3120.html" target="_blank">Katti Chidanand  (Advocate)</a></td><td>4,200</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_106.html" target="_blank">106</a></td><td>Legal opinion  given to Shri C B Katti Advocate Professional fee</td><td>03-Dec-14</td><td>03-Dec-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor3120.html" target="_blank">Katti Chidanand  (Advocate)</a></td><td>750</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_106.html" target="_blank">106</a></td><td>OSNo-734/2013 Legal opinion  given to Shri  C B Katti,  Advocate Professional fee.</td><td>03-Dec-14</td><td>03-Dec-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor3120.html" target="_blank">Katti Chidanand  (Advocate)</a></td><td>4,200</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_106.html" target="_blank">106</a></td><td>OSNo-560/2014 Shri C B Katti  Advocate Professional fee.</td><td>24-Dec-14</td><td>24-Dec-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor3120.html" target="_blank">Katti Chidanand  (Advocate)</a></td><td>200</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_106.html" target="_blank">106</a></td><td>OSNo -632/2014  Shri C B Katti  Advocate Professional fee.</td><td>24-Dec-14</td><td>24-Dec-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor3120.html" target="_blank">Katti Chidanand  (Advocate)</a></td><td>200</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_106.html" target="_blank">106</a></td><td>Legal opinion  given to Shri C B Katti  Advocate Professional fee</td><td>26-Dec-14</td><td>26-Dec-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor3120.html" target="_blank">Katti Chidanand  (Advocate)</a></td><td>750</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_106.html" target="_blank">106</a></td><td>O.S No -350/2014  Shri C B Katti  Advocate Professional fee.</td><td>03-Mar-15</td><td>03-Mar-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor3120.html" target="_blank">Katti Chidanand  (Advocate)</a></td><td>3,250</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_106.html" target="_blank">106</a></td><td>MANo-1/2015 Shri C B Katti  Advocate Professional fee.</td><td>03-Mar-15</td><td>03-Mar-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor3120.html" target="_blank">Katti Chidanand  (Advocate)</a></td><td>4,200</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_106.html" target="_blank">106</a></td><td>O.S.No -84/2013  Shri  C B Katti Patil   Advocate Professional fee</td><td>08-Jun-15</td><td>08-Jun-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor3120.html" target="_blank">Katti Chidanand  (Advocate)</a></td><td>4,000</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_106.html" target="_blank">106</a></td><td>RANo -279/2012  Shri C B Katti  Advocate Professional fee.</td><td>08-Jun-15</td><td>08-Jun-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor3120.html" target="_blank">Katti Chidanand  (Advocate)</a></td><td>4,000</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_106.html" target="_blank">106</a></td><td>1) MANo -8/2014  2) MANo-10/2014 ShriC B Katti Advocate Professional fee.</td><td>08-Jun-15</td><td>08-Jun-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor3120.html" target="_blank">Katti Chidanand  (Advocate)</a></td><td>6,000</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_106.html" target="_blank">106</a></td><td>Caveat Petition Files No-24  Shri C B Katti,  Advocate Professional fee</td><td>29-Jun-15</td><td>29-Jun-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor3120.html" target="_blank">Katti Chidanand  (Advocate)</a></td><td>49,050</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_106.html" target="_blank">106</a></td><td>EXP No-74/2014  Shri C B Katti Advocate Professional fee.
+</td><td>19-Sep-15</td><td>19-Sep-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor3120.html" target="_blank">Katti Chidanand  (Advocate)</a></td><td>4,200</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_106.html" target="_blank">106</a></td><td>OSNo-329/2013 Shri C B Katti  Advocate Professional fee.
+</td><td>21-Sep-15</td><td>21-Sep-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor3120.html" target="_blank">Katti Chidanand  (Advocate)</a></td><td>2,700</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_106.html" target="_blank">106</a></td><td>Caveat  CPNo-349/2014  Shri C B Katti  Advocate Professional fee.</td><td>22-Sep-15</td><td>22-Sep-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor3120.html" target="_blank">Katti Chidanand  (Advocate)</a></td><td>1,050</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_106.html" target="_blank">106</a></td><td>CCNo-991/2011  Shri C B Katti  Advocate Professional fee.
+</td><td>24-Sep-15</td><td>24-Sep-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor3120.html" target="_blank">Katti Chidanand  (Advocate)</a></td><td>4,200</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_106.html" target="_blank">106</a></td><td>OSNo-244/2013  Shri. C B Katti. Desai  Advocate Profession fee</td><td>28-Sep-15</td><td>28-Sep-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor3120.html" target="_blank">Katti Chidanand  (Advocate)</a></td><td>4,200</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_106.html" target="_blank">106</a></td><td>OSNo-187/2015   Shri C B Katti   Advocate Professional fee.</td><td>09-Nov-15</td><td>09-Nov-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor3120.html" target="_blank">Katti Chidanand  (Advocate)</a></td><td>4,200</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_106.html" target="_blank">106</a></td><td>RANo-34/2012 Shri C B Katti Advocate Professional fee.</td><td>17-Nov-15</td><td>17-Nov-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor3120.html" target="_blank">Katti Chidanand  (Advocate)</a></td><td>4,200</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_106.html" target="_blank">106</a></td><td>MA  No-01/2015  54/2015 Shri C B KATTI  Advocate Professional fee.</td><td>17-Nov-15</td><td>17-Nov-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor3120.html" target="_blank">Katti Chidanand  (Advocate)</a></td><td>3,200</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_106.html" target="_blank">106</a></td><td>OSNo-325/2015   M A No  18/2012  Shri C B Katti  Advocate Professional fee.</td><td>17-Nov-15</td><td>17-Nov-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor3120.html" target="_blank">Katti Chidanand  (Advocate)</a></td><td>7,400</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_106.html" target="_blank">106</a></td><td>OSNo-218/2015 Shri C B KATTI  Advocate Professional fee.</td><td>23-Dec-15</td><td>23-Dec-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor3120.html" target="_blank">Katti Chidanand  (Advocate)</a></td><td>4,200</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_106.html" target="_blank">106</a></td><td>M A No 32/2015 Shri C B KATTI  Advocate Professional fee.</td><td>26-Dec-15</td><td>26-Dec-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor3120.html" target="_blank">Katti Chidanand  (Advocate)</a></td><td>3,200</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_106.html" target="_blank">106</a></td><td>OSNo-332/2014 Shri C B KATTI  Advocate Professional fee.</td><td>26-Dec-15</td><td>26-Dec-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor3120.html" target="_blank">Katti Chidanand  (Advocate)</a></td><td>2,700</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_106.html" target="_blank">106</a></td><td>OSNo-285/2008 Shri C B KATTI  Advocate Professional fee.</td><td>26-Dec-15</td><td>26-Dec-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype5.html" target="_blank">Contingency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor3120.html" target="_blank">Katti Chidanand  (Advocate)</a></td><td>4,200</td><td style="color:#d32a0e">Inprogress</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

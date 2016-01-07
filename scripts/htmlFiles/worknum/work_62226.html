@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+				width: 24px;
+				height: 24px;
+				}
+				th.sorttable_sorted::after {
+				background: url(up.png);
+				background-size: contain;
+				}
+				th.sorttable_sorted_reverse::after {
+				background: url(down.png);
+				background-size: cover;
+				}
+
+				.scrollup {
+			    width: 80px;
+			    height: 40px;
+			    position: fixed;
+			    bottom: 50px;
+			    right: 100px;
+			    text-indent: 0px
+			    border-radius: 20px;
+			    border-color:black;
+			    border-style:solid;
+			    border-width:1px;
+			    text-align:center;
+			    padding-top:10px;
+			    color:black;  
+			    background-color:white;
+				}
+				<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+
+
+				</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+				
+				</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;"> Total number of works: 6</h4><h4 style="display:inline-block; margin-left:3em;"> Total amount spent: &#8377 6,80,846</h4>
+		<table class="table table-responsive sortable">
+
+		<thead>
+
+		<tr>
+
+		<th style="width:5%">Sl no.</th>
+
+		<th style="width:48%">Work Details</th>
+
+		<th>Measurement</th>
+
+		<th>Unit</th>
+
+		<th>Rate</th>
+
+		<th>Total Amount</th>
+
+		</tr>
+
+		</thead>
+
+		<tbody>
+		<a href="#" class="scrollup">Go to top</a>
+		<tr><td class = "span1">1</td><td>KSRB 2-2.2 : Earthwork excavation for foundation of buildings, water supply, sanitary lines and electrical conduits either in pits or in trenches 1.5m and above in width, in hard soil not exceeding 1.5 m. in depth including dressing the bottom and sides o</td><td>38.31</td><td>CUM</td><td>222.00 </td><td>8504.82</td></tr><tr><td class = "span1">2</td><td>KSRB 4-1.6 ; Providing and laying in position plain cement concrete of mix M15 with cement @ 240kgs, with 20mm and down size graded granite metal coarse aggregates @0.878cum and fine aggregtes @ 0.459cum, machine mixed, concrete laid in layers not exceedi</td><td>24.41</td><td>CUM</td><td>4,800.00 </td><td>117168.0</td></tr><tr><td class = "span1">3</td><td>Providing and laying/fixing cement base, precast, pre polished cement concrete, designer tiles 25mm thick conforming to IS 1237 heavy duty tiles for flooring, treads of steps and landing, laid on a bed of 12mm thick cement mortar 1:3 mis finished with flu</td><td>410.83</td><td>Sqm</td><td>1,066.80 </td><td>438273.444</td></tr><tr><td class = "span1">4</td><td>Providing and fixing Pre cast solid concrete kerb stones made out of CC 1:2:4 and finished with CM 1:3 plastering and finishing cutting etc., complete. - of size 450 x 150 x 500 mm  </td><td>282.00</td><td>Nos</td><td>320.00 </td><td>90240.0</td></tr><tr><td class = "span1">5</td><td>"For roof slab &  terraces  Providing & applying water proofing to roof slab, terraces, landscape area, podium  etc., using  modified polyurethane cures (conforming to ASTM C836-84)  to give a tough elastomeric waterproof membrane on the surface.   The su</td><td>32.38</td><td>Sqm</td><td>750.00 </td><td>24285.0</td></tr><tr><td class = "span1">6</td><td>KSRRB 800-1. Painting two coats after filling the surface with synthetic enamel paint in approved shades on new plastered concrete surfaces, with materials, labour complete as per specifications. MORTH Chapter 8  </td><td>43.20</td><td>Sqm</td><td>55.00 </td><td>2376.0</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

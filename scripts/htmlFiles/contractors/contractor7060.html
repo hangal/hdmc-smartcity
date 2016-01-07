@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: " \25B4\25BE"}display: inline-block;
+		  width: 24px;
+		  height: 24px;
+		}
+		th.sorttable_sorted::after {
+		  background: url(up.png);
+		  background-size: contain;
+		}
+		th.sorttable_sorted_reverse::after {
+		  background: url(down.png);
+		  background-size: cover;
+		}</style>
+<title>Smart City</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../common_files/sorttable.js"></script>
+<link rel="stylesheet" href="../common_files/bootstrap.css">
+<script src="../common_files/jquery.min.js"></script>
+<script src="../common_files/bootstrap.min.js"></script>
+
+
+		<script src="http://maps.googleapis.com/maps/api/js"></script>
+		<script>
+		var src = 'http://hack4hd.org/data/HD-ward-boundaries.kml';
+
+		function initialize() {
+		  var mapProp = {
+			center:new google.maps.LatLng(15.3935685,75.08009570000002),
+			zoom:15,
+			mapTypeId:google.maps.MapTypeId.ROADMAP
+		  };
+		  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+		  var ctaLayer = new google.maps.KmlLayer({
+			url: 'http://hack4hd.org/data/HD-ward-boundaries.kml',
+			map: map
+		  });
+
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+		<script>
+		function worksTotal(){
+		var table = document.getElementById("myTable");
+		var x = table.rows.length;
+		document.getElementById("totalWorks").innerHTML = x
+		}
+</script>
+<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+<style>
+.scrollup {
+    width: 80px;
+    height: 40px;
+    position: fixed;
+    bottom: 50px;
+    right: 100px;
+    text-indent: 0px
+    border-radius: 20px;
+    border-color:black;
+    border-style:solid;
+    border-width:1px;
+    text-align:center;
+    padding-top:10px;
+    color:black;  
+    background-color:white;
+}
+</style>
+
+		</head>
+<body>
+<div class="container">
+<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">
+
+<h2 style="text-align:center; display:inline-block;"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>
+
+<img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><h4 style="display:inline-block;margin-left:5em"> Total number of works: 14</h4><h4 style="display:inline-block; margin-left:7em;"> Completed works: 11</h4><h4 style="display:inline-block; margin-left:7em;"> In progress works: 3</h4><h4 style="display:inline-block; margin-left:5em;"> Total amount spent: &#8377 9,91,305</h4>
+	<table class="table table-responsive sortable" id="myTable">
+
+	<thead>
+
+	<tr>
+
+	<th style="width:5%">Ward</th>
+
+	<th style="width:48%">Work Description</th>
+
+	<th>Work Order Date</th>
+
+	<th>Work Completion Date</th>
+
+	<th>Work Type</th>
+
+	<th>Source of Income</th>
+
+	<th style="width:7%">Contractor</th>
+
+	<th>Amount Sanctioned</th>
+
+	<th>Status</th>
+
+	</tr>
+
+	</thead>
+
+	<tbody>
+	<a href="#" class="scrollup">Go to top</a>
+	<tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_38.html" target="_blank">38</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_67803.html" target="_blank">Regarding  UGD Line Work At Chetana Colony & Aruna Colony. in ward no 38</a></td><td>24-Nov-14</td><td>23-Dec-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype3.html" target="_blank">Emergency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7060.html" target="_blank">Walikar Ashok Parasappa</a></td><td>58,700</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_38.html" target="_blank">38</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_67804.html" target="_blank">Regarding Name Board Work At Hubli Division in ward no 38</a></td><td>24-Nov-14</td><td>23-Dec-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype2.html" target="_blank">Maintenance</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7060.html" target="_blank">Walikar Ashok Parasappa</a></td><td>99,000</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_38.html" target="_blank">38</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_67842.html" target="_blank">Zonal No.07 MHC repair at ward no. 38 Venteshwar colony, Surabhi Nagar & Shakti Nagar.</a></td><td>26-Nov-14</td><td>25-Dec-14</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype3.html" target="_blank">Emergency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7060.html" target="_blank">Walikar Ashok Parasappa</a></td><td>55,165</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_48.html" target="_blank">48</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_68547.html" target="_blank">Regarding UGD Line work At Sagar Colony Pecepick Main Road in ward no 48</a></td><td>05-Jan-15</td><td>04-Feb-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype3.html" target="_blank">Emergency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7060.html" target="_blank">Walikar Ashok Parasappa</a></td><td>80,000</td><td style="color:#d32a0e">Inprogress</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_38.html" target="_blank">38</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_69124.html" target="_blank">Regarding UGD line work at Silvar Town Huralikuppi ward no.38</a></td><td>12-Jan-15</td><td>11-Feb-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype1.html" target="_blank">Capital</td><td>Emergency Fund</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7060.html" target="_blank">Walikar Ashok Parasappa</a></td><td>43,226</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_38.html" target="_blank">38</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_69125.html" target="_blank">Regarding Slab Cover work at Shakti Nagar Mayuranagar Silver Town ward no.38.</a></td><td>12-Jan-15</td><td>11-Feb-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype3.html" target="_blank">Emergency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7060.html" target="_blank">Walikar Ashok Parasappa</a></td><td>38,269</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_38.html" target="_blank">38</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_69127.html" target="_blank">Regarding Drain work at Shakti Nagar ward no.38</a></td><td>12-Jan-15</td><td>11-Feb-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype3.html" target="_blank">Emergency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7060.html" target="_blank">Walikar Ashok Parasappa</a></td><td>98,316</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_38.html" target="_blank">38</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_71393.html" target="_blank">Regarding Drain work At Anand Nagar. & Venkateshwar Colony, Arun Colony, Shakthi Nagar. in ward no 38</a></td><td>20-Apr-15</td><td>19-May-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype1.html" target="_blank">Capital</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7060.html" target="_blank">Walikar Ashok Parasappa</a></td><td>80,637</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_38.html" target="_blank">38</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_71394.html" target="_blank">Regarding UGD Line work At Ambedkar Colony Near  Kambale Residence in ward no 38</a></td><td>20-Apr-15</td><td>19-May-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype1.html" target="_blank">Capital</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7060.html" target="_blank">Walikar Ashok Parasappa</a></td><td>47,716</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_48.html" target="_blank">48</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_73800.html" target="_blank">Providing UGD Line & Constructing Chamber at Vasanth Nagar Solanki House to Gudihal House in ward no-48</a></td><td>29-Jul-15</td><td>28-Aug-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype3.html" target="_blank">Emergency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7060.html" target="_blank">Walikar Ashok Parasappa</a></td><td>89,798</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_48.html" target="_blank">48</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_73802.html" target="_blank">Providing UGD Line & Constructing Chamber at Janata Colony Road to Vasanth Nagar Cross Road in ward</a></td><td>29-Jul-15</td><td>28-Aug-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype3.html" target="_blank">Emergency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7060.html" target="_blank">Walikar Ashok Parasappa</a></td><td>73,278</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_38.html" target="_blank">38</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_75135.html" target="_blank">Regarding work for thr UGD Drain at Venkateswara Colony, Apoorva Nagar Near Miskina House in Ward No. 38</a></td><td>15-Sep-15</td><td>14-Oct-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype3.html" target="_blank">Emergency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7060.html" target="_blank">Walikar Ashok Parasappa</a></td><td>55,500</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_38.html" target="_blank">38</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_75136.html" target="_blank">Regarding work for thr UGD Drain at Anand Nagar,Shakti Nagar, Bharata Nagar & Venkateswara Nagar in Ward No. 38</a></td><td>15-Sep-15</td><td>14-Oct-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype3.html" target="_blank">Emergency</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7060.html" target="_blank">Walikar Ashok Parasappa</a></td><td>72,300</td><td style="color:#43ac6a">Completed</td></tr><tr><td class = "span1"><a href="C:\Projects\HDMC\scripts\htmlFiles\ward_works/ward_38.html" target="_blank">38</a></td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worknum/work_76096.html" target="_blank">Zonal No.07 Construction of open drain at Surbhi nagar in ward no:38</a></td><td>21-Oct-15</td><td>20-Nov-15</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles\worktype/worktype1.html" target="_blank">Capital</td><td>Own Source</td><td><a href="C:\Projects\HDMC\scripts\htmlFiles/contractors/contractor7060.html" target="_blank">Walikar Ashok Parasappa</a></td><td>99,400</td><td style="color:#d32a0e">Inprogress</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>
