@@ -1,4 +1,4 @@
-import csv, os, sys
+import csv, os, sys, codecs
 import wardworks
 import contractor
 import worktype
@@ -43,7 +43,7 @@ def allworks(argv):
         inprogressWorksTotalstr=putCommas(inprogressWorksTotal)
         contractorsTotal=putCommas(len(contractorsList))
 
-  with open(os.path.join(argv[2],'allworks','allworks.html'), 'w+') as k:
+  with codecs.open(os.path.join(argv[2],'allworks','allworks.html'), 'w+', encoding='utf-8') as k:
     k.write("""<!DOCTYPE html>\n<html lang=\"en\">\n
       <head>
       \n<title>Smart City</title>\n
@@ -83,7 +83,7 @@ def allworks(argv):
       <a href="#" class="scrollup">Go to top</a>
       """) 
     rowTotal=0
-    with open(sys.argv[1], 'rU') as f:
+    with codecs.open(sys.argv[1], 'rU', encoding='utf-8') as f:
         reader = csv.reader(f)
         #reader.next()
         for row in reader:
@@ -99,7 +99,10 @@ def allworks(argv):
           
           #work description
           if (len(row[4])<=4):
-            k.write('<td>Info not available</td>')      
+            try:
+              k.write('<td><a href=\"../worknum/work_'+str(workID)+'.html\" target=\"_blank\">' + row[24] + '</a></td>')
+            except:
+              pass     
           else:
             if(row[2] == '1' or row[2] == '2' or row[2] == '3'):
               k.write('<td><a href=\"../worknum/work_'+str(workID)+'.html\" target=\"_blank\">' + row[4] + '</a></td>')
