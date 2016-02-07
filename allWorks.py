@@ -56,7 +56,7 @@ def allworks(argv):
       <script src=\"../commonfiles/addons.js\"></script>\n
   </head>\n<body>\n<div class=\"container\">\n<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">\n
   <h2 style=\"text-align:center; display:inline-block;\"><a href="../allworks/allworks.html">Hubballi Dharwad Smart Cities Project</a></h2>\n
-  <img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;">""")
+  <img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;"><div class="pull-right" style="margin-top:40px;"><a href="allworks_k.html" target="_blank">Kannada</a> | <a href="allworks.html" target="_blank">English</a></div>""")
     
     k.write("""<h4 style="display:inline-block;margin-left:5em"> Total number of works: """+rowTotalstr+"""</h4>""")
     k.write("""<h4 style="display:inline-block; margin-left:7em;"> Completed works: """+completedWorksTotalstr+"""</h4>""")
@@ -95,7 +95,7 @@ def allworks(argv):
           k.write('<tr>')
 
           #ward number
-          k.write('<td class = \"span1\"><a href=\"../ward_works/ward_'+row[1]+'.html\" target=\"_blank\">' + row[1] + '</a></td>')    
+          k.write('<td class = \"span1\"><a href=\"../wardworks/ward_'+row[1]+'.html\" target=\"_blank\">' + row[1] + '</a></td>')    
           
           #work description
           if (len(row[4])<=4):
