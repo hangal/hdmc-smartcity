@@ -1,4 +1,4 @@
-import csv, os, sys, codecs
+import csv, os, sys
 import wardworks
 import contractor
 import worktype
@@ -43,7 +43,7 @@ def allworks(argv):
         inprogressWorksTotalstr=putCommas(inprogressWorksTotal)
         contractorsTotal=putCommas(len(contractorsList))
 
-  with codecs.open(os.path.join(argv[2],'allworks','allworks.html'), 'w+', encoding='utf-8') as k:
+  with open(os.path.join(argv[2],'allworks','allworks.html'), 'w+') as k:
     k.write("""<!DOCTYPE html>\n<html lang=\"en\">\n
       <head>
       \n<title>Smart City</title>\n
@@ -83,7 +83,7 @@ def allworks(argv):
       <a href="#" class="scrollup">Go to top</a>
       """) 
     rowTotal=0
-    with codecs.open(sys.argv[1], 'rU', encoding='utf-8') as f:
+    with open(sys.argv[1], 'rU') as f:
         reader = csv.reader(f)
         #reader.next()
         for row in reader:
