@@ -5,20 +5,13 @@ import csv, os, sys
 import wardworks
 import contractor
 import worktype
+import allWorks_k
+import tally
 from operator import itemgetter
 #import workdetails
 
-def putCommas(num):
-  numUlta = str(num)[::-1]
-  revnumstr = str(numUlta)
-  newstr = revnumstr[:3]+','+revnumstr[3:5]+','+revnumstr[5:7]+','+revnumstr[7:9]+','+revnumstr[9:11]
-  retstr=newstr[::-1]
-  for k in retstr:
-    if k==',':
-      retstr=retstr.replace(',','',1)
-    else:
-      break
-  return retstr
+from commonFunctions import putCommas
+from commonFunctions import dateConv
 
 def index(argv):
     with open(os.path.join(argv[2],'allworks','index.html'), 'w+') as k:
@@ -263,6 +256,8 @@ def allworks(argv):
           year=int(row[16][-2:])
           workID = row[0][:-3].replace(',','')
           workID = int(workID)
+          orderDate=dateConv(row[15])
+          completionDate=dateConv(row[16])
           #print (workID)
           k.write('<tr>')
 
@@ -282,10 +277,10 @@ def allworks(argv):
               k.write('<td>'+ row[4] + '</td>')
           
           #work order date
-          k.write('<td>' + row[15] + '</td>')         
+          k.write('<td sorttable_customkey='+orderDate+'>' + row[15] + '</td>')         
 
           #work completion date
-          k.write('<td>' + row[16] + '</td>')     
+          k.write('<td sorttable_customkey='+completionDate+'>' + row[16] + '</td>')     
 
           #type of work
           k.write('<td><a href=\"../worktype/worktype_'+row[2]+'.html\" target=\"_blank\">' + row[20] + '</a></td>') 
@@ -329,8 +324,9 @@ if not os.path.exists(os.path.join(sys.argv[2],'worktype')):
 if not os.path.exists(os.path.join(sys.argv[2],'contractors')):
   os.makedirs(os.path.join(sys.argv[2],'contractors'))
 
-index(sys.argv)
+#index(sys.argv)
 allworks(sys.argv)
+allWorks_k.allworks_k(sys.argv)
 wardworks.wardworks(sys.argv)
 worktype.worktype(sys.argv)
 contractor.contractor(sys.argv)

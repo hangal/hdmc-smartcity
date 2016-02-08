@@ -1,16 +1,7 @@
 import csv, os
-
-def putCommas(num):
-  numUlta = str(num)[::-1]
-  revnumstr = str(numUlta)
-  newstr = revnumstr[:3]+','+revnumstr[3:5]+','+revnumstr[5:7]+','+revnumstr[7:9]+','+revnumstr[9:11]
-  retstr=newstr[::-1]
-  for k in retstr:
-    if k==',':
-      retstr=retstr.replace(',','',1)
-    else:
-      break
-  return retstr 
+#from allWorks import dateConv
+from commonFunctions import putCommas
+from commonFunctions import dateConv
 
 def wardworks(argv):   
     rowTotal=0 
@@ -127,6 +118,8 @@ def wardworks(argv):
                     year=int(row[16][-2:])
                     workID = row[0][:-3].replace(',','')
                     workID = int(workID)
+                    orderDate=dateConv(row[15])
+                    completionDate=dateConv(row[16])
                     #print (workID)
                     k.write('<tr>')
 
@@ -143,10 +136,10 @@ def wardworks(argv):
                         k.write('<td>'+ row[4] + '</td>')
                     
                     #work order date
-                    k.write('<td>' + row[15] + '</td>')         
+                    k.write('<td sorttable_customkey='+orderDate+'>' + row[15] + '</td>')         
 
                     #work completion date
-                    k.write('<td>' + row[16] + '</td>')     
+                    k.write('<td sorttable_customkey='+completionDate+'>' + row[16] + '</td>')     
 
                     #type of work
                     k.write('<td><a href=\"../worktype/worktype_'+row[2]+'.html\" target=\"_blank\">' + row[20] + '</td>') 

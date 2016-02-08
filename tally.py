@@ -2,17 +2,8 @@ import csv, sys, os
 from operator import itemgetter
 from heapq import nlargest
 
-def putCommas(num):
-  numUlta = str(num)[::-1]
-  revnumstr = str(numUlta)
-  newstr = revnumstr[:3]+','+revnumstr[3:5]+','+revnumstr[5:7]+','+revnumstr[7:]
-  retstr=newstr[::-1]
-  for k in retstr:
-    if (k==','):
-      retstr=retstr.replace(',','',1)
-    else:
-      break
-  return retstr
+from commonFunctions import putCommas
+from commonFunctions import dateConv
 
 #sys.argv
 def index(argv,top50contractorsNamesList,top50amount):
@@ -274,5 +265,6 @@ def contractor(argv):
     #print contractorID_amount
     return top50contractorsNamesList, top50amount
 
+print('Generating homepage.Please wait...')
 top50contractorsNamesList, top50amount = contractor(sys.argv)
 index(sys.argv,top50contractorsNamesList,top50amount)

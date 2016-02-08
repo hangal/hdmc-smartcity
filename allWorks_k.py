@@ -5,26 +5,15 @@ import csv, os, sys, codecs
 import wardworks
 import contractor
 import worktype
+
+from commonFunctions import putCommas
+from commonFunctions import dateConv
 #import workdetails
 
 reload(sys)  
 sys.setdefaultencoding('utf-8')
 
-def putCommas(num):
-  numUlta = str(num)[::-1]
-  revnumstr = str(numUlta)
-  newstr = revnumstr[:3]+','+revnumstr[3:5]+','+revnumstr[5:7]+','+revnumstr[7:9]+','+revnumstr[9:11]
-  retstr=newstr[::-1]
-  for k in retstr:
-    if k==',':
-      retstr=retstr.replace(',','',1)
-    else:
-      break
-  return retstr
-
-
-
-def allworks(argv):
+def allworks_k(argv):
   rowTotal=0
   amtTotal=0
   inprogressWorksTotal=0
@@ -97,6 +86,8 @@ def allworks(argv):
           year=int(row[16][-2:])
           workID = row[0][:-3].replace(',','')
           workID = int(workID)
+          orderDate=dateConv(row[15])
+          completionDate=dateConv(row[16])
           #print (workID)
           k.write('<tr>')
 
@@ -122,10 +113,10 @@ def allworks(argv):
                 pass
           
           #work order date
-          k.write('<td>' + row[15] + '</td>')         
+          k.write('<td sorttable_customkey='+orderDate+'>' + row[15] + '</td>')         
 
           #work completion date
-          k.write('<td>' + row[16] + '</td>')     
+          k.write('<td sorttable_customkey='+completionDate+'>' + row[16] + '</td>')     
 
           #type of work
           k.write('<td><a href=\"../worktype/worktype_'+row[2]+'.html\" target=\"_blank\">' + row[20] + '</a></td>') 
@@ -158,7 +149,7 @@ def allworks(argv):
     k.write("</body>\n</html>")
 
 
-  print("Done generating all works!") 
+  print("Done generating all works in Kannada!") 
 
 if not os.path.exists(os.path.join(sys.argv[2],'allworks')):
   os.makedirs(os.path.join(sys.argv[2],'allworks'))
@@ -169,8 +160,3 @@ if not os.path.exists(os.path.join(sys.argv[2],'worktype')):
 if not os.path.exists(os.path.join(sys.argv[2],'contractors')):
   os.makedirs(os.path.join(sys.argv[2],'contractors'))
 
-
-allworks(sys.argv)
-#wardworks.wardworks(sys.argv)
-
-#workdetails()
