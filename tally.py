@@ -35,7 +35,7 @@ def index(argv,top50contractorsNamesList,top50amount):
             </head>\n<body>\n<div class=\"container\">\n<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">\n
             <h2 style=\"text-align:center; display:inline-block;\"><a href="../allworks/allworks.html">Hubballi Dharwad Smart Cities Project</a></h2>\n
             <img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;">
-            <a href="#" class="scrollup">Go to top</a><div id="chartallworks" style="width:100%; height:400px; margin-top:5em;"></div>
+            <a href="#" class="scrollup">Go to top</a><div id="chartallworks" style="width:100%; height:600px; margin-top:5em;"></div>
             """)
 
         rowTotal=0
@@ -78,7 +78,7 @@ def index(argv,top50contractorsNamesList,top50amount):
             k.write("""<h4 style="display:inline-block; margin-left:5em;"> Total amount spent: &#8377 """+amtTotalstr+"""</h4>""")
             k.write("""<h4 style="display:inline-block; margin-left:3.5em;"> Total number of contractors: """+contractorsTotal+"""</h4>""")
 
-            k.write("""<div id="chartcontractors" style="width:100%; height:400px;"></div>""")
+            k.write("""<div id="chartcontractors" style="width:100%; height:600px;"></div>""")
 
             k.write("""
             <table class=\"table table-responsive sortable\" id="myTable" style="margin-top:2em">\n
