@@ -1,5 +1,6 @@
 import csv, sys, os
 from operator import itemgetter
+from heapq import nlargest
 
 def putCommas(num):
   numUlta = str(num)[::-1]
@@ -14,7 +15,11 @@ def putCommas(num):
   return retstr
 
 #sys.argv
-def index(argv):
+def index(argv,top50contractorsIDList,top50amount):
+
+    print top50contractorsIDList
+    print top50amount
+
     with open(os.path.join(argv[2],'allworks','index.html'), 'w+') as k:
         k.write("""<!DOCTYPE html>\n
             <html lang=\"en\">\n
@@ -33,7 +38,7 @@ def index(argv):
             </head>\n<body>\n<div class=\"container\">\n<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">\n
             <h2 style=\"text-align:center; display:inline-block;\"><a href="../allworks/allworks.html">Hubballi Dharwad Smart Cities Project</a></h2>\n
             <img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;">
-            <a href="#" class="scrollup">Go to top</a><div id="chart" style="width:100%; height:400px;"></div>
+            <a href="#" class="scrollup">Go to top</a><div id="chartallworks" style="width:100%; height:400px;"></div>
             """)
 
         rowTotal=0
@@ -75,6 +80,8 @@ def index(argv):
             #k.write("""<h4 style="display:inline-block; margin-left:7em;"> In progress works: """+inprogressWorksTotalstr+"""</h4>""")
             k.write("""<h4 style="display:inline-block; margin-left:5em;"> Total amount spent: &#8377 """+amtTotalstr+"""</h4>""")
             k.write("""<h4 style="display:inline-block; margin-left:3.5em;"> Total number of contractors: """+contractorsTotal+"""</h4>""")
+
+            k.write("""<div id="chartcontractors" style="width:100%; height:400px;"></div>""")
 
             k.write("""
             <table class=\"table table-responsive sortable\" id="myTable" style="margin-top:2em">\n
@@ -122,13 +129,7 @@ def index(argv):
                 inprogressWorksTotalstr=putCommas(inprogressWorksTotal)
                 contractorsTotal=putCommas(len(contractorsByWardList))
 
-                print('Ward: ' + str(ward))
-                print('Amount: ' + amtTotalstr)
-                print('Works total: ' + rowTotalstr)
-                print('Completed: ' + completedWorksTotalstr)
-                print('In progress: ' + inprogressWorksTotalstr)
-                print('Number of contractors: ' + contractorsTotal)
-                print('\n')
+
 
                 k.write("<tr>")
                 k.write("<td><a href=\"../wardworks/ward_"+row[1]+".html\" target=\"_blank\">"+str(ward)+"</a></td>")
@@ -150,7 +151,7 @@ def index(argv):
         k.write("""
         <script>
         $(function () { 
-        $('#chart').highcharts({
+        $('#chartallworks').highcharts({
             chart: {
                 type: 'column'
             },
@@ -186,9 +187,90 @@ def index(argv):
                 visible: false
             }]
         });
+    
+        $('#chartcontractors').highcharts({
+            chart: {
+                type: 'column'
+            },
+            title: {
+                text: 'Top 50 Contractors by Amount'
+            },
+            credits: {
+                enabled: true
+            },
+            xAxis: {
+                categories: """ + str(top50contractorsIDList) + """
+            },
+            yAxis: {
+                title: {
+                    text: 'Magnitude'
+                }
+            },
+            series: [{
+                name: 'Total works',
+                data: """ + str(top50amount) + """,
+                visible: true
+            
+            }]
+        });
     });
+
     </script>""")
         k.write("</tbody>\n</table>\n</div>\n</body>\n</html>")
-    k.close()
+        k.close()
 
-index(sys.argv)
+def contractor(argv):
+    contractorIDList=[]
+    top50contractorsIDList=[]
+    contractorID_amount={}
+    amountList=[]
+
+    with open(argv[1], 'rU') as f:
+        reader=csv.reader(f)
+        for row in reader:
+            if int(row[12]) not in contractorIDList:
+                contractorIDList.append(int(row[12]))
+
+    print(len(contractorIDList))
+
+    for contractorID in contractorIDList:
+        
+        with open(argv[1], 'rU') as f:
+            reader = csv.reader(f)
+            #reader.next()
+            rowTotal=0
+            amtTotal=0
+            completedWorksTotal=0
+            inprogressWorksTotal=0
+            for row in reader:
+                #print(row[12])
+                #print contractorID
+                #time.sleep(1)
+                if int(row[12])==contractorID:
+                    rowTotal+=1
+                    amtTotal=amtTotal+int(row[14])
+                    if row[17] == 'completed':
+                        completedWorksTotal+=1
+                    if row[17] == 'inprogress':
+                        inprogressWorksTotal+=1
+
+        amtTotalstr=putCommas(amtTotal)
+        rowTotalstr=putCommas(rowTotal)
+        completedWorksTotalstr=putCommas(completedWorksTotal)
+        inprogressWorksTotalstr=putCommas(inprogressWorksTotal)
+        if (amtTotal not in amountList):
+            amountList.append(amtTotal)
+        contractorID_amount[amtTotal]=contractorID
+
+
+
+    amountList.sort()
+    print('-----------------------------')
+    print(nlargest(50,amountList))
+    top50amount=(nlargest(50,amountList))
+    for number in amountList:
+        top50contractorsIDList.append(contractorID_amount[number])
+    return top50contractorsIDList, top50amount
+
+top50contractorsIDList, top50amount = contractor(sys.argv)
+index(sys.argv,top50contractorsIDList,top50amount)

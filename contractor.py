@@ -1,5 +1,8 @@
 import csv, time, os
 
+contractorID_amount={}
+amountList=[]
+
 def putCommas(num):
   numUlta = str(num)[::-1]
   revnumstr = str(numUlta)
@@ -48,6 +51,9 @@ def contractor(argv):
         rowTotalstr=putCommas(rowTotal)
         completedWorksTotalstr=putCommas(completedWorksTotal)
         inprogressWorksTotalstr=putCommas(inprogressWorksTotal)
+        if (amtTotal not in amountList):
+            amountList.append(amtTotal)
+        contractorID_amount[contractorID]=amtTotal
 
         print("Generating HTML for contractor " + str(contractorID))
         print('Total amount for the contractor: ' + amtTotalstr)
@@ -147,3 +153,7 @@ def contractor(argv):
 
 
             k.write("</tbody>\n</table>\n</div>\n</body>\n</html>")
+
+amountList.sort()
+for number in amountList:
+    print(contractorID_amount[number])
