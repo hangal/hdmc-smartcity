@@ -1,22 +1,14 @@
-import csv
+import csv, os
 
-def putCommas(num):
-  numUlta = str(num)[::-1]
-  revnumstr = str(numUlta)
-  newstr = revnumstr[:3]+','+revnumstr[3:5]+','+revnumstr[5:7]+','+revnumstr[7:9]+','+revnumstr[9:11]
-  retstr=newstr[::-1]
-  for k in retstr:
-    if k==',':
-      retstr=retstr.replace(',','',1)
-    else:
-      break
-  return retstr
+from commonFunctions import putCommas
+from commonFunctions import dateConv
 
 def workdetails(argv):
 
     workIDList =[]
-
-    with open('HD-works-details-2014-15.csv', 'rU') as f:
+    filepath = argv[2].split('root/',1)[0]+'data/HD-works-details-2014-15.csv'
+    #print filepath
+    with open(filepath, 'rU') as f:
         csvHandle = csv.reader(f)
         csvHandle.next()
 
@@ -25,13 +17,10 @@ def workdetails(argv):
             if wid not in workIDList:
                 workIDList.append(wid)
 
-    print(workIDList)
-    print(len(workIDList))
-
     for number in workIDList:
         rowTotal=0
         amtTotal=0
-        with open('HD-works-details-2014-15.csv', 'rU') as f:
+        with open(filepath, 'rU') as f:
             reader = csv.reader(f)
             reader.next()
             for row in reader:
@@ -47,8 +36,8 @@ def workdetails(argv):
 
         with open(os.path.join(argv[2],'worknum','work_'+str(number)+'.html'), 'w+') as k:
             print('Generating HTML for work ID: ' + str(number))
-            print 'Total amount: ' + amtTotalstr
-            print 'Total number of rows: ' + rowTotalstr
+            #print 'Total amount: ' + amtTotalstr
+            #print 'Total number of rows: ' + rowTotalstr
             k.write("""<!DOCTYPE html>\n<html lang=\"en\">\n<head><style>table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {content: \" \\25B4\\25BE\"}display: inline-block;
                     width: 24px;
                     height: 24px;
@@ -100,7 +89,7 @@ def workdetails(argv):
     </script>
 
 
-                    </style>\n<title>Smart City</title>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<script src=\"../common_files/sorttable.js\"></script>\n<link rel=\"stylesheet\" href=\"../common_files/bootstrap.css\">\n<script src=\"../common_files/jquery.min.js\"></script>\n<script src=\"../common_files/bootstrap.min.js\"></script>\n
+                    </style>\n<title>Smart City</title>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<script src=\"../commonfiles/sorttable.js\"></script>\n<link rel=\"stylesheet\" href=\"../commonfiles/bootstrap.css\">\n<script src=\"../commonfiles/jquery.min.js\"></script>\n<script src=\"../commonfiles/bootstrap.min.js\"></script>\n
                     
                     </head>\n<body>\n<div class=\"container\">\n<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">\n
     <h2 style=\"text-align:center; display:inline-block;\"><a href="../all_works/allWorks.html">Hubballi Dharwad Smart Cities Project</a></h2>\n
@@ -126,7 +115,7 @@ def workdetails(argv):
             <a href="#" class="scrollup">Go to top</a>
             """)
 
-            with open('HD-works-details-2014-15.csv', 'rU') as f:
+            with open(filepath, 'rU') as f:
                 csvHandle = csv.reader(f)
                 csvHandle.next()
                 i=1

@@ -8,7 +8,7 @@ import worktype
 import allWorks_k
 import tally
 from operator import itemgetter
-#import workdetails
+import workdetails
 
 from commonFunctions import putCommas
 from commonFunctions import dateConv
@@ -153,10 +153,12 @@ if not os.path.exists(os.path.join(sys.argv[2],'worktype')):
   os.makedirs(os.path.join(sys.argv[2],'worktype'))
 if not os.path.exists(os.path.join(sys.argv[2],'contractors')):
   os.makedirs(os.path.join(sys.argv[2],'contractors'))
+if not os.path.exists(os.path.join(sys.argv[2],'worknum')):
+  os.makedirs(os.path.join(sys.argv[2],'worknum'))
 
 allworks(sys.argv)
 allWorks_k.allworks_k(sys.argv)
 wardworks.wardworks(sys.argv)
 worktype.worktype(sys.argv)
 contractor.contractor(sys.argv)
-#workdetails()
+workdetails.workdetails(sys.argv)
