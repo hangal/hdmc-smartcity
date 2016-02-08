@@ -67,8 +67,8 @@ def worktype(argv):
             <tr>\n
             <th style=\"width:5%\">Ward</th>\n
             <th style=\"width:48%\">Work Description</th>\n
-            <th>Work Order Date</th>\n
-            <th>Work Completion Date</th>\n
+            <th style=\"width:10%\">Work Order Date</th>\n
+            <th style=\"width:10%\">Work Completion Date</th>\n
             <th>Work Type</th>\n
             <th>Source of Income</th>\n
             <th style=\"width:7%\">Contractor</th>\n
