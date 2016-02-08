@@ -15,10 +15,7 @@ def putCommas(num):
   return retstr
 
 #sys.argv
-def index(argv,top50contractorsIDList,top50amount):
-
-    print top50contractorsIDList
-    print top50amount
+def index(argv,top50contractorsNamesList,top50amount):
 
     with open(os.path.join(argv[2],'allworks','index.html'), 'w+') as k:
         k.write("""<!DOCTYPE html>\n
@@ -38,7 +35,7 @@ def index(argv,top50contractorsIDList,top50amount):
             </head>\n<body>\n<div class=\"container\">\n<img src="../images/hdmc-logo.png" width="140em" height="140em" style="display:inline-block; margin-right:1em; margin-left:7em;">\n
             <h2 style=\"text-align:center; display:inline-block;\"><a href="../allworks/allworks.html">Hubballi Dharwad Smart Cities Project</a></h2>\n
             <img src="../images/smartcitylogo.jpg" width="150em" height="150em" style="display:inline-block; margin-left:1em; margin-top:1.2em;">
-            <a href="#" class="scrollup">Go to top</a><div id="chartallworks" style="width:100%; height:400px;"></div>
+            <a href="#" class="scrollup">Go to top</a><div id="chartallworks" style="width:100%; height:400px; margin-top:5em;"></div>
             """)
 
         rowTotal=0
@@ -199,7 +196,7 @@ def index(argv,top50contractorsIDList,top50amount):
                 enabled: true
             },
             xAxis: {
-                categories: """ + str(top50contractorsIDList) + """
+                categories: """ + str(top50contractorsNamesList) + """
             },
             yAxis: {
                 title: {
@@ -207,7 +204,7 @@ def index(argv,top50contractorsIDList,top50amount):
                 }
             },
             series: [{
-                name: 'Total works',
+                name: 'Total contract amount',
                 data: """ + str(top50amount) + """,
                 visible: true
             
@@ -224,14 +221,15 @@ def contractor(argv):
     top50contractorsIDList=[]
     contractorID_amount={}
     amountList=[]
+    contractorID_contractorName={}
+    top50contractorsNamesList=[]
 
     with open(argv[1], 'rU') as f:
         reader=csv.reader(f)
         for row in reader:
             if int(row[12]) not in contractorIDList:
                 contractorIDList.append(int(row[12]))
-
-    print(len(contractorIDList))
+                contractorID_contractorName[int(row[12])]=row[11]    
 
     for contractorID in contractorIDList:
         
@@ -265,12 +263,16 @@ def contractor(argv):
 
 
     amountList.sort()
+    amountList.reverse()
     print('-----------------------------')
-    print(nlargest(50,amountList))
+    #print(nlargest(50,amountList))
     top50amount=(nlargest(50,amountList))
     for number in amountList:
         top50contractorsIDList.append(contractorID_amount[number])
-    return top50contractorsIDList, top50amount
+    for ID in top50contractorsIDList:
+        top50contractorsNamesList.append(contractorID_contractorName[ID])
+    #print contractorID_amount
+    return top50contractorsNamesList, top50amount
 
-top50contractorsIDList, top50amount = contractor(sys.argv)
-index(sys.argv,top50contractorsIDList,top50amount)
+top50contractorsNamesList, top50amount = contractor(sys.argv)
+index(sys.argv,top50contractorsNamesList,top50amount)
